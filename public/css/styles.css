@@ -1,0 +1,54 @@
+/**
+Typography
+*/
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    font-weight: bold;
+    src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+h1, h2, p {
+    font-family: "Open Sans", sans-serif
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.6em;
+}
+
+h2 {
+    font-size: 2.4em
+}
+
+p, button {
+    font-size: 1.2em
+}
+
+@media (max-width: 767.98px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/**
+Spacing
+ */
+
+section {
+    padding: 40px 0;
+}
+
+@media (max-width: 767.98px) {
+    section {
+        padding: 15px 0;
+    }
+}
