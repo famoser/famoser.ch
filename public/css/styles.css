@@ -13,6 +13,12 @@ Typography
     src: url("../fonts/OpenSans-Bold.ttf");
 }
 
+@font-face {
+    font-family: "Open Sans";
+    font-weight: 300;
+    src: url("../fonts/OpenSans-Light.ttf");
+}
+
 h1, h2, p {
     font-family: "Open Sans", sans-serif
 }
@@ -26,11 +32,22 @@ h1 {
 }
 
 h2 {
-    font-size: 2.4em
+    font-size: 2.4em;
+    margin-bottom: 1.2em;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 p, button {
     font-size: 1.2em
+}
+
+.lead {
+    font-size: 2.4em;
+    font-weight: 300;
 }
 
 @media (max-width: 767.98px) {
@@ -44,11 +61,89 @@ Spacing
  */
 
 section {
-    padding: 40px 0;
+    padding: 7.2em 0;
 }
 
 @media (max-width: 767.98px) {
     section {
-        padding: 15px 0;
+        padding: 1em 0;
     }
+}
+
+.spacer {
+    margin: 10.8em 0;
+}
+
+.spacer-half {
+    margin: 5.4em 0;
+}
+
+/**
+Colors
+ */
+
+.inverted {
+    background-color: #e0ece4;
+}
+
+a, a:hover, a:focus, .link,
+.btn-link, .btn-link:hover, .btn-link:focus {
+    color: #B25C4D;
+}
+
+a:hover, a:focus,
+.btn-link:hover, .btn-link:focus {
+    text-decoration: underline;
+}
+
+
+/**
+Experience
+ */
+
+div.job {
+    cursor: pointer;
+    padding: 1em;
+    position: relative;
+    margin-left: -1em;
+}
+
+div.job:hover {
+    background-color: #e0ece4;
+}
+
+div.job > p {
+    margin-bottom: 0;
+}
+
+g.active {
+    filter: none;
+}
+
+.job-wrapper {
+    height: 37em;
+    padding-left: 5em;
+    width: calc(100% - 2.5em);
+}
+
+.axis-top, .axis-bottom {
+    position: absolute;
+}
+
+.axis-top {
+    top: 0;
+    right: 0;
+}
+
+.axis-bottom {
+    bottom: 1.5em;
+    right: 0;
+}
+
+.job-image {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    max-width: 10em;
+    max-height: 5.5em;
 }

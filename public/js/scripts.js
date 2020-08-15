@@ -1,6 +1,20 @@
 $(document).ready(function () {
     initializeSmoothScrolling();
+    initializeExperienceHover();
 });
+
+function initializeExperienceHover() {
+    $('div.job').hover(
+        function () {
+            let otherClass = $(this).prop("classList").item(1);
+            $("svg g." + otherClass).addClass("active")
+        },
+        function () {
+            let otherClass = $(this).prop("classList").item(1);
+            $("svg g." + otherClass).removeClass("active")
+        }
+    )
+}
 
 function initializeSmoothScrolling() {
     $('[data-spy="scroll"]').each(function () {

@@ -1,23 +1,8 @@
 <?php
 include "../src/bootstrap.php";
 
-$sendContactRequest = isset($_POST["email"]) && strlen($_POST["email"]) > 3 &&
-    isset($_POST["message"]) && strlen($_POST["message"]) > 3 &&
-    !isset($_POST["robot"]) && isset($_POST["human"]);
-
-if ($sendContactRequest) {
-    sendMail($_POST["email"], $_POST["message"]);
-}
-
 $invalidUri = false;
 if ($_SERVER["REQUEST_URI"] !== "/") {
-    $redirect = getRedirect($_SERVER["REQUEST_URI"]);
-    if ($redirect !== false) {
-        http_response_code(302);
-        header("Location: " . $redirect);
-        exit;
-    }
-
     http_response_code(404);
     $invalidUri = true;
 }
@@ -34,8 +19,8 @@ include "../templates/head.html"
     <section>
         <div class="container">
             <div class="alert alert-danger">
-                Sorry, we could not find what you were looking for!
-                Contact us and we'll find it for you :)
+                Entschuldigung, diese Seite wurde leider nicht gefunden.
+                Kontaktieren Sie mich, und ich finde sie :)
             </div>
         </div>
     </section>
@@ -43,135 +28,218 @@ include "../templates/head.html"
 
 <section class="inverted">
     <div class="container">
-        <p id="ads" class="d-none adblock-warning">
-            You have turned off or did not install an Adblocker!
-            Install it now for <a target="_blank" href="https://addons.mozilla.org/de/firefox/addon/ublock-origin/">Firefox</a> or
-            <a target="_blank" href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=de">Chrome</a>.<br/>
-            Because <a class="smooth-scroll" href="#privacy">privacy</a> is a human right.
-        </p>
         <div class="main">
             <div class="teaser">
-                <img class="img-fluid logo" src="/images/logo.png" alt="the alternative logo">
+                <p class="lead">Hallo!</p>
 
                 <div class="spacer"></div>
-                <p>
-                    We are students of ETH who help you with linux<br/>
-                    at our <a class="smooth-scroll" href="#events">events</a>
-                    and in our <a class="smooth-scroll" href="#contact">office</a>.
-                    For free!
-                </p>
-                <p>
-                    Because we love Open Source and Free Software<br/>
-                    and want to help you to get started (<a class="smooth-scroll" href="#philosophy">here's why</a>).
+
+                <p class="lead">
+                    Ich bin <b>Florian Moser</b>.<br/>
+                    Programmierer von famosen Applikationen<br/>
+                    für komplexe Anwendungen.
                 </p>
 
-                <div class="resources">
-                    <p>
-                        <a href="https://gitlab.ethz.ch/thealternative/courses" target="_blank">course materials</a> |
-                        guides: <a href="https://thealternative.ch/guides/bash" target="_blank">bash</a> <a href="https://thealternative.ch/guides/git.html" target="_blank">git</a>
-                    </p>
-                </div>
+                <div class="spacer"></div>
 
-                <img class="tux" src="/images/tux.png" alt="tux, the linux mascot">
+                <p>Kontakt aufnehmen: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u></p>
             </div>
         </div>
     </div>
 </section>
 
-<?php
-
-$eventFiles = getFutureEventFiles();
-printEventsSection($eventFiles, true);
-
-?>
-
-<section class="inverted" id="contact">
+<section>
     <div class="container">
-        <div class="contact">
-            <div class="row team">
-                <div class="col-6 col-sm-3">
-                    <img class="img-fluid" src="images/nicolas.jpg" alt="nicolas">
-                    <p class="text-center">
-                        <span class="ressort lead">President</span><br/>
-                        Nicolas König
-                    </p>
-                </div>
+        <div class="summary">
+            <h2>Background</h2>
+            <p>
+                Ich bin ein Freelancer mit langjähriger Erfahrung in der Entwicklung, dem Betrieb und der Wartung von
+                Web Applikationen.
+            </p>
 
-                <div class="col-6 col-sm-3">
-                    <img class="img-fluid" src="images/alex.jpg" alt="alex">
-                    <p class="text-center">
-                        <span class="ressort">Vice-President</span><br/>
-                        Alexander Schoch
-                    </p>
-                </div>
+            <p>
+                Famose Applikationen sind kosteneffektiv in der Umsetzung und Wartung, werden fristgerecht fertig
+                gestellt und machen Freude bei der Nutzung.
+                Ein klares Verständnis der Nutzungsszenarien und ein frischer Blick auf die zu lösenden Probleme
+                erlauben einfache Lösungsansätze auch für komplexe Anwendungen.
+            </p>
 
-                <div class="col-6 col-sm-3">
-                    <img class="img-fluid" src="images/nils.jpg" alt="nils">
-                    <p class="text-center">
-                        <span class="ressort lead">Events</span><br/>
-                        Nils Leuzinger
-                    </p>
-                </div>
+            <p>
+                Ich studiere an der ETH im Master Informatik mit einem Fokus auf Security und Application Engineering.
+                Bin ich nicht vor dem Computer, singe ich vermutlich gerade in einem Projektchor, bin am wandern oder
+                mache Sport.
+            </p>
+        </div>
+    </div>
+</section>
 
-                <div class="col-6 col-sm-3">
-                    <img class="img-fluid" src="images/florian.jpg" alt="florian">
-                    <p class="text-center">
-                        <span class="ressort lead">Sponsoring</span><br/>
-                        Florian Moser
-                    </p>
-                </div>
-            </div>
+<section>
+    <div class="container">
+        <div class="featured">
+            <h2>Besonders famoos</h2>
+            <h3>eVoting der Stände</h3>
+            <p>
+                Für die Vertreterorganisationen V-ATP (administratives und technisches Personal), VFFL (externe
+                Dozierende) und VAUZ (Doktorierende und Postdocs) wurde ein Wahltool erstellt.
+                Die Wahlberechtigten können so auf einfachem Wege darüber abstimmen, wer sie in den jeweiligen UZH
+                Gremien vertreten soll.
+            </p>
+            <p>
+                Die Sicherheit des Tools wurde in einer umfassenden sicherheitstechnischen Analyse dargelegt,
+                und am fertigen Projekt wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
+                durchgeführt.
+            </p>
+            <img src="images/eVoting/screenshot2.png" class="img-fluid img-thumbnail">
 
-            <div class="row location">
-                <div class="col-lg-4 col-sm-6 col-12 address">
-                    <p>
-                        <b>The Alternative</b> <br/>
-                        CAB E14 <br/>
-                        Universitätsstrasse 6 <br/>
-                        8092 Zürich
-                    </p>
-                    <p>
-                        <a href="https://github.com/TheAlternativeZurich" target="_blank">github</a> |
-                        <a href="https://gitlab.ethz.ch/thealternative" target="_blank">gitlab</a>
-                    </p>
+            <div class="spacer-half"></div>
 
-                    <p class="mt-4">
-                        a part of <a href="https://ssc.ethz.ch/" target="_blank">SSC</a>
-                        <a href="https://vseth.ethz.ch" target="_blank">
-                            <img class="img-fluid vseth-logo" alt="vseth logo" src="/images/vseth.png">
-                        </a>
-                    </p>
-                </div>
-                <div class="col-lg-4 maps" id="maps">
+            <h3>mangel.io</h3>
+            <p>
+                Für eine Baufirma wurde eine Pendenzenverwaltung für die Bauleiter umgesetzt.
+                Die Bauleiter werden bei der Erfassung der Pendenzen, der Kommunikation mit den Handwerkern und der Abnahme unterstützt.
+            </p>
+            <p>
+                Das Tool ist auf mehreren Baustellen im Einsatz und erlaubt auch auf grossen Baustellen den Überblick nicht zu verlieren.
+                Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter angepasst.
+            </p>
+            <img src="images/mangel.io/screenshot1.jpg" class="img-fluid img-thumbnail">
 
-                </div>
 
-                <div class="col-lg-4  col-sm-6 col-12 contact-form">
-                    <form action="/" method="post">
-                        <?php if ($sendContactRequest) { ?>
-                            <div class="alert alert-success">
-                                We have received your contact request, and will reply shortly.
-                            </div>
-                        <?php } ?>
-                        <div class="form-group">
-                            <input type="email" name="email" class="form-control" id="email" placeholder="john@doe.com">
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="experience">
+            <h2>Experience</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <?php
+                    $jobs = [
+                        [
+                            "class" => "vseth",
+                            "title" => "Internal Affairs",
+                            "firm" => "VSETH - Dachverband der Studierenden ETH",
+                            "link" => "https://vseth.ethz.ch",
+                            "period" => "Sep. 2019 - Sep. 2020",
+                            "image_name" => "vseth.png"
+                        ],
+                        [
+                            "class" => "zuehlke",
+                            "title" => "Professional Software Engineer",
+                            "firm" => "Zühlke AG - Empowering Ideas",
+                            "link" => "https://zuehlke.ch",
+                            "period" => "Oct. 2018 - Jun. 2019",
+                            "image_name" => "zuehlke.svg"
+                        ],
+                        [
+                            "class" => "freelancer",
+                            "title" => "Entwicklung & Projektleitung",
+                            "firm" => "Freelancer",
+                            "link" => "https://famoser.ch",
+                            "period" => "Jan. 2018 - jetzt"
+                        ],
+                        [
+                            "class" => "jkweb",
+                            "title" => "Projektleitung & Programmierung",
+                            "firm" => "JKweb GmbH - Schöne und schlichte Webseiten",
+                            "link" => "https://jkweb.ch",
+                            "period" => "Feb. 2016 - Dez. 2017",
+                            "image_name" => "jkweb.png"
+                        ],
+                        [
+                            "class" => "eth",
+                            "title" => "Informatik Studium",
+                            "firm" => "ETH - Eidgenössische Technische Hochschule Zürich",
+                            "link" => "https://ethz.ch",
+                            "period" => "Sep. 2015 - jetzt",
+                            "image_name" => "eth.png"
+                        ]
+                    ];
+
+                    foreach ($jobs as $job) { ?>
+                        <div class="job <?= $job["class"] ?>">
+                            <p>
+                                <b><?= $job["title"] ?></b><br/>
+                                <a href="<?= $job["link"] ?>" target="_blank"><?= $job["firm"] ?></a><br/>
+                                <small class="text-secondary"><?= $job["period"] ?></small>
+                            </p>
+                            <?php if (isset($job["image_name"])) { ?>
+                                <img class="job-image" src="/images/jobs/<?= $job["image_name"] ?>"
+                                     alt="logo of <?= $job["firm"] ?>">
+                            <?php } ?>
                         </div>
-                        <div class="form-group">
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="robot" id="robot">
-                                <label class="custom-control-label" for="robot">I am a robot.</label>
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" name="human" id="human">
-                                <label class="custom-control-label" for="human">I am a human.</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="text" rows="6" name="message"
-                                      placeholder="message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
+                    <?php } ?>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="job-wrapper">
+                        <!--
+                        10 width = 100% pensum
+                        0 = jan 2015, 11 = dez 2015, 71 dez 2020
+
+                        52 height = 52 months; from Sep 2015 - Dez 2020
+                        -->
+                        <svg class="jobs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 10 72"
+                             height="112%"
+                             width="100%">
+                            <filter id="dry">
+                                <feComponentTransfer>
+                                    <feFuncA type="table" tableValues="0 0.5">
+                                </feComponentTransfer>
+                            </filter>
+                            <g transform="scale(-1,-1)" transform-origin="center">
+                                <g class="eth" filter="url(#dry)">
+                                    <title>ETH</title>
+                                    <!--
+                                    10 sep 2015 (8) - jan 2016 (0+12)
+                                    0.8 feb 2016 - aug 2018 (7+36)
+                                    0 sep 2018 - aug 2019 (7+48)
+                                    0.5 sep 2019 - sep 2020 (8+60)
+                                    0.8 sep 2020 - dez 2020 (11+60)
+                                    -->
+                                    <polygon points="0,8 10,8 10,13 8,13 8,45 0,45" fill="#1f4070"></polygon>
+                                    <polygon points="0,54 4,54 4,69 8,69 8,72 0,72" fill="#1f4070"></polygon>
+                                </g>
+                                <g class="jkweb" filter="url(#dry)">
+                                    <title>JKWeb</title>
+                                    <!--
+                                    02 feb 2016 (1+12) - dez 2017 (11+24)
+                                    -->
+                                    <polygon points="8,13 10,13 10,36 8,36" fill="#3d3d3d"></polygon>
+                                </g>
+                                <g class="zuehlke" filter="url(#dry)">
+                                    <title>Zühlke</title>
+                                    <!--
+                                    Oct 2018 (9+36) - Jun 2019 (5+48)
+                                    -->
+                                    <polygon points="0,45 9,45 9,54 0,54" fill="#985b9c"></polygon>
+                                </g>
+                                <g class="vseth" filter="url(#dry)">
+                                    <title>VSETH</title>
+                                    <!--
+                                    Sep 2019 (8+48) - Sep 2020 (8+60)
+                                    -->
+                                    <polygon points="4,54 9,54 9,69 4,69" fill="#009FE3"></polygon>
+                                </g>
+                                <g class="freelancer" filter="url(#dry)">
+                                    <title>Freelancer</title>
+                                    <!--
+                                    02 Jan 2018 (0+36) - Sep 2018 (8+36)
+                                    10 Jul 2019 (6+48) - Sep 2019 (8+48)
+                                    02 Oct 2020 (9+60) - Dez 2020 (11+60)
+                                    -->
+                                    <polygon points="8,36 10,36 10,72 8,72 8,69 9,69 9,45 8,45"
+                                             fill="#8BBB9B"></polygon>
+                                </g>
+                            </g>
+                        </svg>
+                        <p class="axis-top text-right text-secondary">jetzt</p>
+                        <p class="axis-bottom text-right text-secondary">2015</p>
+                    </div>
+                    <p class="text-right text-secondary mr-5">Pensum</p>
                 </div>
             </div>
         </div>
@@ -180,127 +248,11 @@ printEventsSection($eventFiles, true);
 
 <section>
     <div class="container">
-        <div class="footer">
+        <div class="skills">
+            <h2>Skills</h2>
 
-            <div class="philosophy" id="philosophy">
-
-                <h2>Open Source</h2>
-                <blockquote class="blockquote">
-                    <p class="mb-0">
-                        The term "open source" refers to something people can modify and share because its
-                        design is publicly accessible.
-                    </p>
-                    <footer class="blockquote-footer">
-                        <cite title="opensource.com">opensource.com</cite>
-                    </footer>
-                </blockquote>
-
-                <p class="interpretation">
-                    Open Source software encourages others to understand how something works exactly because the
-                    inner workings of the program are published. Depending on the exact license used, the user may also be allowed
-                    to run, modify and distribute the work. <br/>
-
-                    <br/>
-
-                    Using Open Source, you can check that the program does not execute something on your device you
-                    do not want; like surveilling your activities or stealing your computational power for its own
-                    purposes. However, when software is advertised as Open Source, it does not necessarily guarantee the rights to modify and distribute the work. <br/>
-
-                    <br/>
-
-                    <small>
-                        Examples include
-                        <a href="https://www.mozilla.org/de/firefox/" target="_blank">Firefox</a> and
-                        <a href="https://www.python.org/" target="_blank">Python</a>.
-                    </small>
-                </p>
-
-                <h2>Free Software</h2>
-                <blockquote class="blockquote">
-                    <p class="mb-0">
-                        Free software developers guarantee [...] [that] any user can study the
-                        source code, modify it, and share the program.
-                    </p>
-                    <footer class="blockquote-footer"><cite title="Free Software Foundation">fsf.org</cite></footer>
-                </blockquote>
-
-                <p class="interpretation">
-                    Free Software <b>guarantees</b> the rights to run, modify and distribute the work. Depending on the exact license used,
-                    it may be enforced that all derivative software must also grant the same rights (this is called <em>Copyleft</em>).<br/>
-
-                    <br/>
-
-                    Using Free Software, you are allowed to adapt it to your needs; like adding functionality critical
-                    to your workflows. If you decide to use a Copyleft license, you can additionally be sure your work will benefit all
-                    future users of the
-                    software in the same way. <br/>
-
-                    <br/>
-
-                    <small>
-                        Examples include
-                        <a href="https://www.videolan.org/vlc/index.de.html" target="_blank">VLC Media Player</a> and
-                        <a href="https://www.linux.org/" target="_blank">Linux</a>.
-                    </small>
-                </p>
-
-                <h2>Proprietary Software</h2>
-
-                <blockquote class="blockquote">
-                    <p class="mb-0">
-                        Only the original authors of proprietary software can legally copy, inspect, and alter that
-                        software. To use proprietary software, computer users must agree (...) that they will not do
-                        anything with the software that the software's authors have not expressly permitted.
-                    </p>
-                    <footer class="blockquote-footer"><cite title="opensource.com">opensource.com</cite></footer>
-                </blockquote>
-
-                <p class="interpretation">
-                    Proprietary Software severely restricts how users can interact with the software running on their
-                    device and does not allow them to read, modify or distribute its source code.<br/>
-
-                    <br/>
-
-                    Using Proprietary Software, you are in danger to lose functionality critical to your workflow
-                    (because the owner chose not to provide it anymore), to no longer being able to open your files
-                    (because the filetype is no longer supported) or to pay excessive license fees (because there are no
-                    comparable alternatives).<br/>
-
-                    <br/>
-
-                    <small>
-                        Examples include
-                        <a href="https://www.microsoft.com/de-ch/windows" target="_blank">Windows</a> and
-                        <a href="https://get.adobe.com/de/reader" target="_blank">Adobe Reader</a>.
-                    </small>
-                </p>
-
-                <h2 id="privacy">Privacy</h2>
-
-                <blockquote class="blockquote">
-                    <p class="mb-0">
-                        No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honor and reputation.
-                    </p>
-                    <footer class="blockquote-footer"><cite title="https://www.un.org/en/universal-declaration-human-rights/">Article 12 of Universal Declaration of Human Rights (1948)</cite></footer>
-                </blockquote>
-
-                <p class="interpretation">
-                    Privacy is fundamental to protect yourself and those around you from manipulation.<br/>
-
-                    <br/>
-                    Most webpages and programs track anything you do or click.
-                    Use Open Source Software and <a target="_blank" href="https://addons.mozilla.org/de/firefox/addon/ublock-origin/">Adblockers</a> to be reasonably sure that you are not a victim of surveillance.
-                    Make anonymity the default to avoid making those stand out, who must stay anonymous.
-                    <br/>
-
-                    <br/>
-                    <small>
-                        Facebook reveals more about your personality than your friends could [<a target="_blank" href="https://www.pnas.org/content/112/4/1036">Paper</a>]; imagine what your browser history tells about you. <br/>
-                        A firm called Cambridge Analytica (and probably many others) use this technique to influence outcomes of elections [<a href="https://www.tagesanzeiger.ch/ausland/europa/diese-firma-weiss-was-sie-denken/story/17474918">Tagesanzeiger</a>]<br/>
-                        Edward Snowden used an anonymity service that relies on many "normal" people using the system to avoid suspicion [<a target="_blank" href="https://twitter.com/Snowden/status/1165297667490103302">Twitter</a>].
-                    </small>
-                </p>
-            </div>
+            <p>languages, frameworks, projects & showcase of all these</p>
+            <em>coming soon</em>
         </div>
     </div>
 </section>
