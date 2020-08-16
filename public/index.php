@@ -26,7 +26,7 @@ include "../templates/head.html"
     </section>
 <?php } ?>
 
-<section class="inverted">
+<section class="primary">
     <div class="container">
         <div class="main">
             <div class="teaser">
@@ -35,7 +35,7 @@ include "../templates/head.html"
                 <div class="spacer"></div>
 
                 <p class="lead">
-                    Ich bin <b>Florian Moser</b>.<br/>
+                    Ich bin <b>Florian</b> Alexander <b>Moser</b>.<br/>
                     Programmierer von famosen Applikationen<br/>
                     für komplexe Anwendungen.
                 </p>
@@ -66,18 +66,18 @@ include "../templates/head.html"
 
             <p>
                 Ich studiere an der ETH im Master Informatik mit einem Fokus auf Security und Application Engineering.
-                Bin ich nicht vor dem Computer, singe ich vermutlich gerade in einem Projektchor, bin am wandern oder
+                Bin ich nicht vor dem Computer, singe ich vermutlich gerade als Bass II in einem Projektchor, bin am
+                wandern oder
                 mache Sport.
             </p>
         </div>
     </div>
 </section>
 
-<section>
+<section class="secondary">
     <div class="container">
         <div class="featured">
-            <h2>Besonders famoos</h2>
-            <h3>eVoting der Stände</h3>
+            <h2>Besonders famoos: eVoting der Stände UZH</h2>
             <p>
                 Für die Vertreterorganisationen V-ATP (administratives und technisches Personal), VFFL (externe
                 Dozierende) und VAUZ (Doktorierende und Postdocs) wurde ein Wahltool erstellt.
@@ -89,21 +89,31 @@ include "../templates/head.html"
                 und am fertigen Projekt wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
                 durchgeführt.
             </p>
-            <img src="images/eVoting/screenshot2.png" class="img-fluid img-thumbnail">
 
-            <div class="spacer-half"></div>
+            <img src="images/eVoting/screenshot2.png" alt="Screenshot eVoting Stände"
+                 class="mt-2 img-fluid img-screenshot">
+        </div>
+    </div>
+</section>
 
-            <h3>mangel.io</h3>
+<section class="primary">
+    <div class="container">
+        <div class="featured">
+            <h2>Besonders famos: Pendenzenverwaltung mangel.io</h2>
             <p>
                 Für eine Baufirma wurde eine Pendenzenverwaltung für die Bauleiter umgesetzt.
-                Die Bauleiter werden bei der Erfassung der Pendenzen, der Kommunikation mit den Handwerkern und der Abnahme unterstützt.
+                Die Bauleiter werden bei der Erfassung der Pendenzen, der Kommunikation mit den Handwerkern und der
+                Abnahme unterstützt.
             </p>
             <p>
-                Das Tool ist auf mehreren Baustellen im Einsatz und erlaubt auch auf grossen Baustellen den Überblick nicht zu verlieren.
-                Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter angepasst.
+                Das Tool ist auf mehreren Baustellen im Einsatz und erlaubt auch auf grossen Baustellen den Überblick
+                nicht zu verlieren.
+                Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter
+                angepasst.
             </p>
-            <img src="images/mangel.io/screenshot1.jpg" class="img-fluid img-thumbnail">
 
+            <img src="images/mangel.io/screenshot1.jpg" alt="Screenshot Pendenzenverwaltung mangel.io"
+                 class="mt-2 img-fluid img-screenshot">
 
         </div>
     </div>
@@ -246,15 +256,57 @@ include "../templates/head.html"
     </div>
 </section>
 
-<section>
+<section class="dark">
     <div class="container">
         <div class="skills">
             <h2>Skills</h2>
 
-            <p>languages, frameworks, projects & showcase of all these</p>
-            <em>coming soon</em>
-        </div>
-    </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <p><b>Language</b></p>
+                    <ul class="skill-filters">
+                        <li><a href="#" data-filter=".php">PHP</a></li>
+                        <li><a href="#" data-filter=".c-sharp">C#</a></li>
+                        <li><a href="#" data-filter=".javascript">JavaScript</a></li>
+                        <li><a href="#" data-filter=".python">Python</a></li>
+                        <li><a href="#" data-filter=".css-html">CSS/HTML</a></li>
+                        <li><a href="#" data-filter=".kotlin">Kotlin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Framework</b></p>
+                    <ul class="skill-filters">
+                        <li><a href="#" data-filter=".symfony">Symfony</a></li>
+                        <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
+                        <li><a href="#" data-filter=".slim">Slim</a></li>
+                        <li><a href="#" data-filter=".angular">Angular</a></li>
+                        <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
+                        <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Platform</b></p>
+                    <ul class="skill-filters">
+                        <li><a href="#" data-filter=".web">Web</a></li>
+                        <li><a href="#" data-filter=".windows">Windows</a></li>
+                        <li><a href="#" data-filter=".android">Android</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <?php
+                $projects = getProjects();
+                foreach ($projects as $project) { ?>
+                    <div class="skills-grid-item">
+                        <h3><?= $project["name"]?></h3>
+                        <p><?= $project["purpose"]?></p>
+                        <?php if (isset($project["description"])) {?>
+                            <p><?= $project["description"] ?></p>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
+            </div>
 </section>
 
 <?php

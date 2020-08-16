@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    initializeSmoothScrolling();
     initializeExperienceHover();
+    initializeSkills();
 });
 
 function initializeExperienceHover() {
@@ -16,16 +16,26 @@ function initializeExperienceHover() {
     )
 }
 
-function initializeSmoothScrolling() {
-    $('[data-spy="scroll"]').each(function () {
-        $(this).scrollspy('refresh');
-    });
+function initializeSkills()
+{
+     // Initialize Isotope
+     const $container = $('.skills-grid');
+     $container.isotope({
+         itemSelector: '.skills-grid-item',
+     });
 
-    $(document).on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
+     // Set up the click event for filtering
+     $('.skill-filters').on('click', 'a', function (event) {
+         event.preventDefault();
 
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 500);
-    });
+         const $filter = $(this).attr('data-filter');
+         $container.isotope({filter: $filter});
+
+         console.log("filter by " + $filter);
+     });
+
+     // sometimes rendering fails the first time (parts are overlapped)
+     // hence repeat at later time
+    setTimeout(function(){ $container.isotope() }, 1000);
+    setTimeout(function(){ $container.isotope() }, 5000);
 }

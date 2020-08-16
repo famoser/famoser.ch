@@ -6,7 +6,7 @@ function getProjects(): array
 {
     $projects = [];
 
-    foreach (glob(__DIR__ . "/../projects/*.yml") as $projectFilePath) {
+    foreach (glob(__DIR__ . "/../projects/*.yaml") as $projectFilePath) {
         $projects[] = getProject($projectFilePath);
     }
 
@@ -17,11 +17,5 @@ function getProjects(): array
 function getProject(string $filePath)
 {
     $fileContent = file_get_contents($filePath);
-    $project = Yaml::parse($fileContent);
-
-    $name = basename($filePath);
-
-    $project["name"] = $name;
-
-    return $project;
+    return Yaml::parse($fileContent);
 }
