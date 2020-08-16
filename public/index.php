@@ -301,12 +301,11 @@ include "../templates/head.html"
                     <div class="skills-grid-item">
                         <h3><?= $project["name"]?></h3>
                         <p><?= $project["purpose"]?></p>
-                        <?php if (isset($project["description"])) {?>
-                            <p><?= $project["description"] ?></p>
-                        <?php } ?>
                     </div>
                 <?php } ?>
             </div>
+        </div>
+    </div>
 </section>
 
 <?php
