@@ -1,0 +1,17 @@
+name: Zühlke
+purpose: projects at zühlke
+description: |
+  At Zühlke, I worked full-stack in an agile team.
+  Notably, I was involved into developing a solution for underwrites for international property business.
+
+kickoff_date: 2018-10
+publish_date: 2019-06
+last_activity_date: 2019-06
+
+languages:
+- C#
+- JavaScript
+frameworks:
+- ASP.NET
+- Angular
+platform: Web

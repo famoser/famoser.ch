@@ -1,5 +1,5 @@
-name: eth-summaries
-purpose: collect summaries from the courses of ETH
+name: ETH summaries
+purpose: summaries for each course taken at ETH
 
 kickoff_date: 2018-02
 last_activity_date: 2020-07
