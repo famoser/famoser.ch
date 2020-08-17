@@ -2,6 +2,7 @@ name: Mensa
 purpose: eth & uzh mensas in zurich
 
 source_url: https://github.com/famoser/Mensa
+publish_url: https://play.google.com/store/apps/details?id=ch.famoser.mensa
 
 kickoff_date: 2019-07
 publish_date: 2019-07

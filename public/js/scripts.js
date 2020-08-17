@@ -23,10 +23,10 @@ function initializeSkills()
      const $container = $('.skills-grid');
      $container.isotope({
          itemSelector: '.skills-grid-item',
+         stamp: '.stamp'
      });
 
      // Set up the click event for filtering
-
      $('.skill-filters').on('click', 'a', function (event) {
          event.preventDefault();
 
@@ -39,6 +39,23 @@ function initializeSkills()
 
          $container.isotope({filter: current_filter});
      });
+
+     $(".skills-grid-item").hover(
+         function () {
+             let description = $(this).find(".description");
+             description.addClass("stamp")
+             description.removeClass("hidden");
+             $container.isotope();
+             setTimeout(function(){ $container.isotope() }, 200);
+         },
+         function () {
+             let description = $(this).find(".description");
+             description.addClass("hidden");
+             description.removeClass("stamp")
+             $container.isotope();
+             setTimeout(function(){ $container.isotope() }, 200);
+         }
+     )
 
      // sometimes rendering fails the first time (parts are overlapped)
      // hence repeat at later time

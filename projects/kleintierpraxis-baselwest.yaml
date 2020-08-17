@@ -1,6 +1,8 @@
 name: kleintierpraxis-baselwest
 purpose: webpage presenting a veterinarian
 
+publish_url: https://kleintierpraxis-baselwest.ch
+
 kickoff_date: 2016-01
 publish_date: 2016-03
 last_activity_date: 2016-03

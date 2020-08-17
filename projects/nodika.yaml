@@ -7,6 +7,7 @@ implementation: |
   Before the event, the are reminded again per mail and have to confirm it.
 
 source_url: https://github.com/famoser/nodika
+publish_url: https://nodika.ch
 
 kickoff_date: 2017-05
 publish_date: 2017-11

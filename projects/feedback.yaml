@@ -5,6 +5,7 @@ implementation: |
   It gathers actionable feedback to further improve the courses for the next semester.
 
 source_url: https://github.com/TheAlternativeZurich/feedback
+publish_url: https://feedback.thealternative.ch
 
 kickoff_date: 2018-09
 publish_date: 2018-09

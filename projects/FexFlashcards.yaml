@@ -2,6 +2,7 @@ name: FexFlashcards
 purpose: memorize facts easily with a stage-based flashcard system
 
 source_url: https://github.com/famoser/FexFlashcards
+publish_url: https://publish.famoser.ch/FexFlashCards/publish.htm
 
 kickoff_date: 2018-01
 publish_date: 2018-01
