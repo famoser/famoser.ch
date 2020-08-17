@@ -50,6 +50,26 @@ p, button {
     font-weight: 300;
 }
 
+@media ( max-width: 999px ) {
+    h1 {
+        font-size: 2.4em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .lead {
+        font-size: 1.8em;
+        font-weight: 300;
+    }
+
+}
+
 @media (max-width: 767.98px) {
     html {
         font-size: 14px;
@@ -67,7 +87,7 @@ section {
 
 @media (max-width: 767.98px) {
     section {
-        padding: 1em 0;
+        padding: 3em 0;
     }
 }
 
@@ -88,7 +108,7 @@ section.primary {
 }
 
 section.secondary {
-     background-color: #fff4f2;
+    background-color: #fff4f2;
 }
 
 section.dark {
@@ -110,7 +130,7 @@ besonders famos
  */
 
 .img-screenshot {
-    box-shadow: 0 0 2px 0 rgba(0,0,0,.06),0 4px 16px 0 rgba(0,0,0,.12);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .06), 0 4px 16px 0 rgba(0, 0, 0, .12);
 }
 
 /**
@@ -184,7 +204,7 @@ skills
     padding: 0.5em;
     display: inline-block;
     margin: 0.25em;
-    box-shadow: 0 0 0.5px 0 rgba(0,0,0,.06),0 1px 4px 0 rgba(0,0,0,.12);
+    box-shadow: 0 0 0.5px 0 rgba(0, 0, 0, .06), 0 1px 4px 0 rgba(0, 0, 0, .12);
 }
 
 .skill-filters.primary a {
@@ -206,7 +226,19 @@ skills
     padding: 1em;
 
     background-color: #fff;
-    box-shadow: 0 0 2px 0 rgba(0,0,0,.06),0 4px 16px 0 rgba(0,0,0,.12);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .06), 0 4px 16px 0 rgba(0, 0, 0, .12);
+}
+
+@media ( max-width: 999px ) {
+    .skills-grid-item {
+        width: calc(50% - 0.5em);
+    }
+}
+
+@media ( max-width: 599px ) {
+    .skills-grid-item {
+        width: calc(100% - 0.5em);
+    }
 }
 
 

@@ -89,7 +89,7 @@ def renameOptionalKey(dictionary, old, new):
 
 valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin"]
 language_replaces = {"php": "PHP", "javascript": "JavaScript", "kotlin": "Kotlin"}
-valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "ASP.NET", "Wordpress", "UWP", "WPF", "SyncApi", "wadmin"]
+valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "ASP.NET", "Wordpress", "UWP", "WPF", "Forms", "SyncApi", "wadmin"]
 framework_replaces = {"vuejs": "Vue.js", "wordpress": "Wordpress", "symfony": "Symfony"}
 valid_platforms = ["Web", "Windows", "Windows Phone", "Android"]
 valid_employers = ["JKweb", "Zühlke"]

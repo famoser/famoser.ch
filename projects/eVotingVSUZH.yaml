@@ -1,5 +1,5 @@
 name: eVoting VSUZH
-purpose: easy online voting for their representatives in committees of the University of Zurich
+purpose: online voting for the student's representatives in the VSUZH Rat
 implementation: |
   Developed for the student association of UZH.
   Candidates can be voted for the VSUZH Rat with a party system.

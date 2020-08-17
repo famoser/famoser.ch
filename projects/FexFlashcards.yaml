@@ -9,5 +9,5 @@ publish_date: 2018-01
 last_activity_date: 2018-01
 
 languages: [C#]
-frameworks: [WPF]
+frameworks: [Forms]
 platform: Windows

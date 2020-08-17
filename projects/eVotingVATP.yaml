@@ -1,7 +1,7 @@
 name: eVoting Stände UZH
 purpose: easy online voting for their representatives in committees of the University of Zurich
 implementation: |
-  Developed for three organisations represeting their members at UZH (including PhDs, technical & administrative staff, external lecturers).
+  Developed for three organisations representing their members at UZH (including PhDs, technical & administrative staff, external lecturers).
   Candidates can be voted into different Committees for each faculty.
   Any data can only be edited before the election, and a history of who changed what is kept.
   To vote, the voter logs in with the normal UZH login and then inputs an additional personal authentication code.

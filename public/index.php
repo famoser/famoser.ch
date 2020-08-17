@@ -128,7 +128,7 @@ include "../templates/head.html"
             <div class="row mb-4">
                 <div class="col-md-4">
                     <p><b>Language</b></p>
-                    <ul class="skill-filters primary">
+                    <ul class="skill-filters primary clearfix">
                         <li><a href="#" data-filter=".php">PHP</a></li>
                         <li><a href="#" data-filter=".csharp">C#</a></li>
                         <li><a href="#" data-filter=".javascript">JavaScript</a></li>
@@ -138,7 +138,7 @@ include "../templates/head.html"
                 </div>
                 <div class="col-md-4">
                     <p><b>Framework</b></p>
-                    <ul class="skill-filters secondary">
+                    <ul class="skill-filters secondary clearfix">
                         <li><a href="#" data-filter=".symfony">Symfony</a></li>
                         <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
                         <li><a href="#" data-filter=".angular">Angular</a></li>
@@ -148,7 +148,7 @@ include "../templates/head.html"
                 </div>
                 <div class="col-md-4">
                     <p><b>Platform</b></p>
-                    <ul class="skill-filters ">
+                    <ul class="skill-filters clearfix">
                         <li><a href="#" data-filter=".web">Web</a></li>
                         <li><a href="#" data-filter=".windows">Windows</a></li>
                         <li><a href="#" data-filter=".android">Android</a></li>
@@ -217,7 +217,7 @@ include "../templates/head.html"
         <div class="experience">
             <h2>Experience</h2>
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-xl-8">
                     <?php
                     $jobs = [
                         [
@@ -269,14 +269,14 @@ include "../templates/head.html"
                                 <small class="text-secondary"><?= $job["period"] ?></small>
                             </p>
                             <?php if (isset($job["image_name"])) { ?>
-                                <img class="job-image" src="/images/jobs/<?= $job["image_name"] ?>"
+                                <img class="job-image d-none d-md-block" src="/images/jobs/<?= $job["image_name"] ?>"
                                      alt="logo of <?= $job["firm"] ?>">
                             <?php } ?>
                         </div>
                     <?php } ?>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-xl-4 col-12 d-none d-xl-block">
                     <div class="job-wrapper">
                         <!--
                         10 width = 100% pensum
