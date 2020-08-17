@@ -1,6 +1,6 @@
 name: eVoting Stände UZH
 purpose: easy online voting for their representatives in committees of the University of Zurich
-description: |
+implementation: |
   Developed for three organisations represeting their members at UZH (including PhDs, technical & administrative staff, external lecturers).
   Candidates can be voted into different Committees for each faculty.
   Any data can only be edited before the election, and a history of who changed what is kept.
@@ -11,12 +11,6 @@ kickoff_date: 2018-09
 publish_date: 2019-06
 last_activity_date: 20200801
 
-languages:
-- JavaScript
-- PHP
-
-frameworks:
-- Vue.js
-- symfony
-
+languages: [JavaScript, PHP]
+frameworks: [Vue.js, symfony]
 platform: Web

@@ -1,13 +1,11 @@
 name: Mensa
 purpose: eth & uzh mensas in zurich
 
+source_url: https://github.com/famoser/Mensa
+
 kickoff_date: 2019-07
 publish_date: 2019-07
 last_activity_date: 2019-07
 
-source_url: https://github.com/famoser/Mensa
-publish_url: https://play.google.com/store/apps/details?id=ch.famoser.mensa
-
-languages:
-- kotlin
+languages: [kotlin]
 platform: Android

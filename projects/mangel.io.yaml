@@ -1,24 +1,18 @@
 name: mangel.io
 purpose: issue administration for construction managers
-description: |
+implementation: |
   The issue management developed for a construction firm is meant for construction managers.
   Construction managers may inspect the construction site and create new issues in the iOS app.
   In the office, on a webpage all open issues can be reviewed, pdf reports can be generated and the craftsman can be informed per e-mail.
   The craftsman has its personal link with all assigned issues, and can mark them as complete.
   In the end, the construction manager reviews the complete issues.
 
+source_url: https://github.com/mangelio/app
+
 kickoff_date: 2018-02
 publish_date: 2018-10
 last_activity_date: 2018-06
 
-source_url: https://github.com/mangelio/app
-publish_url: https://app.mangel.io/login
-
-languages:
-- JavaScript
-- PHP
-frameworks:
-- Vue.js
-- symfony
-
+languages: [JavaScript, PHP]
+frameworks: [Vue.js, symfony]
 platform: Web

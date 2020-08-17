@@ -1,19 +1,17 @@
 name: crm
 purpose: project management (time & cost control) & customer collaboration
-description: |
+implementation: |
   Customers can be assigned to their respective projects.
   A projects consist of milestones which in turn are composed of procedures.
   With the procdeures time & progress can be tracked.
   The customer can view the project status with an always-up-to-date link.
 
+source_url: https://github.com/famoser/crm
+
 kickoff_date: 2015-12
 publish_date: 2016-01
 last_activity_date: 20151201
 
-source_url: https://github.com/famoser/crm
-
-languages:
-- PHP
-frameworks:
-- wadmin
+languages: [PHP]
+frameworks: [wadmin]
 platform: Web

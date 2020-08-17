@@ -22,8 +22,8 @@ def addOptionalMultiline(lines, dictionary, key):
         return
 
     lines.append(key + ": |")
-    intendation = "  "
-    lines.append(intendation + dictionary[key].replace("\n", intendation + "\n"))
+    indentation = "  "
+    lines.append(indentation + dictionary[key].replace("\n", "\n"+ indentation)[0:-3])
 
 def addOptionalWhitelistedEntry(lines, dictionary, key, whitelist):
     if key not in dictionary:

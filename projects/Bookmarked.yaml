@@ -1,16 +1,12 @@
 name: Bookmarked
 purpose: save & sync bookmarks & passwords in a folder structure
 
+source_url: https://github.com/famoser/Bookmarked
+
 kickoff_date: 2017-03
 publish_date: 2017-05
 last_activity_date: 2017-03
 
-source_url: https://github.com/famoser/Bookmarked
-publish_url: https://www.microsoft.com/store/productid/9NJF401XW3G5
-
-languages:
-- C#
-frameworks:
-- UWP
-- SyncApi
+languages: [C#]
+frameworks: [UWP, SyncApi]
 platform: Windows Phone

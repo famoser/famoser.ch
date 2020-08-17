@@ -1,20 +1,15 @@
 name: feedback
 purpose: get feedback to improve lectures & exercises
-description: |
+implementation: |
   Built for TheAlternaitve, a student society with semesterly lectures abpout topics of Open Source  & Free Software.
   It gathers actionable feedback to further improve the courses for the next semester.
+
+source_url: https://github.com/TheAlternativeZurich/feedback
 
 kickoff_date: 2018-09
 publish_date: 2018-09
 last_activity_date: 2018-09
 
-source_url: https://github.com/TheAlternativeZurich/feedback
-publish_url: https://feedback.thealternative.ch/
-
-languages:
-- JavaScript
-- PHP
-frameworks:
-- Vue.js
-- symfony
+languages: [JavaScript, PHP]
+frameworks: [Vue.js, symfony]
 platform: Web

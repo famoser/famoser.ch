@@ -3,9 +3,7 @@ purpose: webpage presenting a veterinarian
 
 kickoff_date: 2016-01
 publish_date: 2016-03
-
 last_activity_date: 2016-03
 
-publish_url: https://kleintierpraxis-baselwest.ch
 languages: [php, javascript]
 platform: Web

@@ -1,6 +1,6 @@
 name: eVoting VSUZH
 purpose: easy online voting for their representatives in committees of the University of Zurich
-description: |
+implementation: |
   Developed for the student association of UZH.
   Candidates can be voted for the VSUZH Rat with a party system.
   A history of who changed what is kept.
@@ -12,12 +12,6 @@ kickoff_date: 2016-08
 publish_date: 2017-03
 last_activity_date: 2017-08
 
-languages:
-- JavaScript
-- PHP
-
-frameworks:
-- Vue.js
-- symfony
-
+languages: [JavaScript, PHP]
+frameworks: [Vue.js, symfony]
 platform: Web

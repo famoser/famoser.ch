@@ -1,6 +1,6 @@
 name: vseth.ethz.ch
 purpose: present VSETH and its services
-description: |
+implementation: |
   Describes what VSETH is for students, ETH members and others.
   Divided into politics, events and organisation section to fit the different interests in VSETH.
   Ressources for actives were placed in a wiki to seperate it cleanly from the information of externals.
@@ -9,11 +9,6 @@ kickoff_date: 2019-10
 publish_date: 2020-06
 last_activity_date: 2020-06
 
-publish_url: https://vseth.ethz.ch/
-
-languages:
-- PHP
-- javascript
-frameworks:
-- wordpress
+languages: [PHP, javascript]
+frameworks: [wordpress]
 platform: Web
