@@ -15,3 +15,5 @@ kickoff_date: 2019-01
 last_activity_date: 2019-08
 
 languages: [PHP]
+
+featured: true

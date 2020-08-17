@@ -160,10 +160,10 @@ include "../templates/head.html"
                 <?php
                 $projects = getProjects();
                 foreach ($projects as $project) { ?>
-                    <div class="skills-grid-item <?= $project["class"] ?>">
+                    <div class="skills-grid-item <?= $project["featured"] ? "double " : "" ?><?= isset($project["implementation"]) ? "expandable " : "" ?><?= $project["class"] ?>">
                         <h3><?= $project["name"] ?></h3>
                         <p><?= $project["purpose"] ?></p>
-                        <?php if (isset($project["implementation"]) || isset($project["employer"])) { ?>
+                        <?php if (isset($project["implementation"])) { ?>
                             <p class="description hidden">
                                 <small>
                                     <?= $project["implementation"] ?>
@@ -181,30 +181,32 @@ include "../templates/head.html"
                                 <span class="skill"><?= $project["employer"] ?></span>
                             <?php } ?>
                         </p>
-                        <p>
-                            <?php if (isset($project["source_url"])) { ?>
-                                <a href="<?= $project["source_url"] ?>" target="_blank">
-                                    <?php if (strpos($project["source_url"], "github") > 0) { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                             src="icons/github.svg">
-                                    <?php } else { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                             src="icons/external-link.svg">
-                                    <?php } ?>
-                                </a>
-                            <?php } ?>
-                            <?php if (isset($project["publish_url"])) { ?>
-                                <a href="<?= $project["publish_url"] ?>" target="_blank">
-                                    <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
-                                        <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
-                                             src="icons/microsoft.svg">
-                                    <?php } else { ?>
-                                        <img class="icon" alt="visit <?= $project["name"] ?>"
-                                             src="icons/external-link.svg">
-                                    <?php } ?>
-                                </a>
-                            <?php } ?>
-                        </p>
+                        <?php if (isset($project["source_url"]) || isset($project["publish_url"])) { ?>
+                            <p>
+                                <?php if (isset($project["source_url"])) { ?>
+                                    <a href="<?= $project["source_url"] ?>" target="_blank">
+                                        <?php if (strpos($project["source_url"], "github") > 0) { ?>
+                                            <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                 src="icons/github.svg">
+                                        <?php } else { ?>
+                                            <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                 src="icons/external-link.svg">
+                                        <?php } ?>
+                                    </a>
+                                <?php } ?>
+                                <?php if (isset($project["publish_url"])) { ?>
+                                    <a href="<?= $project["publish_url"] ?>" target="_blank">
+                                        <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
+                                            <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
+                                                 src="icons/microsoft.svg">
+                                        <?php } else { ?>
+                                            <img class="icon" alt="visit <?= $project["name"] ?>"
+                                                 src="icons/external-link.svg">
+                                        <?php } ?>
+                                    </a>
+                                <?php } ?>
+                            </p>
+                        <?php } ?>
                     </div>
                 <?php } ?>
             </div>

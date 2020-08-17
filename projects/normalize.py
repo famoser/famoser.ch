@@ -133,6 +133,12 @@ for filePath in projects:
     addOptionalWhitelistedList(lines, project, "frameworks", valid_frameworks, framework_replaces)
     addOptionalWhitelistedEntry(lines, project, "platform", valid_platforms)
 
+    if len(lines) > lengthBeforeGroup:
+        lines.append("")
+    lengthBeforeGroup = len(lines)
+
+    addOptionalWhitelistedEntry(lines, project, "featured", ["true", "false"])
+
     content = "\n".join(lines)
     with open(filePath, "w") as file:
         file.write(content)

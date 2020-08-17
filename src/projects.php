@@ -65,6 +65,7 @@ function getProject(string $filePath)
 
     $project["languages"] = isset($project["languages"]) ? $project["languages"] : [];
     $project["frameworks"] = isset($project["frameworks"]) ? $project["frameworks"] : [];
+    $project["featured"] = isset($project["featured"]) && $project["featured"] && false;
 
     return $project;
 }
