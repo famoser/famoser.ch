@@ -1,0 +1,11 @@
+name: agnes
+purpose: create & deploys releases safely to various environments
+description: |
+  Command line utility to create releases (and optionally publish to github).
+  These releases can then be published to the specified servers & their respective environments.
+  Deployments are zero-downtime; rollbacks and other useful commands exist.
+
+kickoff_date: 2019-08
+last_activity_date: 2020-08
+
+source_url: https://github.com/famoser/agnes

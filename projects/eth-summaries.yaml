@@ -1,0 +1,7 @@
+name: eth-summaries
+purpose: collect summaries from the courses of ETH
+
+kickoff_date: 2018-02
+last_activity_date: 2020-07
+
+source_url: https://github.com/famoser/eth-summaries

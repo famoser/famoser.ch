@@ -1,0 +1,22 @@
+name: nodika
+purpose: event calender for emergency services by veterinarians
+description: |
+  Veterinarians provide together around the clock emergency services.
+  Accodring to quotas, timeslots are distributed to the veterianrians; special quotas apply for saturdays, sundays, and holidays.
+  Users may trade events if both sides agree.
+  Before the event, the are reminded again per mail and have to confirm it.
+
+kickoff_date: 2017-05
+publish_date: 2017-11
+last_activity_date: 2018-12
+
+source_url: https://github.com/famoser/nodika
+publish_url: https://nodika.ch/
+
+languages:
+- PHP
+- javascript
+frameworks:
+- symfony
+- vuejs
+platform: Web

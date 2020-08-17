@@ -1,0 +1,15 @@
+name: FexFlashcards
+purpose: memorize facts easily with a stage-based flashcard system
+
+kickoff_date: 2018-01
+publish_date: 2018-01
+last_activity_date: 20180101
+
+source_url: https://github.com/famoser/FexFlashcards
+publish_url: http://publish.famoser.ch/FexFlashCards/publish.htm
+
+languages:
+- C#
+frameworks:
+- WPF
+platform: Windows

@@ -1,0 +1,19 @@
+name: pdf-generator
+purpose: generate pdf with an easy to use php api
+description: |
+  The pdf-generator takes a new approach at pdf generation, providing a higher level api independently of the pdf specific oddities.
+  Common tasks such as tables are much easier implemented than with the existing libraries.
+  The user works on the level of pages, text and image blocks while the library places the elements appropriately.
+
+  To support this approach, the pdf generator was written from scratch as the already existing libraries did not support such a scenario.
+  It provides most of the common pdf functionality, notably as text, images and custom fonts.
+  To support custom fonts, a parser & generator of TTF subset files was also implemented.
+
+kickoff_date: 2019-01
+last_activity_date: 2019-08
+
+source_url: https://github.com/famoser/pdf-generator
+
+languages:
+- C#
+- PHP

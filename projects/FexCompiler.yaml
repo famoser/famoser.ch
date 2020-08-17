@@ -1,0 +1,19 @@
+name: FexCompiler
+purpose: compile .fex files to printable .pdf
+description: |
+  To write and restructure summaries fast, the intendation-based .fex format was created.
+  This compiler turns the text format into pdfs for easy printing.
+  It uses latex2pdf under the hood, hence first compiles to latex.
+  Some common text notations is parsed to latex syntax to get a more readable result.
+  Other export options are also available, for example a .json format powering FexFlashcards.
+
+kickoff_date: 2017-06
+publish_date: 2017-07
+last_activity_date: 2020-07
+
+source_url: https://github.com/famoser/FexCompiler
+publish_url: http://publish.famoser.ch/FexCompiler/publish.htm
+
+languages:
+- C#
+platform: Windows
