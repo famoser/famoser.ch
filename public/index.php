@@ -106,7 +106,7 @@ include "../templates/head.html"
                 Abnahme unterstützt.
             </p>
             <p>
-                Das Tool ist auf mehreren Baustellen im Einsatz und erlaubt auch auf grossen Baustellen den Überblick
+                Die Kombination aus Webseite und iOS App ist auf mehreren Baustellen im Einsatz und erlaubt auch auf grossen Baustellen den Überblick
                 nicht zu verlieren.
                 Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter
                 angepasst.
