@@ -16,6 +16,7 @@ function initializeExperienceHover() {
     )
 }
 
+let current_filter = "";
 function initializeSkills()
 {
      // Initialize Isotope
@@ -25,13 +26,18 @@ function initializeSkills()
      });
 
      // Set up the click event for filtering
+
      $('.skill-filters').on('click', 'a', function (event) {
          event.preventDefault();
 
          const $filter = $(this).attr('data-filter');
-         $container.isotope({filter: $filter});
+         if (current_filter === $filter) {
+             current_filter = null;
+         } else {
+             current_filter = $filter;
+         }
 
-         console.log("filter by " + $filter);
+         $container.isotope({filter: current_filter});
      });
 
      // sometimes rendering fails the first time (parts are overlapped)

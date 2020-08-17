@@ -122,6 +122,67 @@ include "../templates/head.html"
 
 <section>
     <div class="container">
+        <div class="skills">
+            <h2>Skills</h2>
+
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <p><b>Language</b></p>
+                    <ul class="skill-filters primary">
+                        <li><a href="#" data-filter=".php">PHP</a></li>
+                        <li><a href="#" data-filter=".csharp">C#</a></li>
+                        <li><a href="#" data-filter=".javascript">JavaScript</a></li>
+                        <li><a href="#" data-filter=".css-html">CSS/HTML</a></li>
+                        <li><a href="#" data-filter=".kotlin">Kotlin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Framework</b></p>
+                    <ul class="skill-filters secondary">
+                        <li><a href="#" data-filter=".symfony">Symfony</a></li>
+                        <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
+                        <li><a href="#" data-filter=".angular">Angular</a></li>
+                        <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
+                        <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Platform</b></p>
+                    <ul class="skill-filters ">
+                        <li><a href="#" data-filter=".web">Web</a></li>
+                        <li><a href="#" data-filter=".windows">Windows</a></li>
+                        <li><a href="#" data-filter=".android">Android</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="skills-grid">
+                <?php
+                $projects = getProjects();
+                foreach ($projects as $project) { ?>
+                    <div class="skills-grid-item <?= $project["class"] ?>">
+                        <h3><?= $project["name"] ?></h3>
+                        <p><?= $project["purpose"] ?></p>
+                        <?php if (isset($project["implementation"])) { ?>
+                            <p><small><?= $project["implementation"] ?></small></p>
+                        <?php } ?>
+                        <p>
+                            <?php foreach ($project["languages"] as $language) {?>
+                                <span class="skill primary"><?= $language ?></span>
+                            <?php } ?>
+                            <?php foreach ($project["frameworks"] as $framework) {?>
+                                <span class="skill secondary"><?= $framework ?></span>
+                            <?php } ?>
+                        </p>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="secondary">
+    <div class="container">
         <div class="experience">
             <h2>Experience</h2>
             <div class="row">
@@ -252,56 +313,6 @@ include "../templates/head.html"
                     </div>
                     <p class="text-right text-secondary mr-5">Pensum</p>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="dark">
-    <div class="container">
-        <div class="skills">
-            <h2>Skills</h2>
-
-            <div class="row mb-4">
-                <div class="col-md-4">
-                    <p><b>Language</b></p>
-                    <ul class="skill-filters">
-                        <li><a href="#" data-filter=".php">PHP</a></li>
-                        <li><a href="#" data-filter=".c-sharp">C#</a></li>
-                        <li><a href="#" data-filter=".javascript">JavaScript</a></li>
-                        <li><a href="#" data-filter=".css-html">CSS/HTML</a></li>
-                        <li><a href="#" data-filter=".kotlin">Kotlin</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p><b>Framework</b></p>
-                    <ul class="skill-filters">
-                        <li><a href="#" data-filter=".symfony">Symfony</a></li>
-                        <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
-                        <li><a href="#" data-filter=".angular">Angular</a></li>
-                        <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
-                        <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p><b>Platform</b></p>
-                    <ul class="skill-filters">
-                        <li><a href="#" data-filter=".web">Web</a></li>
-                        <li><a href="#" data-filter=".windows">Windows</a></li>
-                        <li><a href="#" data-filter=".android">Android</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="skills-grid">
-                <?php
-                $projects = getProjects();
-                foreach ($projects as $project) { ?>
-                    <div class="skills-grid-item <?= $project["class"] ?>">
-                        <h3><?= $project["name"] ?></h3>
-                        <p><?= $project["purpose"] ?></p>
-                    </div>
-                <?php } ?>
             </div>
         </div>
     </div>

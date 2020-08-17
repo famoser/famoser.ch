@@ -7,10 +7,13 @@ function getProjects(): array
     $projects = [];
 
     foreach (glob(__DIR__ . "/../projects/*.yaml") as $projectFilePath) {
-        $projects[] = getProject($projectFilePath);
+        $project = getProject($projectFilePath);
+        $projects[$project["last_activity_date"]][] = $project;
     }
 
-    return $projects;
+    krsort($projects);
+
+    return array_merge(...array_values($projects));
 }
 
 function getProject(string $filePath)
@@ -19,7 +22,6 @@ function getProject(string $filePath)
     $project = Yaml::parse($fileContent);
 
     /**
-     *
      * valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin"]
      * language_replaces = {"php": "PHP", "javascript": "JavaScript", "kotlin": "Kotlin"}
      * valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "ASP.NET", "Wordpress", "UWP", "WPF", "SyncApi", "wadmin"]
@@ -30,7 +32,7 @@ function getProject(string $filePath)
      */
 
     $languageToClass = ["PHP" => "php", "C#" => "csharp", "JavaScript" => "javascript", "Python" => "python", "Kotlin" => "kotlin"];
-    $frameworkToClass = ["Symfony" => "symfony", "Vue.js" => "vuejs", "Angular" => "angular", "ASP.NET" => "asp.net", "Wordpress" => "wordpress"];
+    $frameworkToClass = ["Symfony" => "symfony", "Vue.js" => "vuejs", "Angular" => "angular", "ASP.NET" => "asp-net", "Wordpress" => "wordpress"];
     $platformToClass = ["Web" => "web", "Windows" => "windows", "Android" => "android"];
 
     $classes = [];
@@ -60,6 +62,9 @@ function getProject(string $filePath)
     }
 
     $project["class"] = implode(" ", $classes);
+
+    $project["languages"] = isset($project["languages"]) ? $project["languages"] : [];
+    $project["frameworks"] = isset($project["frameworks"]) ? $project["frameworks"] : [];
 
     return $project;
 }
