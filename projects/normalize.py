@@ -54,15 +54,23 @@ def addOptionalMonthLine(lines, dictionary, key):
 
     lines.append(key + ": " + str(dictionary[key]))
 
-def addOptionalWhitelistedList(lines, dictionary, key, whitelist):
+def addOptionalWhitelistedList(lines, dictionary, key, whitelist, replaces = {}):
     if key not in dictionary:
         return
 
+    result = []
     for entry in dictionary[key]:
-        if entry not in whitelist:
-            print("Fail: " + entry + " is not a valid entry for key " + key)
+        if entry in replaces:
+            value = replaces[entry]
+        else:
+            value = entry
 
-    lines.append(key + ": [" + ", ".join(dictionary[key]) + "]")
+        if value not in whitelist:
+            print("Fail: " + value + " is not a valid entry for key " + key)
+
+        result.append(value)
+
+    lines.append(key + ": [" + ", ".join(result) + "]")
 
 def checkOnlyValidKeys(dictionary, whitelist):
     for key in dictionary:
@@ -80,14 +88,18 @@ def renameOptionalKey(dictionary, old, new):
     del dictionary[old]
 
 valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin"]
-valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "ASP.NET", "Wordpress"]
+language_replaces = {"php": "PHP", "javascript": "JavaScript", "kotlin": "Kotlin"}
+valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "ASP.NET", "Wordpress", "UWP", "WPF", "SyncApi", "wadmin"]
+framework_replaces = {"vuejs": "Vue.js", "wordpress": "Wordpress", "symfony": "Symfony"}
 valid_platforms = ["Web", "Windows", "Windows Phone", "Android"]
 valid_employers = ["JKweb", "Zühlke"]
 
-valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "public_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "languages", "frameworks", "platform"]
+valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "languages", "frameworks", "platform"]
 
 for filePath in projects:
     project = projects[filePath]
+
+    print("processing " + filePath)
 
     renameOptionalKey(project, "description", "implementation")
     checkOnlyValidKeys(project, valid_keys)
@@ -117,8 +129,8 @@ for filePath in projects:
         lines.append("")
     lengthBeforeGroup = len(lines)
 
-    addOptionalWhitelistedList(lines, project, "languages", valid_languages)
-    addOptionalWhitelistedList(lines, project, "frameworks", valid_frameworks)
+    addOptionalWhitelistedList(lines, project, "languages", valid_languages, language_replaces)
+    addOptionalWhitelistedList(lines, project, "frameworks", valid_frameworks, framework_replaces)
     addOptionalWhitelistedEntry(lines, project, "platform", valid_platforms)
 
     content = "\n".join(lines)

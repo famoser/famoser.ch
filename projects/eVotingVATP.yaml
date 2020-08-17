@@ -9,8 +9,8 @@ implementation: |
 
 kickoff_date: 2018-09
 publish_date: 2019-06
-last_activity_date: 20200801
+last_activity_date: 2020-08
 
 languages: [JavaScript, PHP]
-frameworks: [Vue.js, symfony]
+frameworks: [Vue.js, Symfony]
 platform: Web

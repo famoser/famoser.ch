@@ -11,5 +11,5 @@ publish_date: 2018-09
 last_activity_date: 2018-09
 
 languages: [JavaScript, PHP]
-frameworks: [Vue.js, symfony]
+frameworks: [Vue.js, Symfony]
 platform: Web
