@@ -106,7 +106,8 @@ include "../templates/head.html"
                 Abnahme unterstützt.
             </p>
             <p>
-                Die Kombination aus Webseite und iOS App ist auf mehreren Baustellen im Einsatz und erlaubt auch auf grossen Baustellen den Überblick
+                Die Kombination aus Webseite und iOS App ist auf mehreren Baustellen im Einsatz und erlaubt auch auf
+                grossen Baustellen den Überblick
                 nicht zu verlieren.
                 Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter
                 angepasst.
@@ -268,7 +269,6 @@ include "../templates/head.html"
                         <li><a href="#" data-filter=".php">PHP</a></li>
                         <li><a href="#" data-filter=".c-sharp">C#</a></li>
                         <li><a href="#" data-filter=".javascript">JavaScript</a></li>
-                        <li><a href="#" data-filter=".python">Python</a></li>
                         <li><a href="#" data-filter=".css-html">CSS/HTML</a></li>
                         <li><a href="#" data-filter=".kotlin">Kotlin</a></li>
                     </ul>
@@ -278,7 +278,6 @@ include "../templates/head.html"
                     <ul class="skill-filters">
                         <li><a href="#" data-filter=".symfony">Symfony</a></li>
                         <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
-                        <li><a href="#" data-filter=".slim">Slim</a></li>
                         <li><a href="#" data-filter=".angular">Angular</a></li>
                         <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
                         <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
@@ -298,9 +297,9 @@ include "../templates/head.html"
                 <?php
                 $projects = getProjects();
                 foreach ($projects as $project) { ?>
-                    <div class="skills-grid-item">
-                        <h3><?= $project["name"]?></h3>
-                        <p><?= $project["purpose"]?></p>
+                    <div class="skills-grid-item <?= $project["class"] ?>">
+                        <h3><?= $project["name"] ?></h3>
+                        <p><?= $project["purpose"] ?></p>
                     </div>
                 <?php } ?>
             </div>
