@@ -1,6 +1,24 @@
 import yaml
 
 class ProjectNormalizer:
+    valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin"]
+    language_replaces = {"csharp": "C#"}
+
+    valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "Flutter", "ASP.NET", "Wordpress", "UWP", "WPF", "Windows Forms", "SyncApi", "wadmin"]
+    framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET"}
+
+    valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist"]
+
+    valid_employers = ["JKweb", "Zühlke"]
+
+    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "languages", "frameworks", "platform", "featured"]
+
+    def __init__(self):
+        for language in self.valid_languages:
+            self.language_replaces[lower(language)] = language
+        for framework in self.valid_frameworks:
+            self.framework_replaces[lower(framework)] = framework
+
     def __addMandatoryLine(self, lines, dictionary, key):
         if key not in dictionary:
             print("Fail: " + key + " not found")
@@ -91,25 +109,22 @@ class ProjectNormalizer:
         dictionary[new] = dictionary[old]
         del dictionary[old]
 
+    def is_framework(self, framework):
+        return framework in self.valid_frameworks or framework in self.framework_replaces
+
+    def is_language(self, language):
+        return language in self.valid_languages or language in self.language_replaces
+
     def normalize(self, project):
-        valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin"]
-        language_replaces = {"php": "PHP", "javascript": "JavaScript", "kotlin": "Kotlin"}
-        valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "ASP.NET", "Wordpress", "UWP", "WPF", "Forms", "SyncApi", "wadmin"]
-        framework_replaces = {"vuejs": "Vue.js", "wordpress": "Wordpress", "symfony": "Symfony"}
-        valid_platforms = ["Web", "Windows", "Windows Phone", "Android"]
-        valid_employers = ["JKweb", "Zühlke"]
-
-        valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "languages", "frameworks", "platform", "featured"]
-
         self.__renameOptionalKey(project, "description", "implementation")
-        self.__checkOnlyValidKeys(project, valid_keys)
+        self.__checkOnlyValidKeys(project, self.valid_keys)
 
         lines = []
         self.__addMandatoryLine(lines, project, "name")
         self.__addMandatoryLine(lines, project, "purpose")
         self.__addOptionalMultiline(lines, project, "implementation")
         self.__addOptionalMultiline(lines, project, "involvement")
-        self.__addOptionalWhitelistedEntry(lines, project, "employer", valid_employers)
+        self.__addOptionalWhitelistedEntry(lines, project, "employer", self.valid_employers)
 
         lines.append("")
         lengthBeforeGroup = len(lines)
@@ -129,9 +144,9 @@ class ProjectNormalizer:
             lines.append("")
         lengthBeforeGroup = len(lines)
 
-        self.__addOptionalWhitelistedList(lines, project, "languages", valid_languages, language_replaces)
-        self.__addOptionalWhitelistedList(lines, project, "frameworks", valid_frameworks, framework_replaces)
-        self.__addOptionalWhitelistedEntry(lines, project, "platform", valid_platforms)
+        self.__addOptionalWhitelistedList(lines, project, "languages", self.valid_languages, self.language_replaces)
+        self.__addOptionalWhitelistedList(lines, project, "frameworks", self.valid_frameworks, self.framework_replaces)
+        self.__addOptionalWhitelistedEntry(lines, project, "platform", self.valid_platforms)
 
         if len(lines) > lengthBeforeGroup:
             lines.append("")
