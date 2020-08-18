@@ -20,7 +20,7 @@ include "../templates/head.html"
         <div class="container">
             <div class="alert alert-danger">
                 Entschuldigung, diese Seite wurde leider nicht gefunden.
-                Kontaktieren Sie mich, und ich finde sie :)
+                Kontaktieren Sie mich und ich finde sie :)
             </div>
         </div>
     </section>
@@ -54,7 +54,7 @@ include "../templates/head.html"
             <h2>Background</h2>
             <p>
                 Ich bin ein Freelancer mit langjähriger Erfahrung in der Entwicklung, dem Betrieb und der Wartung von
-                Web Applikationen.
+                Web-Applikationen.
             </p>
 
             <p>
@@ -84,8 +84,8 @@ include "../templates/head.html"
                 Gremien vertreten soll.
             </p>
             <p>
-                Die Sicherheit des Tools wurde in einer umfassenden sicherheitstechnischen Analyse dargelegt,
-                und am fertigen Projekt wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
+                Die Sicherheit des Tools wurde in einer umfassenden sicherheitstechnischen Analyse dargelegt und am 
+                fertigen Projekt wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
                 durchgeführt.
             </p>
 
@@ -223,7 +223,7 @@ include "../templates/head.html"
                     $jobs = [
                         [
                             "class" => "vseth",
-                            "title" => "Internal Affairs",
+                            "title" => "Board Member, Ressort Internal Affairs",
                             "firm" => "VSETH - Dachverband der Studierenden ETH",
                             "link" => "https://vseth.ethz.ch",
                             "period" => "Sep. 2019 - Sep. 2020",
@@ -291,7 +291,7 @@ include "../templates/head.html"
                              width="100%">
                             <filter id="dry">
                                 <feComponentTransfer>
-                                    <feFuncA type="table" tableValues="0 0.5">
+                                    <feFuncA type="table" tableValues="0 0.5"></feFuncA>
                                 </feComponentTransfer>
                             </filter>
                             <g transform="scale(-1,-1)" transform-origin="center">
