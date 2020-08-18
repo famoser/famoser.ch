@@ -1,5 +1,5 @@
 name: feedback
-purpose: get feedback to improve lectures & exercises
+purpose: collect actionable feedback from lectures & workshops with minimal setup & instant evaluation
 implementation: |
   Built for TheAlternaitve, a student society with semesterly lectures abpout topics of Open Source  & Free Software.
   It gathers actionable feedback to further improve the courses for the next semester.

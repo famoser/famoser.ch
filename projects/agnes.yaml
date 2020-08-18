@@ -1,5 +1,5 @@
 name: agnes
-purpose: create & deploys releases safely to various environments
+purpose: create & deploy releases safely to various environments
 implementation: |
   Command line utility to create releases (and optionally publish to github).
   These releases can then be deployed to the specified servers & their respective environments.
