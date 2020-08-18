@@ -50,7 +50,6 @@ function initializeSkills()
          },
          function () {
              let description = $(this).find(".description");
-             description.addClass("hidden");
              description.removeClass("stamp")
              $container.isotope();
              setTimeout(function(){ $container.isotope() }, 200);
