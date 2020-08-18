@@ -1,0 +1,25 @@
+agnes:
+  version: 4
+
+config:
+  path: .config
+  repository:
+    url: git@gitlab.com:agnes-config/famoser-famoser.ch.git
+
+build:
+  path: .build
+
+github:
+  api_token: '%env(GITHUB_API_TOKEN)%'
+  repository: famoser/famoser.ch
+
+data:
+  files:
+    - path: .env.local
+      required: true
+
+scripts:
+  build:
+    hook: build
+    script:
+      - composer install --verbose --prefer-dist --no-interaction --no-dev --optimize-autoloader --no-scripts

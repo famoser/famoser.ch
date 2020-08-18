@@ -1,4 +1,13 @@
+# IDE config
 .idea
+
+# dependencies
 /vendor/
 node_modules
+
+# config
 .env.local
+
+# agnes
+.config
+.build

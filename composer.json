@@ -12,5 +12,8 @@
             "name": "Florian Moser",
             "email": "git@famoser.ch"
         }
-    ]
+    ],
+    "require-dev": {
+        "famoser/agnes": "^4.0"
+    }
 }
