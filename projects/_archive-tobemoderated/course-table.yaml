@@ -1,0 +1,11 @@
+name: course-table
+purpose: visualize weekly occurrences of courses
+kickoff_date: '2019-09'
+last_activity_date: 20190901
+source_url: https://github.com/famoser/course-table
+languages:
+- Kotlin
+frameworks:
+- Flutter
+
+platform: Android

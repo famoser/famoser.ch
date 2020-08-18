@@ -1,0 +1,13 @@
+name: avfroburger
+purpose: present student society & manage members
+description: webpage for a student society to present itself. It contains a secured
+  area for members only. Members can be managed with a web application.
+kickoff_date: 2016-02
+publish_date: 2016-02
+last_activity_date: 20160201
+publish_url: https://avfroburger.ch/
+languages:
+- PHP
+frameworks:
+- WordPress
+platform: Web

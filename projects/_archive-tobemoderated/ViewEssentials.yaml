@@ -1,0 +1,10 @@
+name: ViewEssentials
+purpose: set of classes useful in view projects
+description: set of classes useful in view projects
+kickoff_date: '2016-07-06T10:56:29Z'
+publish_date: July 2016
+last_activity_date: 20160701
+source_url: https://github.com/famoser/ViewEssentials
+publish_url: https://www.nuget.org/packages/Famoser.FrameworkEssentials.View
+languages:
+- C#

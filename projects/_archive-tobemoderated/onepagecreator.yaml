@@ -1,0 +1,10 @@
+name: onepagecreator
+purpose: generate a webpage with a few simple lines of code
+description: generate a webpage with a few simple lines of code
+kickoff_date: '2015-12-21T23:28:10Z'
+last_activity_date: 20151201
+source_url: https://github.com/famoser/onepagecreator
+is_legacy: true
+languages:
+- PHP
+platform: Web

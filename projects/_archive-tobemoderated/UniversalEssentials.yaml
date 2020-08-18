@@ -1,0 +1,13 @@
+name: UniversalEssentials
+purpose: essential classes for any universal project
+description: contains classes essential for any universal project, for example a StorageService
+  which implements the IStorageService interface from Famoser.FrameworkEssentials
+kickoff_date: '2016-03-13T21:57:08Z'
+publish_date: April 2016
+last_activity_date: 20160301
+source_url: https://github.com/famoser/UniversalEssentials
+publish_url: https://www.nuget.org/packages/Famoser.FrameworkEssentials.UniversalWindows/
+languages:
+- C#
+frameworks:
+- UWP

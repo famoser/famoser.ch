@@ -1,0 +1,10 @@
+name: metu
+purpose: onlineshop for building parts
+description: imported shop
+kickoff_date: April 2016
+last_activity_date: 20160401
+employer: jkweb
+publish_url: http://metu.ch
+languages:
+- PHP
+platform: Web

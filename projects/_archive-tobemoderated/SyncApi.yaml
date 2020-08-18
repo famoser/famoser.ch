@@ -1,0 +1,19 @@
+name: SyncApi
+purpose: a nuget portable library to sync models in a very convenient way
+description: "this library allows to connect to the sync api webpage, and then save\
+  \ any entites (after implementing a small interface) to it. All entries will be\
+  \ synced over all UWP devices automatically. \r\n\r\nYou can customize pretty much\
+  \ everything is this repository, but get started quickly for simple use cases due\
+  \ to clever dependency injection and a prepared standard use case. About 10 LOC\
+  \ allow for basic CRUD!\r\n\r\nAll objects are persist with a unique version id,\
+  \ so you can even access the history of your objects. All data is available offline,\
+  \ initialization is done lazy with observable collections."
+kickoff_date: '2016-10-02T09:19:31Z'
+publish_date: February 2017
+last_activity_date: 20161001
+source_url: https://github.com/famoser/SyncApi
+publish_url: https://www.nuget.org/packages/Famoser.SyncApi/0.1.11
+languages:
+- C#
+frameworks:
+- SyncApi

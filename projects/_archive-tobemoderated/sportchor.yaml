@@ -1,0 +1,8 @@
+name: sportchor
+description: webpage to view YouTube videos from a specifc channel
+kickoff_date: February 2014
+last_activity_date: 20140201
+is_legacy: true
+languages:
+- PHP
+platform: Web

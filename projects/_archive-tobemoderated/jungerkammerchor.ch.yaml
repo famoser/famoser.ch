@@ -1,0 +1,11 @@
+name: jungerkammerchor.ch
+purpose: present project choir from Basel
+description: A small project choir presents itself with videos and images from the last concert. Upcoming concerts are displayed if available
+kickoff_date: 2016-11
+publish_date: 2016-11
+last_activity_date: 20161101
+publish_url: http://jungerkammerchor.ch
+is_legacy: true
+languages:
+- PHP
+platform: Web

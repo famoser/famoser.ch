@@ -1,0 +1,13 @@
+name: farbstoff-design
+purpose: online shop for a printing firm
+description: "online shop for over 3000 products such as clothes, bags and much more."
+kickoff_date: 2017-03
+publish_date: 2017-05
+last_activity_date: 20170301
+employer: JKweb
+publish_url: https://farbstoff-design.ch/
+languages:
+- PHP
+frameworks:
+- symfony
+platform: Web

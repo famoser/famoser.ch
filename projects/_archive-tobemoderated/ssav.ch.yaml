@@ -1,0 +1,10 @@
+name: ssav.ch
+purpose: webpage for Schulsozialarbeitsverband
+description: developed a plugin
+kickoff_date: Mai 2016
+last_activity_date: 20160501
+employer: jkweb
+publish_url: https://ssav.ch/
+languages:
+- PHP
+platform: Web

@@ -1,0 +1,11 @@
+name: jobbau
+purpose: job platform for construction business
+kickoff_date: 2016-06
+last_activity_date: 20160601
+source_url: https://github.com/famoser/jobbau
+is_legacy: true
+languages:
+- PHP
+frameworks:
+- Slim
+platform: Web

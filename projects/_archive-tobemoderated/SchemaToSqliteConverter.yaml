@@ -1,0 +1,13 @@
+name: SchemaToSqliteConverter
+purpose: convert a schema produced by https://github.com/ondras/wwwsqldesigner to
+  valid sqlite
+description: convert a schema produced by https://github.com/ondras/wwwsqldesigner
+  to valid sqlite
+kickoff_date: '2016-09-04T11:48:36Z'
+last_activity_date: 20160901
+source_url: https://github.com/famoser/SchemaToSqliteConverter
+languages:
+- C#
+frameworks:
+- Windows Forms
+platform: Windows

@@ -1,0 +1,10 @@
+name: turium.fit
+purpose: webpage for a sport center
+description: api connection to mindbodyonline done
+kickoff_date: Oktober 2016
+last_activity_date: 20161001
+source_url: https://gitlab.com/JKwebGmbH/turicum.fit
+languages:
+- C#
+- PHP
+platform: Windows Phone

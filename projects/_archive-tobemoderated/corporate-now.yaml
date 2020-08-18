@@ -1,0 +1,11 @@
+name: corporate-now
+purpose: student project to explore how to improve internal communication in large companies
+kickoff_date: 2016-06
+last_activity_date: 20160601
+employer: JKweb
+is_legacy: true
+languages:
+- PHP
+frameworks:
+- symfony
+platform: Web

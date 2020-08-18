@@ -1,0 +1,12 @@
+name: traveltrade
+purpose: trading platform for goods
+description: symfony framework done
+kickoff_date: August 2016
+last_activity_date: 20160801
+employer: jkweb
+source_url: https://gitlab.com/JKwebGmbH/traveltrade
+is_legacy: true
+languages:
+- C#
+- PHP
+platform: Windows Phone

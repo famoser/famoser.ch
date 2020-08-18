@@ -1,0 +1,9 @@
+name: SyncApi.Webpage
+purpose: the server application for SyncApi
+description: the webpage for the SyncApi
+kickoff_date: '2016-12-21T18:06:27Z'
+last_activity_date: 20161201
+source_url: https://github.com/famoser/SyncApi.Webpage
+languages:
+- PHP
+platform: Web

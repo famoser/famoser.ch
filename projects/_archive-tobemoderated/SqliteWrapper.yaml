@@ -1,0 +1,11 @@
+name: SqliteWrapper
+purpose: a portable sqlite wrapper
+description: a portable sqlite wrapper to simplify sqlite access. It provides generic
+  repositories to hide the complexity introduced by sqlite
+kickoff_date: '2016-06-04T18:37:08Z'
+publish_date: June 2016
+last_activity_date: 20160601
+source_url: https://github.com/famoser/SqliteWrapper
+publish_url: https://www.nuget.org/packages/Famoser.SqliteWrapper
+languages:
+- C#

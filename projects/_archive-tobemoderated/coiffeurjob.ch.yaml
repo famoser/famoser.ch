@@ -1,0 +1,16 @@
+name: coiffeurjob.ch
+purpose: make it easy for hair stylists to find a job
+description: helped implement pdf generation & part of the admin interface
+publish_url: https://coiffeurjob.ch/
+
+kickoff_date: 2017-02
+last_activity_date: 20170201
+employer: JKweb
+
+languages:
+- PHP
+
+frameworks:
+- symfony
+
+platform: Web
