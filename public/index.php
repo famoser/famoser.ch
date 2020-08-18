@@ -67,8 +67,7 @@ include "../templates/head.html"
             <p>
                 Ich studiere an der ETH im Master Informatik mit einem Fokus auf Security und Application Engineering.
                 Bin ich nicht vor dem Computer, singe ich vermutlich gerade als Bass II in einem Projektchor, bin am
-                wandern oder
-                mache Sport.
+                Wandern oder mache Sport.
             </p>
         </div>
     </div>
@@ -77,7 +76,7 @@ include "../templates/head.html"
 <section class="secondary">
     <div class="container">
         <div class="featured">
-            <h2>Besonders famoos: eVoting der Stände UZH</h2>
+            <h2>Besonders famos: eVoting der Stände UZH</h2>
             <p>
                 Für die Vertreterorganisationen V-ATP (administratives und technisches Personal), VFFL (externe
                 Dozierende) und VAUZ (Doktorierende und Postdocs) wurde ein Wahltool erstellt.
