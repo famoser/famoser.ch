@@ -5,6 +5,9 @@
 /vendor/
 node_modules
 
+# python
+tools/__pycache__
+
 # config
 .env.local
 

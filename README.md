@@ -21,5 +21,7 @@ last_activity_date: 20170601 # when the project had its last relevant activity
 
 languages: [C#] # languages; see in projects/validate.py for valid names
 frameworks: [UWP, SyncApi] # frameworks; see in projects/validate.py for valid names
-platform: [Windows Phone] # platform (what the end user uses); see in projects/validate.py for valid names
+platform: [Windows Phone] # platform (what the end user uses); see in tools/normalizer.py for valid names
+
+featured: true # boolean if should be displayed prominently on webpage
 ```
