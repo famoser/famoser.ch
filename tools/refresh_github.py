@@ -10,10 +10,19 @@ from loader import ProjectLoader
 loader = ProjectLoader()
 projects = loader.load()
 
+github_projects = []
+for project in projects:
+    if "source_url" in project and project["source_url"].startswith("https://github.com")
+        github_projects.append(project)
+
+print(github_projects)
+
 from github import Github
 
 github = Github(github_token)
-for repo in github.get_user().get_repos():
+user = github.get_user()
+for repo in user.get_repos():
     print(repo.name)
+    
 
 loader.store(projects)
