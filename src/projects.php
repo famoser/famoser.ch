@@ -91,5 +91,9 @@ function getProject(string $filePath)
     $project["frameworks"] = isset($project["frameworks"]) ? $project["frameworks"] : [];
     $project["featured"] = isset($project["featured"]) && $project["featured"] && false;
 
+    if (isset($project["last_relevant_activity_date"])) {
+        $project["last_activity_date"] = $project["last_relevant_activity_date"];
+    }
+
     return $project;
 }

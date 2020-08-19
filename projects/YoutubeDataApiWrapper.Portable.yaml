@@ -1,0 +1,10 @@
+name: YoutubeDataApiWrapper.Portable
+purpose: a portable youtube api wrapper to simplify requests
+
+source_url: https://github.com/famoser/YoutubeDataApiWrapper.Portable
+
+kickoff_date: 2016-05
+last_activity_date: 2016-05
+
+languages: [C#]
+platform: Nuget

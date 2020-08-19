@@ -1,0 +1,10 @@
+name: jsonmapper
+purpose: map nested JSON structures onto PHP classes
+
+source_url: https://github.com/famoser/jsonmapper
+
+kickoff_date: 2016-05
+last_activity_date: 2019-08
+
+languages: [PHP]
+platform: Packagist

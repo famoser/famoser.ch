@@ -1,0 +1,10 @@
+name: LectureSync
+purpose: type in your courses, lectures and their information once, sync them over all your devices
+
+source_url: https://github.com/famoser/LectureSync
+
+kickoff_date: 2016-09
+last_activity_date: 2017-09
+
+languages: [C#]
+frameworks: [SyncApi, UWP]

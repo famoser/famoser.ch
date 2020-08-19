@@ -1,0 +1,10 @@
+name: jobbau
+purpose: bau dir deinen job!
+
+source_url: https://github.com/famoser/jobbau
+
+kickoff_date: 2016-06
+last_activity_date: 2019-08
+
+languages: [PHP]
+frameworks: [slim]

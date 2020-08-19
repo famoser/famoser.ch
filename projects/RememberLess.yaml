@@ -1,0 +1,10 @@
+name: RememberLess
+purpose: simple note taking app with API sync
+
+source_url: https://github.com/famoser/RememberLess
+
+kickoff_date: 2016-01
+last_activity_date: 2017-01
+
+languages: [C#]
+frameworks: [SyncApi, UWP]

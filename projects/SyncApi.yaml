@@ -1,0 +1,11 @@
+name: SyncApi
+purpose: a nuget portable library to sync models in a very convenient way
+
+source_url: https://github.com/famoser/SyncApi
+
+kickoff_date: 2016-10
+last_activity_date: 2017-08
+
+languages: [C#]
+frameworks: [SyncApi]
+platform: Nuget

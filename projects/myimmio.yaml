@@ -1,0 +1,10 @@
+name: myimmio
+purpose: a timesafer for tenants and administrations
+
+source_url: https://github.com/famoser/myimmio
+
+kickoff_date: 2018-02
+last_activity_date: 2019-07
+
+languages: [PHP]
+frameworks: [Symfony]

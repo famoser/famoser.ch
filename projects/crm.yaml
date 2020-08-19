@@ -8,10 +8,9 @@ implementation: |
 
 source_url: https://github.com/famoser/crm
 
-kickoff_date: 2015-12
+kickoff_date: 2015-10
 publish_date: 2016-01
-last_activity_date: 2016-01
+last_activity_date: 2016-05
 
 languages: [PHP]
-frameworks: [wadmin]
 platform: Web

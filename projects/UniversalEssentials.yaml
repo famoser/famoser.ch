@@ -1,0 +1,11 @@
+name: UniversalEssentials
+purpose: opinionated abstractions for storage & other utilities
+
+source_url: https://github.com/famoser/UniversalEssentials
+
+kickoff_date: 2016-03
+last_activity_date: 2016-07
+
+languages: [C#]
+frameworks: [UWP]
+platform: Nuget

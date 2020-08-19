@@ -6,8 +6,9 @@ publish_url: https://www.microsoft.com/de-ch/p/bookmarked/9njf401xw3g5
 
 kickoff_date: 2017-03
 publish_date: 2017-05
-last_activity_date: 2017-03
+last_activity_date: 2019-06
+last_relevant_activity_date: 2017-03
 
 languages: [C#]
-frameworks: [UWP, SyncApi]
+frameworks: [SyncApi, UWP]
 platform: Windows Phone

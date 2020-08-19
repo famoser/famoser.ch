@@ -1,0 +1,10 @@
+name: xkcd-cache
+purpose: a caching server for XKCD comics to enable fast complete downloads for the XKCD application
+
+source_url: https://github.com/famoser/xkcd-cache
+
+kickoff_date: 2017-09
+last_activity_date: 2019-08
+
+languages: [PHP]
+frameworks: [slim]

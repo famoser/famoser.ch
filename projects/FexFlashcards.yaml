@@ -6,8 +6,7 @@ publish_url: https://publish.famoser.ch/FexFlashCards/publish.htm
 
 kickoff_date: 2018-01
 publish_date: 2018-01
-last_activity_date: 2018-01
+last_activity_date: 2020-08
 
 languages: [C#]
-frameworks: [Forms]
 platform: Windows

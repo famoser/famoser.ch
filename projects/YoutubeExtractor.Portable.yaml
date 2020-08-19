@@ -1,0 +1,10 @@
+name: YoutubeExtractor.Portable
+purpose: a portable library which allow download of video informations, video & audio
+
+source_url: https://github.com/famoser/YoutubeExtractor.Portable
+
+kickoff_date: 2016-05
+last_activity_date: 2016-07
+
+languages: [C#]
+platform: Nuget

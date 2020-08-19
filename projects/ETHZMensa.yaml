@@ -1,0 +1,10 @@
+name: ETHZMensa
+purpose: displays ETH & UZH mensa menu of the day
+
+source_url: https://github.com/famoser/ETHZMensa
+
+kickoff_date: 2016-03
+last_activity_date: 2018-09
+
+languages: [C#]
+frameworks: [UWP]

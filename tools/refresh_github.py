@@ -22,10 +22,11 @@ for project in projects:
 import time
 from github import Github
 
-github_whitelist = ["csharp", "php", "symfony"," vuejs", "uwp", "sync-api", "flutter", "android", "kotlin", "windows-forms", "windows-phone", "angular", "asp-net", "packagist", "nuget-package", "aur", "latex", "mkdocs", "slim-framework", "api-platform", "visual-studio-extension", "javascript"]
+github_whitelist = ["csharp", "php", "symfony", "vuejs", "uwp", "sync-api", "flutter", "android", "kotlin", "windows-forms", "windows-phone", "angular", "asp-net", "packagist", "nuget-package", "aur", "latex", "mkdocs", "slim-framework", "api-platform", "visual-studio-extension", "javascript"]
 # ignore topics about the purpose of the package (because this is explained elsewhere)
 ignore_whitelist = ["network-analysis", "bachelor-thesis", "netflix", "eth", "summaries", "crm-system", "lokalise", "console-application", "xkcd", "php-framework", "vseth", "compiler", "sync", "pdf-generation", "symfony-cli", "telemetry"]
-platform_mapping = {"windows-forms": "Windows", "windows-phone": "Windows Phone", "api-platform": "Api Platform", "visual-studio-extension": "Visual Studio Extension", "nuget-package": "Nuget", "android": "Android", "mkdocs": "Web", "packagist": "Packagist","aur": "AUR"}
+platform_mapping = {"windows-forms": "Windows", "windows-phone": "Windows Phone", "visual-studio-extension": "Visual Studio Extension", "nuget-package": "Nuget", "android": "Android", "mkdocs": "Web", "packagist": "Packagist","aur": "AUR"}
+blacklist = ["aur"]
 
 normalizer = ProjectNormalizer()
 
@@ -42,6 +43,9 @@ def write_from_github(project, source):
         if topic in ignore_whitelist:
             continue
 
+        if topic in blacklist:
+            return False
+
         if topic not in github_whitelist:
             print("topic " + topic + " is not in whitelist.")
 
@@ -55,6 +59,7 @@ def write_from_github(project, source):
         if topic in platform_mapping:
             project["platform"] = platform_mapping[topic]
 
+
 github = Github(github_token)
 user = github.get_user()
 for repo in user.get_repos():
@@ -63,9 +68,12 @@ for repo in user.get_repos():
         project = github_projects[repo.full_name]
         write_from_github(project, repo)
     elif repo.owner.login == user.login:
-        print("creating " + repo.full_name)
         project = {"name": repo.name}
-        write_from_github(project, repo)
-        github_projects[repo.full_name] = project
+        include = write_from_github(project, repo)
+        if include:
+            print("creating " + repo.full_name)
+            github_projects[repo.full_name] = project
+        else:
+            print("skipping " + repo.full_name)
 
-loader.store(projects)
+loader.store(github_projects.values())

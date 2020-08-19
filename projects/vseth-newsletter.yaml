@@ -1,0 +1,10 @@
+name: vseth-newsletter
+purpose: curate and send the vsteh newsletter
+
+source_url: https://github.com/famoser/vseth-newsletter
+
+kickoff_date: 2020-03
+last_activity_date: 2020-04
+
+languages: [PHP]
+frameworks: [Symfony]

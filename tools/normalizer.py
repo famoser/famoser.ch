@@ -4,14 +4,14 @@ class ProjectNormalizer:
     valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin", "latex"]
     language_replaces = {"csharp": "C#"}
 
-    valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "Flutter", "ASP.NET", "Wordpress", "UWP", "WPF", "Windows Forms", "SyncApi", "wadmin"]
-    framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET", "slim-framework": "slim"}
+    valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "Flutter", "ASP.NET", "Wordpress", "UWP", "WPF", "Windows Forms", "API Platform", "SyncApi", "wadmin"]
+    framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET", "slim-framework": "slim", "api-platform": "Api Platform"}
 
     valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist", "AUR"]
 
     valid_employers = ["JKweb", "Zühlke"]
 
-    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "languages", "frameworks", "platform", "featured"]
+    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "languages", "frameworks", "platform", "featured"]
 
     def __init__(self):
         for language in self.valid_languages:
@@ -90,9 +90,12 @@ class ProjectNormalizer:
             if value not in whitelist:
                 print("Fail: " + value + " is not a valid entry for key " + key)
 
-            result.append(value)
+            result.add(value)
 
-        lines.append(key + ": [" + ", ".join(result) + "]")
+        if len(result) > 0:
+            output = list(result)
+            output.sort()
+            lines.append(key + ": [" + ", ".join(output) + "]")
 
     def __checkOnlyValidKeys(self, dictionary, whitelist):
         for key in dictionary:
@@ -139,6 +142,7 @@ class ProjectNormalizer:
         self.__addOptionalMonthLine(lines, project, "kickoff_date")
         self.__addOptionalMonthLine(lines, project, "publish_date")
         self.__addOptionalMonthLine(lines, project, "last_activity_date")
+        self.__addOptionalMonthLine(lines, project, "last_relevant_activity_date")
 
         if len(lines) > lengthBeforeGroup:
             lines.append("")

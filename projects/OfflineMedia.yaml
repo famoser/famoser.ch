@@ -1,0 +1,10 @@
+name: OfflineMedia
+purpose: read articles from multiple news sources under a clean and consistent design.
+
+source_url: https://github.com/famoser/OfflineMedia
+
+kickoff_date: 2015-09
+last_activity_date: 2020-04
+
+languages: [C#]
+frameworks: [UWP]

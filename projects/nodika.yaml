@@ -11,8 +11,8 @@ publish_url: https://nodika.ch
 
 kickoff_date: 2017-05
 publish_date: 2017-11
-last_activity_date: 2018-12
+last_activity_date: 2020-08
 
-languages: [PHP, JavaScript]
-frameworks: [Symfony, Vue.js]
+languages: [PHP]
+frameworks: [Symfony]
 platform: Web

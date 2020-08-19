@@ -1,0 +1,10 @@
+name: MassPass
+purpose: a password manager with encrypted synchronization
+
+source_url: https://github.com/famoser/MassPass
+
+kickoff_date: 2016-05
+last_activity_date: 2019-08
+
+languages: [C#, PHP]
+frameworks: [UWP]

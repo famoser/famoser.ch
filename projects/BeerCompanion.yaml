@@ -1,0 +1,10 @@
+name: BeerCompanion
+purpose: keep track of your beer consumption (with api sync)
+
+source_url: https://github.com/famoser/BeerCompanion
+
+kickoff_date: 2016-01
+last_activity_date: 2017-03
+
+languages: [C#, PHP]
+frameworks: [UWP]

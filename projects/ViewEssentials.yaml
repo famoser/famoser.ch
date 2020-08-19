@@ -1,0 +1,10 @@
+name: ViewEssentials
+purpose: opinionated abstractions for commands & other utilities
+
+source_url: https://github.com/famoser/ViewEssentials
+
+kickoff_date: 2016-07
+last_activity_date: 2016-08
+
+languages: [C#]
+platform: Nuget

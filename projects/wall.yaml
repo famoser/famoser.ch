@@ -1,0 +1,10 @@
+name: wall
+purpose: info wall for flat mates
+
+source_url: https://github.com/famoser/wall
+
+kickoff_date: 2020-06
+last_activity_date: 2020-08
+
+languages: [JavaScript, PHP]
+frameworks: [Symfony, Vue.js]

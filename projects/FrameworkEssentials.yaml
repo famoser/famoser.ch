@@ -1,0 +1,10 @@
+name: FrameworkEssentials
+purpose: opinionated abstractions for network & other utilities
+
+source_url: https://github.com/famoser/FrameworkEssentials
+
+kickoff_date: 2016-01
+last_activity_date: 2017-05
+
+languages: [C#]
+platform: Nuget
