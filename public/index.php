@@ -207,14 +207,14 @@ include "../templates/head.html"
                 <?php } ?>
             </div>
 
-            <p class="text-center p-5">
-                <button id="show-all-active" class="btn btn-outline-secondary">
+            <p class="text-center">
+                <button id="show-all-active" class="m-5 btn btn-outline-secondary">
                     Show all active
                 </button>
             </p>
 
-            <p class="text-center p-5">
-                <button id="show-archived" class="btn btn-outline-secondary d-none">
+            <p class="text-center">
+                <button id="show-archived" class="m-5 btn btn-outline-secondary d-none">
                     Show archived
                 </button>
             </p>
