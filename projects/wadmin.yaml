@@ -5,5 +5,6 @@ source_url: https://github.com/famoser/wadmin
 
 kickoff_date: 2015-09
 last_activity_date: 2017-03
+archived: true
 
 languages: [PHP]

@@ -5,5 +5,6 @@ source_url: https://github.com/famoser/php-frame
 
 kickoff_date: 2016-01
 last_activity_date: 2017-03
+archived: true
 
 languages: [PHP]

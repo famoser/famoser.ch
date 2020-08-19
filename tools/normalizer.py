@@ -5,13 +5,13 @@ class ProjectNormalizer:
     language_replaces = {"csharp": "C#"}
 
     valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "Flutter", "ASP.NET", "Wordpress", "UWP", "WPF", "Windows Forms", "API Platform", "SyncApi", "wadmin"]
-    framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET", "slim-framework": "slim", "api-platform": "Api Platform"}
+    framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET", "slim-framework": "slim", "api-platform": "API Platform", "Api Platform": "API Platform"}
 
     valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist", "AUR"]
 
     valid_employers = ["JKweb", "Zühlke"]
 
-    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "languages", "frameworks", "platform", "featured"]
+    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "archived", "languages", "frameworks", "platform", "featured"]
 
     def __init__(self):
         for language in self.valid_languages:
@@ -43,7 +43,7 @@ class ProjectNormalizer:
 
         lines.append(key + ": " + str(dictionary[key]))
 
-    def __addOptionalBooleanEntry(self, lines, dictionary, key, whitelist):
+    def __addOptionalBooleanEntry(self, lines, dictionary, key):
         if key not in dictionary:
             return
 
@@ -143,6 +143,7 @@ class ProjectNormalizer:
         self.__addOptionalMonthLine(lines, project, "publish_date")
         self.__addOptionalMonthLine(lines, project, "last_activity_date")
         self.__addOptionalMonthLine(lines, project, "last_relevant_activity_date")
+        self.__addOptionalBooleanEntry(lines, project, "archived")
 
         if len(lines) > lengthBeforeGroup:
             lines.append("")
@@ -156,6 +157,6 @@ class ProjectNormalizer:
             lines.append("")
         lengthBeforeGroup = len(lines)
 
-        self.__addOptionalBooleanEntry(lines, project, "featured", ["true", "false"])
+        self.__addOptionalBooleanEntry(lines, project, "featured")
 
         return "\n".join(lines)

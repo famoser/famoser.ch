@@ -8,6 +8,7 @@ kickoff_date: 2017-03
 publish_date: 2017-05
 last_activity_date: 2019-06
 last_relevant_activity_date: 2017-03
+archived: true
 
 languages: [C#]
 frameworks: [SyncApi, UWP]

@@ -5,6 +5,7 @@ source_url: https://github.com/famoser/OfflineMedia
 
 kickoff_date: 2015-09
 last_activity_date: 2020-04
+archived: true
 
 languages: [C#]
 frameworks: [UWP]

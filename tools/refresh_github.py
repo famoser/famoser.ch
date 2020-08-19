@@ -36,6 +36,7 @@ def write_from_github(project, source):
 
     project["kickoff_date"] = repo.created_at.strftime("%Y-%m")
     project["last_activity_date"] = repo.pushed_at.strftime("%Y-%m")
+    project["archived"] = repo.archived
 
     project["languages"] = []
     project["frameworks"] = []

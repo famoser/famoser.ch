@@ -5,6 +5,7 @@ source_url: https://github.com/famoser/ETHZMensa
 
 kickoff_date: 2016-03
 last_activity_date: 2018-09
+archived: true
 
 languages: [C#]
 frameworks: [UWP]

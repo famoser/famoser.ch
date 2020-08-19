@@ -5,6 +5,7 @@ source_url: https://github.com/famoser/SqliteWrapper
 
 kickoff_date: 2016-06
 last_activity_date: 2017-03
+archived: true
 
 languages: [C#]
 platform: Nuget

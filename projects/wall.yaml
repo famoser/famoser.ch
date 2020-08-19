@@ -5,6 +5,7 @@ source_url: https://github.com/famoser/wall
 
 kickoff_date: 2020-06
 last_activity_date: 2020-08
+archived: false
 
 languages: [JavaScript, PHP]
-frameworks: [Api Platform, Symfony, Vue.js]
+frameworks: [API Platform, Symfony, Vue.js]

@@ -5,6 +5,7 @@ source_url: https://github.com/famoser/vseth-semesterly-reports
 
 kickoff_date: 2019-12
 last_activity_date: 2020-04
+archived: false
 
 languages: [PHP]
 frameworks: [Symfony]

@@ -43,7 +43,8 @@ function getProject(string $filePath)
         "Angular" => "JavaScript",
         "Asp.NET" => "C#",
         "Slim" => "PHP",
-        "Api Platform" => "PHP"
+        "Api Platform" => "PHP",
+        "Flutter" => "Dart"
     ];
 
     $frameworkThatImpliesPlatform = [
@@ -51,6 +52,7 @@ function getProject(string $filePath)
         "Windows Forms" => "Windows"
     ];
 
+    $classes = [];
     if (key_exists("frameworks", $project)) {
         foreach ($project["frameworks"] as $framework) {
             if (key_exists($framework, $frameworkToClass)) {
@@ -67,7 +69,6 @@ function getProject(string $filePath)
         }
     }
 
-    $classes = [];
     if (key_exists("languages", $project)) {
         foreach ($project["languages"] as $language) {
             if (key_exists($language, $languageToClass)) {

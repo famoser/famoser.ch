@@ -5,5 +5,6 @@ source_url: https://github.com/famoser/wg-wall
 
 kickoff_date: 2018-10
 last_activity_date: 2020-04
+archived: true
 
 frameworks: [ASP.NET, Angular]
