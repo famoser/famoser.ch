@@ -35,19 +35,43 @@ function getProject(string $filePath)
     $frameworkToClass = ["Symfony" => "symfony", "Vue.js" => "vuejs", "Angular" => "angular", "ASP.NET" => "asp-net", "Wordpress" => "wordpress"];
     $platformToClass = ["Web" => "web", "Windows" => "windows", "Android" => "android"];
 
-    $classes = [];
-    if (key_exists("languages", $project)) {
-        foreach ($project["languages"] as $language) {
-            if (key_exists($language, $languageToClass)) {
-                $classes[] = $languageToClass[$language];
-            }
-        }
-    }
+    $frameworkThatImpliesLanguage = [
+        "Symfony" => "PHP",
+        "Vue.js" => "JavaScript",
+        "UWP" => "C#",
+        "Windows Forms" => "C#",
+        "Angular" => "JavaScript",
+        "Asp.NET" => "C#",
+        "Slim" => "PHP",
+        "Api Platform" => "PHP"
+    ];
+
+    $frameworkThatImpliesPlatform = [
+        "Flutter" => "Android",
+        "Windows Forms" => "Windows"
+    ];
 
     if (key_exists("frameworks", $project)) {
         foreach ($project["frameworks"] as $framework) {
             if (key_exists($framework, $frameworkToClass)) {
                 $classes[] = $frameworkToClass[$framework];
+            }
+
+            if (key_exists($framework, $frameworkThatImpliesLanguage)) {
+                $project["languages"][] = $frameworkThatImpliesLanguage[$framework];
+            }
+
+            if (key_exists($framework, $frameworkThatImpliesPlatform)) {
+                $project["platform"] = $frameworkThatImpliesPlatform[$framework];
+            }
+        }
+    }
+
+    $classes = [];
+    if (key_exists("languages", $project)) {
+        foreach ($project["languages"] as $language) {
+            if (key_exists($language, $languageToClass)) {
+                $classes[] = $languageToClass[$language];
             }
         }
     }

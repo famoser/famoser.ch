@@ -1,13 +1,13 @@
 import yaml
 
 class ProjectNormalizer:
-    valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin"]
+    valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin", "latex"]
     language_replaces = {"csharp": "C#"}
 
     valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "Flutter", "ASP.NET", "Wordpress", "UWP", "WPF", "Windows Forms", "SyncApi", "wadmin"]
-    framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET"}
+    framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET", "slim-framework": "slim"}
 
-    valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist"]
+    valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist", "AUR"]
 
     valid_employers = ["JKweb", "Zühlke"]
 
@@ -15,9 +15,9 @@ class ProjectNormalizer:
 
     def __init__(self):
         for language in self.valid_languages:
-            self.language_replaces[lower(language)] = language
+            self.language_replaces[language.lower()] = language
         for framework in self.valid_frameworks:
-            self.framework_replaces[lower(framework)] = framework
+            self.framework_replaces[framework.lower()] = framework
 
     def __addMandatoryLine(self, lines, dictionary, key):
         if key not in dictionary:
@@ -80,7 +80,7 @@ class ProjectNormalizer:
         if key not in dictionary:
             return
 
-        result = []
+        result = set()
         for entry in dictionary[key]:
             if entry in replaces:
                 value = replaces[entry]

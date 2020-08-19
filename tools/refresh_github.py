@@ -22,9 +22,11 @@ for project in projects:
 import time
 from github import Github
 
-github_whitelist = ["csharp", "php", "symfony"," vuejs", "uwp", "sync-api", "flutter", "android", "vuejs", "windows-forms", "windows-phone", "angular", "asp-net"]
-ignore_whitelist = ["network-analysis", "bachelor-thesis", "netflix", "eth", "summaries", "crm-system", "aur", "lokalise", "console-application", "xkcd", "latex", "php-framework", "vseth", "compiler", "nuget-package", "sync", "pdf-generation"]
-platform_mapping = {"forms": "Windows", "windows-phone": "Windows Phone", "visual-studio-extension": "Visual Studio Extension", "nuget-package", "Nuget"}
+github_whitelist = ["csharp", "php", "symfony"," vuejs", "uwp", "sync-api", "flutter", "android", "kotlin", "windows-forms", "windows-phone", "angular", "asp-net", "packagist", "nuget-package", "aur", "latex", "mkdocs", "slim-framework", "api-platform", "visual-studio-extension", "javascript"]
+# ignore topics about the purpose of the package (because this is explained elsewhere)
+ignore_whitelist = ["network-analysis", "bachelor-thesis", "netflix", "eth", "summaries", "crm-system", "lokalise", "console-application", "xkcd", "php-framework", "vseth", "compiler", "sync", "pdf-generation", "symfony-cli", "telemetry"]
+platform_mapping = {"windows-forms": "Windows", "windows-phone": "Windows Phone", "api-platform": "Api Platform", "visual-studio-extension": "Visual Studio Extension", "nuget-package": "Nuget", "android": "Android", "mkdocs": "Web", "packagist": "Packagist","aur": "AUR"}
+
 normalizer = ProjectNormalizer()
 
 def write_from_github(project, source):
@@ -47,7 +49,7 @@ def write_from_github(project, source):
             project["languages"].append(topic)
         elif normalizer.is_framework(topic):
             project["frameworks"].append(topic)
-        elif topic not in ignore_whitelist:
+        elif topic not in ignore_whitelist and topic not in platform_mapping:
             print("topic " + topic + " could not be categorized.")
 
         if topic in platform_mapping:
@@ -65,6 +67,5 @@ for repo in user.get_repos():
         project = {"name": repo.name}
         write_from_github(project, repo)
         github_projects[repo.full_name] = project
-
 
 loader.store(projects)
