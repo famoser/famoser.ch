@@ -14,3 +14,5 @@ last_activity_date: 2020-08
 languages: [JavaScript, PHP]
 frameworks: [Symfony, Vue.js]
 platform: Web
+
+featured: true

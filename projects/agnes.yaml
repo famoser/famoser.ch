@@ -13,3 +13,5 @@ archived: false
 
 languages: [PHP]
 platform: Packagist
+
+featured: true

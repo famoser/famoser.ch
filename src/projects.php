@@ -90,7 +90,8 @@ function getProject(string $filePath)
 
     $project["languages"] = isset($project["languages"]) ? $project["languages"] : [];
     $project["frameworks"] = isset($project["frameworks"]) ? $project["frameworks"] : [];
-    $project["featured"] = isset($project["featured"]) && $project["featured"] && false;
+    $project["featured"] = isset($project["featured"]) && $project["featured"];
+    $project["archived"] = isset($project["archived"]) && $project["archived"];
 
     if (isset($project["last_relevant_activity_date"])) {
         $project["last_activity_date"] = $project["last_relevant_activity_date"];

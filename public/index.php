@@ -35,8 +35,8 @@ include "../templates/head.html"
                 <div class="spacer"></div>
 
                 <p class="lead">
-                    Ich bin <b>Florian</b> Alexander <b>Moser</b>.<br/>
-                    Programmierer von famosen Applikationen<br/>
+                    Ich bin <b>F</b>lorian <b>A</b>. <b>Moser</b>.<br/>
+                    Programmierer von <b>famosen</b> Applikationen<br/>
                     für komplexe Anwendungen.
                 </p>
 
@@ -84,7 +84,7 @@ include "../templates/head.html"
                 Gremien vertreten soll.
             </p>
             <p>
-                Die Sicherheit des Tools wurde in einer umfassenden sicherheitstechnischen Analyse dargelegt und am 
+                Die Sicherheit des Tools wurde in einer umfassenden sicherheitstechnischen Analyse dargelegt und am
                 fertigen Projekt wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
                 durchgeführt.
             </p>
@@ -155,18 +155,22 @@ include "../templates/head.html"
                 </div>
             </div>
 
+            <div>
+                <p><span class="box archived"></span> archived</p>
+            </div>
+
             <div class="skills-grid">
                 <?php
                 $projects = getProjects();
-                foreach ($projects as $project) { ?>
-                    <div class="skills-grid-item <?= $project["featured"] ? "double " : "" ?><?= isset($project["implementation"]) ? "expandable " : "" ?><?= $project["class"] ?>">
+                foreach ($projects as $project) {
+                    $showDetails = isset($project["implementation"]) && $project["featured"];
+                    ?>
+                    <div class="skills-grid-item <?= $project["archived"] ? "archived " : "" ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
                         <h3><?= $project["name"] ?></h3>
                         <p><?= $project["purpose"] ?></p>
-                        <?php if (isset($project["implementation"])) { ?>
+                        <?php if ($showDetails) { ?>
                             <p class="description hidden">
-                                <small>
-                                    <?= $project["implementation"] ?>
-                                </small>
+                                <?= $project["implementation"] ?>
                             </p>
                         <?php } ?>
                         <p>

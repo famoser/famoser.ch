@@ -233,12 +233,28 @@ skills
     width: calc(66.666666% - 0.5em);
 }
 
+.archived {
+    background-color: #f5f5f5;
+}
+
+.box {
+    display: inline-block;
+    width: 3em;
+    height: 1.5em;
+    margin-bottom: -0.25em;
+}
+
 .skills-grid-item:hover {
     background-color: #f5f5f5;
 }
 
 .skills-grid-item.expandable {
     border: 1px solid #a1a1a1;
+}
+
+.skills-grid-item .description {
+    font-size: 1em;
+    line-height: 1.6em;
 }
 
 @media ( max-width: 999px ) {

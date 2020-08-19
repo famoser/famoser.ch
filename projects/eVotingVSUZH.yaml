@@ -15,3 +15,5 @@ last_activity_date: 2017-08
 languages: [JavaScript, PHP]
 frameworks: [Sonata Admin, Symfony, Vue.js]
 platform: Web
+
+featured: true

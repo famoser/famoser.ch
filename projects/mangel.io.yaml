@@ -17,3 +17,5 @@ archived: false
 
 frameworks: [Symfony, Vue.js]
 platform: Web
+
+featured: true

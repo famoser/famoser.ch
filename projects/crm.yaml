@@ -15,3 +15,5 @@ archived: true
 
 languages: [PHP]
 platform: Web
+
+featured: true

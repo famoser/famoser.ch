@@ -43,14 +43,22 @@ function initializeSkills()
      $(".skills-grid-item").hover(
          function () {
              let description = $(this).find(".description");
-             description.addClass("stamp")
+             if (description.length === 0) {
+                 return
+             }
+
+             description.addClass("stamp");
              description.removeClass("hidden");
              $container.isotope();
              setTimeout(function(){ $container.isotope() }, 200);
          },
          function () {
              let description = $(this).find(".description");
-             description.removeClass("stamp")
+             if (description.length === 0) {
+                 return
+             }
+
+             description.removeClass("stamp");
              $container.isotope();
              setTimeout(function(){ $container.isotope() }, 200);
          }

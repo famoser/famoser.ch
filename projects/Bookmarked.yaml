@@ -1,5 +1,8 @@
 name: Bookmarked
 purpose: save & sync bookmarks & passwords in a folder structure
+implementation: |
+  Bookmarks & passwords can be saved in a recursive folder structure.
+  These are encrypted and synchronized with all other devices of the user.
 
 source_url: https://github.com/famoser/Bookmarked
 publish_url: https://www.microsoft.com/de-ch/p/bookmarked/9njf401xw3g5
@@ -13,3 +16,5 @@ archived: true
 languages: [C#]
 frameworks: [SyncApi, UWP]
 platform: Windows Phone
+
+featured: true

@@ -17,3 +17,5 @@ archived: false
 languages: [PHP]
 frameworks: [Symfony]
 platform: Web
+
+featured: true

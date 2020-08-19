@@ -1,8 +1,14 @@
 name: ETH summaries
 purpose: summaries for courses taken at ETH
+implementation: |
+  For each course, a summary is written in .fex, then compiled using the FexCompiler.
+  The summaries are self-contained and useful to remember facts.
+  The help refresh the knowledge efficiently years after the course is taken.
 
 source_url: https://github.com/famoser/eth-summaries
 
 kickoff_date: 2018-02
 last_activity_date: 2020-08
 archived: false
+
+featured: true
