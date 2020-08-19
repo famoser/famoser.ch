@@ -70,6 +70,7 @@ function getProject(string $filePath)
     }
 
     if (key_exists("languages", $project)) {
+        $project["languages"] = array_unique($project["languages"]);
         foreach ($project["languages"] as $language) {
             if (key_exists($language, $languageToClass)) {
                 $classes[] = $languageToClass[$language];

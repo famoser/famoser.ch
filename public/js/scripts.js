@@ -19,8 +19,18 @@ function initializeExperienceHover() {
 let current_filter = "";
 function initializeSkills()
 {
+    // initialize archive functionality
+    const skillsGrid = $(".skills-grid");
+    skillsGrid.addClass("hide-archived");
+    skillsGrid.addClass("hide-not-featured");
+
+    const showAllActiveButton = $("#show-all-active");
+    showAllActiveButton.removeClass("d-none");
+
+    const showArchivedButton = $("#show-archived");
+
      // Initialize Isotope
-     const $container = $('.skills-grid');
+     const $container = skillsGrid;
      $container.isotope({
          itemSelector: '.skills-grid-item',
          stamp: '.stamp'
@@ -39,6 +49,7 @@ function initializeSkills()
 
          $container.isotope({filter: current_filter});
      });
+
 
      $(".skills-grid-item").hover(
          function () {
@@ -63,6 +74,25 @@ function initializeSkills()
              setTimeout(function(){ $container.isotope() }, 200);
          }
      )
+
+    showAllActiveButton.on("click", function (e) {
+        e.preventDefault();
+
+        $(this).addClass("d-none");
+        showArchivedButton.removeClass("d-none");
+        skillsGrid.removeClass("hide-not-featured");
+
+        $container.isotope();
+    })
+
+    showArchivedButton.on("click", function (e) {
+        e.preventDefault();
+
+        $(this).addClass("d-none");
+        skillsGrid.removeClass("hide-archived");
+
+        $container.isotope();
+    })
 
      // sometimes rendering fails the first time (parts are overlapped)
      // hence repeat at later time

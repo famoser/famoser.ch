@@ -140,9 +140,6 @@ include "../templates/head.html"
                     <ul class="skill-filters secondary clearfix">
                         <li><a href="#" data-filter=".symfony">Symfony</a></li>
                         <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
-                        <li><a href="#" data-filter=".angular">Angular</a></li>
-                        <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
-                        <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -155,17 +152,13 @@ include "../templates/head.html"
                 </div>
             </div>
 
-            <div>
-                <p><span class="box archived"></span> archived</p>
-            </div>
-
             <div class="skills-grid">
                 <?php
                 $projects = getProjects();
                 foreach ($projects as $project) {
                     $showDetails = isset($project["implementation"]) && $project["featured"];
                     ?>
-                    <div class="skills-grid-item <?= $project["archived"] ? "archived " : "" ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
+                    <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $project["featured"] ? "featured " : "not-featured " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
                         <h3><?= $project["name"] ?></h3>
                         <p><?= $project["purpose"] ?></p>
                         <?php if ($showDetails) { ?>
@@ -213,6 +206,18 @@ include "../templates/head.html"
                     </div>
                 <?php } ?>
             </div>
+
+            <p class="text-center p-5">
+                <button id="show-all-active" class="btn btn-outline-secondary">
+                    Show all active
+                </button>
+            </p>
+
+            <p class="text-center p-5">
+                <button id="show-archived" class="btn btn-outline-secondary d-none">
+                    Show archived
+                </button>
+            </p>
         </div>
     </div>
 </section>

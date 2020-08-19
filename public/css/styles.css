@@ -237,11 +237,12 @@ skills
     background-color: #f5f5f5;
 }
 
-.box {
-    display: inline-block;
-    width: 3em;
-    height: 1.5em;
-    margin-bottom: -0.25em;
+.skills-grid.hide-archived .archived {
+    display: none;
+}
+
+.skills-grid.hide-not-featured .not-featured {
+    display: none;
 }
 
 .skills-grid-item:hover {
