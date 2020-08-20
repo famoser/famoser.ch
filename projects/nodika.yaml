@@ -2,7 +2,7 @@ name: nodika
 purpose: event calender for emergency services by veterinarians
 implementation: |
   Veterinarians provide together around the clock emergency services.
-  Accodring to quotas, timeslots are distributed to the veterianrians; special quotas apply for saturdays, sundays, and holidays.
+  According to quotas, timeslots are distributed to the veterinarians; special quotas apply for saturdays, sundays, and holidays.
   Users may trade events if both sides agree.
   Before the event, the are reminded again per mail and have to confirm it.
 

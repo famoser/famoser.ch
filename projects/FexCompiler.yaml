@@ -1,7 +1,7 @@
 name: FexCompiler
 purpose: compile .fex files to printable .pdf
 implementation: |
-  To write and restructure summaries fast, the intendation-based .fex format was created.
+  To write and restructure summaries fast, the indentation-based .fex format was created.
   This compiler turns the text format into pdfs for easy printing.
   It uses latex2pdf under the hood, hence first compiles to latex.
   Some common text notations is parsed to latex syntax to get a more readable result.

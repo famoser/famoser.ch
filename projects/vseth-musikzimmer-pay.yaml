@@ -1,5 +1,5 @@
 name: vseth-musikzimmer-pay
-purpose: create invoices for musikzimmers of VSETH
+purpose: create invoices for music rooms of VSETH
 
 source_url: https://github.com/famoser/vseth-musikzimmer-pay
 
