@@ -1,9 +1,0 @@
-name: FrameworkEssentials
-purpose: a nuget package with some utlities & services I use in my projects
-kickoff_date: 2016-01
-publish_date: 2016-08
-last_activity_date: 20160101
-source_url: https://github.com/famoser/FrameworkEssentials
-publish_url: https://www.nuget.org/packages/Famoser.FrameworkEssentials
-languages:
-- C#

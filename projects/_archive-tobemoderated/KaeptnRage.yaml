@@ -1,9 +1,0 @@
-name: KaeptnRage
-kickoff_date: 2016-08
-last_activity_date: 20160801
-source_url: https://github.com/famoser/KaeptnRage
-is_legacy: true
-hide: true
-languages:
-- C#
-platform: Web
