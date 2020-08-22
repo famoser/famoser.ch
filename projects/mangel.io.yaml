@@ -1,5 +1,5 @@
 name: mangel.io
-purpose: the webpage for the mangel.io project
+purpose: improve issue management on construction sites
 implementation: |
   The issue management developed for a construction firm is meant for construction managers.
   Construction managers may inspect the construction site and create new issues in the iOS app.

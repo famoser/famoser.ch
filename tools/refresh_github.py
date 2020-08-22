@@ -22,6 +22,8 @@ for project in projects:
 import time
 from github import Github
 
+ignore_repos = ["famoser/docs", "famoser/archive"]
+
 github_whitelist = ["csharp", "php", "symfony", "vuejs", "uwp", "sync-api", "flutter", "android", "kotlin", "windows-forms", "windows-phone", "angular", "asp-net", "packagist", "nuget-package", "aur", "latex", "mkdocs", "slim-framework", "api-platform", "visual-studio-extension", "javascript"]
 # ignore topics about the purpose of the package (because this is explained elsewhere)
 ignore_whitelist = ["network-analysis", "bachelor-thesis", "netflix", "eth", "summaries", "crm-system", "lokalise", "console-application", "xkcd", "php-framework", "vseth", "compiler", "sync", "pdf-generation", "symfony-cli", "telemetry"]
@@ -64,7 +66,9 @@ def write_from_github(project, source):
 github = Github(github_token)
 user = github.get_user()
 for repo in user.get_repos():
-    if repo.full_name in github_projects:
+    if repo.full_name in ignore_repos:
+        pass
+    elif repo.full_name in github_projects:
         print("updating " + repo.full_name)
         project = github_projects[repo.full_name]
         write_from_github(project, repo)
