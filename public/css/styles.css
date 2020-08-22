@@ -303,3 +303,18 @@ skills
 .skills-grid-item .hidden {
     display: none;
 }
+
+/**
+network
+ */
+
+.network .icon {
+    display: block;
+    margin: 0 auto;
+    height: 4em;
+    opacity: 0.7;
+}
+
+.network .icon:hover {
+    opacity: 1;
+}

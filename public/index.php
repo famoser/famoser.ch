@@ -359,6 +359,43 @@ include "../templates/head.html"
     </div>
 </section>
 
+<section>
+    <div class="container">
+        <div class="network">
+            <div class="row">
+                <div class="col-md-3">
+                    <p>
+                        <a href="https://github.com/famoser/" target="_blank">
+                            <img class="icon" src="icons/github.svg" alt="github icon">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        <a href="https://stackoverflow.com/users/2259391/florian-moser" target="_blank">
+                            <img class="icon" src="icons/stackoverflow.svg" alt="stackoverflow icon">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        <a href="https://linkedin.com/in/famoser" target="_blank">
+                            <img class="icon" src="icons/linkedin.svg" alt="linkedin icon">
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p>
+                        <a href="https://gitlab.com/famoser" target="_blank">
+                            <img class="icon" src="icons/gitlab.svg" alt="gitlab icon">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <?php
 include "../templates/scripts.html"
 ?>
