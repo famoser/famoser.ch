@@ -112,9 +112,12 @@ include "../templates/head.html"
                 angepasst.
             </p>
 
+            <p>
+                Projektwebseite: <a href="https://mangel.io" target="_blank">mangel.io</a>
+            </p>
+
             <img src="images/mangel.io/screenshot1.jpg" alt="Screenshot Pendenzenverwaltung mangel.io"
                  class="mt-2 img-fluid img-screenshot">
-
         </div>
     </div>
 </section>
@@ -358,6 +361,31 @@ include "../templates/head.html"
         </div>
     </div>
 </section>
+
+<section class="primary">
+    <div class="container">
+        <div class="research">
+            <h2>Research</h2>
+            
+            <h3>Bachelor thesis: Identifying encrypted online video streams using bitrate profiles</h3>
+            <p>
+                Es wurde untersucht, inwiefern sich Daten, die beim Schauen von Videos auf Netflix anfallen, zur Identifikation der angeschauten Videos dienen könnten.
+                Bestehende Verfahren wurden reproduziert, und ein neues Verfahren, dass mit noch weniger Annahmen funktioniert, vorgestellt: 
+                Lediglich anhand der durchschnittlich verbrauchten Datenmenge in verschiedenen Netzwerkkonditionen kann das entsprechende Video identifiziert werden.
+                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>, <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
+            </p>
+            
+            <h3 class="mt-5">Advanced Systems Lab: Fast imlementation of Curve25519 on Intel Skylake</h3>
+            <p>
+                Mit drei Kommilitonen wurde untersucht, inwiefern sich bestehende Implementierungen für eine für die Cryptographie sehr wichtige elliptische Kurve weiter optimieren lassen.
+                Mehrere Ansätze aus bestehender Literatur wurden kombiniert und erweitert und auf die Intel Skylake Architektur angewandt.
+                Die resultierende Implementierung war 10% schneller als alle anderen aus dem Bernstein Implementierungsvergleich.  
+                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>].
+            </p>
+        </div>
+    </div>
+</section>
+
 
 <section>
     <div class="container">
