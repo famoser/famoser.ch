@@ -5,9 +5,9 @@ implementation: |
 
 publish_url: https://tortenboutique.ch
 
-kickoff_date: March 2014
-publish_date: Mai 2014
-last_activity_date: 20140301
+kickoff_date: 2014-03
+publish_date: 2014-05
+last_activity_date: 2014-03
 archived: true
 
 platform: Web

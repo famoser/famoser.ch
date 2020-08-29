@@ -3,13 +3,13 @@ purpose: help customers & craftmen find each other
 implementation: |
   create an account as a business, and present your business on your profile, and see published adverts.
   create an account as customer and you can create adverts which can be viewed by busine
-employer: jkweb
+employer: JKweb
 
 publish_url: https://swisshandwerker.ch/
 
-kickoff_date: May 2017
-publish_date: 1. August 2017
-last_activity_date: 20170501
+kickoff_date: 2017-05
+publish_date: 2017-08
+last_activity_date: 2017-08
 archived: true
 
 languages: [PHP]

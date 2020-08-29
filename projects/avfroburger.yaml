@@ -7,9 +7,9 @@ publish_url: https://avfroburger.ch/
 
 kickoff_date: 2016-02
 publish_date: 2016-02
-last_activity_date: 20160201
+last_activity_date: 2016-02
 archived: true
 
 languages: [PHP]
-frameworks: [WordPress]
+frameworks: [Wordpress]
 platform: Web

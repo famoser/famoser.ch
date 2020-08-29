@@ -1,10 +1,11 @@
 name: Observo
+purpose: Track road damages
 implementation: |
-  helped with the development of the ma
-employer: Unit solutions
+  helped with the development of the map display
+employer: unit.solutions
 
-kickoff_date: March 2015
-last_activity_date: 20150301
+kickoff_date: 2015-03
+last_activity_date: 2015-03
 archived: true
 
 languages: [C#]

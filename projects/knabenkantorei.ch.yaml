@@ -1,4 +1,4 @@
-name: knabenkantorei
+name: knabenkantorei.ch
 purpose: webpage & administration for a youth boys choir
 implementation: |
   Membermanagement for a boys choir. CMS for the webpage. Webpage design was adapted from CI given by flye
@@ -7,7 +7,7 @@ publish_url: https://knabenkantorei.ch
 
 kickoff_date: 2014-02
 publish_date: 2014-04
-last_activity_date: 20140201
+last_activity_date: 2014-02
 archived: true
 
 languages: [PHP]

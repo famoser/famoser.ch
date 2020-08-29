@@ -13,13 +13,13 @@ implementation: |
   advertizes the menu this week 
   
   Elegant, light and image heavy des
-employer: jkweb
+employer: JKweb
 
-publish_url: http://massgekocht.ch
+publish_url: https://massgekocht.ch
 
-kickoff_date: December 2016
-publish_date: January 2017
-last_activity_date: 20161201
+kickoff_date: 2016-12
+publish_date: 2017-01
+last_activity_date: 2016-12
 archived: true
 
 languages: [PHP]

@@ -4,12 +4,12 @@ class ProjectNormalizer:
     valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin", "latex"]
     language_replaces = {"csharp": "C#"}
 
-    valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "Flutter", "ASP.NET", "Wordpress", "UWP", "WPF", "Windows Forms", "API Platform", "SyncApi", "wadmin"]
+    valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "Flutter", "ASP.NET", "Wordpress", "UWP", "WinRT", "WPF", "Windows Forms", "API Platform", "SyncApi", "wadmin"]
     framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET", "slim-framework": "slim", "api-platform": "API Platform", "Api Platform": "API Platform"}
 
     valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist", "AUR"]
 
-    valid_employers = ["JKweb", "Zühlke"]
+    valid_employers = ["JKweb", "Zühlke", "unit.solutions"]
 
     valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "archived", "languages", "frameworks", "platform", "featured"]
 

@@ -1,8 +1,8 @@
 name: sportchor
 purpose: Help members of choir train for performance by viewing instructional videos from youtube.
 
-kickoff_date: February 2014
-last_activity_date: 20140201
+kickoff_date: 2014-02
+last_activity_date: 2014-02
 archived: true
 
 languages: [PHP]

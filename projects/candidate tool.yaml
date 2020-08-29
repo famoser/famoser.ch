@@ -8,5 +8,5 @@ last_activity_date: 2016-08
 archived: true
 
 languages: [PHP]
-frameworks: [Slim]
+frameworks: [slim]
 platform: Web

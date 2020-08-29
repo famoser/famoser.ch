@@ -2,11 +2,11 @@ name: krippenstellen
 purpose: job platform specifically for cribs
 implementation: |
   Ffind a job or register for a membership to publish a notice. Fully automated invioce and payment reminder manageme
-employer: jkweb
+employer: JKweb
 
 kickoff_date: 2016-03
 publish_date: 2016-05
-last_activity_date: 20160301
+last_activity_date: 2016-03
 archived: true
 
 languages: [PHP]
