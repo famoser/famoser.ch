@@ -1,0 +1,12 @@
+name: VSUZH candidate tool
+purpose: allow candidates to sign up online for the upcoming election
+employer: JKweb
+
+kickoff_date: 2016-08
+publish_date: 2016-11
+last_activity_date: 2016-08
+archived: true
+
+languages: [PHP]
+frameworks: [Slim]
+platform: Web

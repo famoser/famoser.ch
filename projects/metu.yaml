@@ -1,0 +1,14 @@
+name: metu
+purpose: shop online for building parts
+implementation: |
+  Import shop data out of an SAP export to Wordpress Woocommerce. Repeair data due to issues with import plug
+employer: jkweb
+
+publish_url: http://metu.ch
+
+kickoff_date: April 2016
+last_activity_date: 20160401
+archived: true
+
+languages: [PHP]
+platform: Web

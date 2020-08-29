@@ -1,0 +1,11 @@
+name: turium.fit
+purpose: allow to sign up to courses online
+implementation: |
+  api connection to mindbodyonline d
+
+kickoff_date: Oktober 2016
+last_activity_date: 20161001
+archived: true
+
+languages: [PHP]
+platform: Web

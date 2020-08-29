@@ -1,0 +1,15 @@
+name: avfroburger
+purpose: present student society & provide internal area for its members
+implementation: |
+  Simple webapplication to manage members of society. Wordpress plugin allows these members to view the internal ar
+
+publish_url: https://avfroburger.ch/
+
+kickoff_date: 2016-02
+publish_date: 2016-02
+last_activity_date: 20160201
+archived: true
+
+languages: [PHP]
+frameworks: [WordPress]
+platform: Web

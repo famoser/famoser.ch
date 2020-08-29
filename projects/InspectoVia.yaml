@@ -1,0 +1,14 @@
+name: InspectoVia
+purpose: investigate damage on streets to help plan street maintenance
+implementation: |
+  An app optimized for the surface tablet to easy & fast note down oberservatio
+employer: unit.solutions
+
+kickoff_date: 2015-04
+publish_date: 2015-07
+last_activity_date: 20150401
+archived: true
+
+languages: [C#]
+frameworks: [WinRT]
+platform: Windows

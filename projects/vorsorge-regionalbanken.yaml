@@ -1,0 +1,13 @@
+name: vorsorge-regionalbanken
+purpose: webpage for Vorsorge Regionalbanken
+
+publish_url: http://vorsorge-regionalbanken.ch
+
+kickoff_date: August 2014
+publish_date: Oktober 2014
+last_activity_date: 20140801
+archived: true
+
+languages: [PHP]
+frameworks: [WordPress]
+platform: Web

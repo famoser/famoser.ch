@@ -1,0 +1,13 @@
+name: tortenboutique
+purpose: present a pie store
+implementation: |
+  colorful retro webpage for a pie st
+
+publish_url: https://tortenboutique.ch
+
+kickoff_date: March 2014
+publish_date: Mai 2014
+last_activity_date: 20140301
+archived: true
+
+platform: Web

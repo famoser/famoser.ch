@@ -1,0 +1,27 @@
+name: massgekocht
+purpose: create a profil and order a menu recommended for you
+implementation: |
+  Order one of three different menus which are
+  changed each week, and read nutrition advice
+  from founders
+  
+  Calculates the recommended nutrition
+  composition and calories based on personal
+  infos
+  
+  Receive a personalized newsletter weekly which 
+  advertizes the menu this week 
+  
+  Elegant, light and image heavy des
+employer: jkweb
+
+publish_url: http://massgekocht.ch
+
+kickoff_date: December 2016
+publish_date: January 2017
+last_activity_date: 20161201
+archived: true
+
+languages: [PHP]
+frameworks: [Symfony]
+platform: Web

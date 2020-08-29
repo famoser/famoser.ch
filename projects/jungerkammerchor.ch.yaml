@@ -1,0 +1,14 @@
+name: jungerkammerchor.ch
+purpose: present project choir from Basel
+implementation: |
+  Videos and images from the last concert are displayed prominently. Upcoming concerts are displayed if availab
+
+publish_url: http://jungerkammerchor.ch
+
+kickoff_date: 2016-11
+publish_date: 2016-11
+last_activity_date: 20161101
+archived: true
+
+languages: [PHP]
+platform: Web

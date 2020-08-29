@@ -1,9 +1,0 @@
-name: zulu.live
-purpose: online teaching with digital blackboard and video
-involvment: reviewing the code written by freelancers for security, maintainability & other non functional requirements
-kickoff_date: 2019-05
-last_activity_date: 2019-06-01
-languages:
-- C#
-
-platform: Web
