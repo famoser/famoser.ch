@@ -36,7 +36,7 @@ include "../templates/head.html"
 
                 <p class="lead">
                     Ich bin <b>F</b>lorian <b>A</b>. <b>Moser</b>.<br/>
-                    Programmierer von <b>famosen</b> Applikationen<br/>
+                    Programmierer <b>famoser</b> Applikationen<br/>
                     für komplexe Anwendungen.
                 </p>
 
