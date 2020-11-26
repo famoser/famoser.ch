@@ -126,7 +126,6 @@ include "../templates/head.html"
     <div class="container">
         <div class="skills">
             <h2>Skills</h2>
-
             <div class="row mb-4">
                 <div class="col-md-4">
                     <p><b>Language</b></p>
@@ -154,74 +153,75 @@ include "../templates/head.html"
                     </ul>
                 </div>
             </div>
-
-            <div class="skills-grid">
-                <?php
-                $projects = getProjects();
-                foreach ($projects as $project) {
-                    $showDetails = isset($project["implementation"]) && $project["featured"];
-                    ?>
-                    <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $project["featured"] ? "featured " : "not-featured " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
-                        <h3><?= $project["name"] ?></h3>
-                        <p><?= $project["purpose"] ?></p>
-                        <?php if ($showDetails) { ?>
-                            <p class="description hidden">
-                                <?= $project["implementation"] ?>
-                            </p>
+        </div>
+    </div>
+    <div class="skills-grid-wrapper container">
+        <div class="skills-grid">
+            <?php
+            $projects = getProjects();
+            foreach ($projects as $project) {
+                $showDetails = isset($project["implementation"]) && $project["featured"];
+                ?>
+                <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $project["featured"] ? "featured " : "not-featured " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
+                    <h3><?= $project["name"] ?></h3>
+                    <p><?= $project["purpose"] ?></p>
+                    <?php if ($showDetails) { ?>
+                        <p class="description hidden">
+                            <?= $project["implementation"] ?>
+                        </p>
+                    <?php } ?>
+                    <p>
+                        <?php foreach ($project["languages"] as $language) { ?>
+                            <span class="skill primary"><?= $language ?></span>
                         <?php } ?>
+                        <?php foreach ($project["frameworks"] as $framework) { ?>
+                            <span class="skill secondary"><?= $framework ?></span>
+                        <?php } ?>
+                        <?php if (isset($project["employer"])) { ?>
+                            <span class="skill"><?= $project["employer"] ?></span>
+                        <?php } ?>
+                    </p>
+                    <?php if (isset($project["source_url"]) || isset($project["publish_url"])) { ?>
                         <p>
-                            <?php foreach ($project["languages"] as $language) { ?>
-                                <span class="skill primary"><?= $language ?></span>
+                            <?php if (isset($project["source_url"])) { ?>
+                                <a href="<?= $project["source_url"] ?>" target="_blank">
+                                    <?php if (strpos($project["source_url"], "github") > 0) { ?>
+                                        <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                src="icons/github.svg">
+                                    <?php } else { ?>
+                                        <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                src="icons/external-link.svg">
+                                    <?php } ?>
+                                </a>
                             <?php } ?>
-                            <?php foreach ($project["frameworks"] as $framework) { ?>
-                                <span class="skill secondary"><?= $framework ?></span>
-                            <?php } ?>
-                            <?php if (isset($project["employer"])) { ?>
-                                <span class="skill"><?= $project["employer"] ?></span>
+                            <?php if (isset($project["publish_url"])) { ?>
+                                <a href="<?= $project["publish_url"] ?>" target="_blank">
+                                    <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
+                                        <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
+                                                src="icons/microsoft.svg">
+                                    <?php } else { ?>
+                                        <img class="icon" alt="visit <?= $project["name"] ?>"
+                                                src="icons/external-link.svg">
+                                    <?php } ?>
+                                </a>
                             <?php } ?>
                         </p>
-                        <?php if (isset($project["source_url"]) || isset($project["publish_url"])) { ?>
-                            <p>
-                                <?php if (isset($project["source_url"])) { ?>
-                                    <a href="<?= $project["source_url"] ?>" target="_blank">
-                                        <?php if (strpos($project["source_url"], "github") > 0) { ?>
-                                            <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                 src="icons/github.svg">
-                                        <?php } else { ?>
-                                            <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                 src="icons/external-link.svg">
-                                        <?php } ?>
-                                    </a>
-                                <?php } ?>
-                                <?php if (isset($project["publish_url"])) { ?>
-                                    <a href="<?= $project["publish_url"] ?>" target="_blank">
-                                        <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
-                                            <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
-                                                 src="icons/microsoft.svg">
-                                        <?php } else { ?>
-                                            <img class="icon" alt="visit <?= $project["name"] ?>"
-                                                 src="icons/external-link.svg">
-                                        <?php } ?>
-                                    </a>
-                                <?php } ?>
-                            </p>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
-            </div>
-
-            <p class="text-center">
-                <button id="show-all-active" class="m-5 btn btn-outline-secondary">
-                    Show all active
-                </button>
-            </p>
-
-            <p class="text-center">
-                <button id="show-archived" class="m-5 btn btn-outline-secondary d-none">
-                    Show archived
-                </button>
-            </p>
+                    <?php } ?>
+                </div>
+            <?php } ?>
         </div>
+
+        <p class="text-center">
+            <button id="show-all-active" class="m-5 btn btn-outline-secondary">
+                Show all active
+            </button>
+        </p>
+
+        <p class="text-center">
+            <button id="show-archived" class="m-5 btn btn-outline-secondary d-none">
+                Show archived
+            </button>
+        </p>
     </div>
 </section>
 

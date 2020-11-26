@@ -29,58 +29,66 @@ function initializeSkills()
 
     const showArchivedButton = $("#show-archived");
 
-     // Initialize Isotope
-     const $container = skillsGrid;
-     $container.isotope({
-         itemSelector: '.skills-grid-item',
-         stamp: '.stamp'
-     });
+    // Initialize Isotope
+    const $container = skillsGrid;
+    $container.isotope({
+        layoutMode: 'masonry',
+        itemSelector: '.skills-grid-item',
+        stamp: '.stamp'
+    });
 
-     // Set up the click event for filtering
-     $('.skill-filters').on('click', 'a', function (event) {
-         event.preventDefault();
+    // Set up the click event for filtering
+    $('.skill-filters').on('click', 'a', function (event) {
+        event.preventDefault();
 
-         const $filter = $(this).attr('data-filter');
-         if (current_filter === $filter) {
-             current_filter = null;
-         } else {
-             current_filter = $filter;
-         }
+        const $filter = $(this).attr('data-filter');
+        if (current_filter === $filter) {
+            current_filter = null;
+        } else {
+            current_filter = $filter;
+        }
 
-         $container.isotope({filter: current_filter});
-     });
+        $container.isotope({filter: current_filter});
+    });
 
 
-     $(".skills-grid-item").hover(
-         function () {
-             let description = $(this).find(".description");
-             if (description.length === 0) {
-                 return
-             }
+    $(".skills-grid-item").hover(
+        function () {
+            let description = $(this).find(".description");
+            if (description.length === 0) {
+                return
+            }
 
-             description.addClass("stamp");
-             description.removeClass("hidden");
-             $container.isotope();
-             setTimeout(function(){ $container.isotope() }, 200);
-         },
-         function () {
-             let description = $(this).find(".description");
-             if (description.length === 0) {
-                 return
-             }
+            description.addClass("stamp");
+            description.removeClass("hidden");
+            $container.isotope();
+            setTimeout(function(){ $container.isotope() }, 200);
+        },
+        function () {
+            let description = $(this).find(".description");
+            if (description.length === 0) {
+                return
+            }
 
-             description.removeClass("stamp");
-             $container.isotope();
-             setTimeout(function(){ $container.isotope() }, 200);
-         }
-     )
+            description.removeClass("stamp");
+            $container.isotope();
+            setTimeout(function(){ $container.isotope() }, 200);
+        }
+    )
 
+    const skillsGridWrapper = $(".skills-grid-wrapper");
+    const setOptimalSkillsGridColumns = function() {
+        const width = skillsGridWrapper.width();
+        console.log(width);
+    };
     showAllActiveButton.on("click", function (e) {
         e.preventDefault();
 
         $(this).addClass("d-none");
         showArchivedButton.removeClass("d-none");
         skillsGrid.removeClass("hide-not-featured");
+
+        skillsGridWrapper.addClass('container-wide');
 
         $container.isotope();
     })
@@ -90,6 +98,8 @@ function initializeSkills()
 
         $(this).addClass("d-none");
         skillsGrid.removeClass("hide-archived");
+
+        skillsGridWrapper.addClass('container-xtra-wide');
 
         $container.isotope();
     })
