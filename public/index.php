@@ -48,14 +48,76 @@ include "../templates/head.html"
     </div>
 </section>
 
-<section class="secondary">
+<section>
     <div class="container">
         <div class="summary">
             <h2>Background</h2>
             <p>
-                Ich bin Freelancer mit langjähriger Erfahrung in der Entwicklung, dem Betrieb und der Wartung von
-                Web-Applikationen. An der ETH bin ich im Master Informatik mit einem Fokus auf Security und Application Engineering.
+                Ich bin ein Freelancer mit langjähriger Erfahrung in der Entwicklung, dem Betrieb und der Wartung von
+                Web-Applikationen.
             </p>
+
+            <p>
+                Famose Applikationen sind kosteneffektiv in der Umsetzung und Wartung, werden fristgerecht fertig
+                gestellt und machen Freude bei der Nutzung.
+                Ein klares Verständnis der Nutzungsszenarien und ein frischer Blick auf die zu lösenden Probleme
+                erlauben einfache Lösungsansätze auch für komplexe Anwendungen.
+            </p>
+
+            <p>
+                Ich studiere an der ETH im Master Informatik mit einem Fokus auf Security und Application Engineering.
+                Bin ich nicht vor dem Computer, singe ich vermutlich gerade als Bass II in einem Projektchor, bin am
+                Wandern oder mache Sport.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="secondary">
+    <div class="container">
+        <div class="featured">
+            <h2>Besonders famos: eVoting der Stände UZH</h2>
+            <p>
+                Für die Vertreterorganisationen V-ATP (administratives und technisches Personal), VFFL (externe
+                Dozierende) und VAUZ (Doktorierende und Postdocs) wurde ein Wahltool erstellt.
+                Die Wahlberechtigten können so auf einfachem Wege darüber abstimmen, wer sie in den jeweiligen UZH
+                Gremien vertreten soll.
+            </p>
+            <p>
+                Die Sicherheit des Tools wurde in einer umfassenden sicherheitstechnischen Analyse dargelegt und am
+                fertigen Projekt wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
+                durchgeführt.
+            </p>
+
+            <img src="images/eVoting/screenshot2.png" alt="Screenshot eVoting Stände"
+                 class="mt-2 img-fluid img-screenshot">
+        </div>
+    </div>
+</section>
+
+<section class="primary">
+    <div class="container">
+        <div class="featured">
+            <h2>Besonders famos: Pendenzenverwaltung mangel.io</h2>
+            <p>
+                Für eine Baufirma wurde eine Pendenzenverwaltung für die Bauleiter umgesetzt.
+                Die Bauleiter werden bei der Erfassung der Pendenzen, der Kommunikation mit den Handwerkern und der
+                Abnahme unterstützt.
+            </p>
+            <p>
+                Die Kombination aus Webseite und iOS App ist auf mehreren Baustellen im Einsatz und erlaubt auch auf
+                grossen Baustellen den Überblick
+                nicht zu verlieren.
+                Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter
+                angepasst.
+            </p>
+
+            <p>
+                Projektwebseite: <a href="https://mangel.io" target="_blank">mangel.io</a>
+            </p>
+
+            <img src="images/mangel.io/screenshot1.jpg" alt="Screenshot Pendenzenverwaltung mangel.io"
+                 class="mt-2 img-fluid img-screenshot">
         </div>
     </div>
 </section>
@@ -300,7 +362,7 @@ include "../templates/head.html"
     </div>
 </section>
 
-<section>
+<section class="primary">
     <div class="container">
         <div class="research">
             <h2>Research</h2>
@@ -320,56 +382,6 @@ include "../templates/head.html"
                 Die resultierende Implementierung war 10% schneller als alle anderen aus dem Bernstein Implementierungsvergleich.  
                 [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>].
             </p>
-        </div>
-    </div>
-</section>
-
-
-<section class="primary">
-    <div class="container">
-        <div class="featured">
-            <h2>Besonders famos: eVoting der Stände UZH</h2>
-            <p>
-                Für die Vertreterorganisationen V-ATP (administratives und technisches Personal), VFFL (externe
-                Dozierende) und VAUZ (Doktorierende und Postdocs) wurde ein Wahltool erstellt.
-                Die Wahlberechtigten können so auf einfachem Wege darüber abstimmen, wer sie in den jeweiligen UZH
-                Gremien vertreten soll.
-            </p>
-            <p>
-                Die Sicherheit des Tools wurde in einer umfassenden sicherheitstechnischen Analyse dargelegt und am
-                fertigen Projekt wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
-                durchgeführt.
-            </p>
-
-            <img src="images/eVoting/screenshot2.png" alt="Screenshot eVoting Stände"
-                 class="mt-2 img-fluid img-screenshot">
-        </div>
-    </div>
-</section>
-
-<section class="secondary">
-    <div class="container">
-        <div class="featured">
-            <h2>Besonders famos: Pendenzenverwaltung mangel.io</h2>
-            <p>
-                Für eine Baufirma wurde eine Pendenzenverwaltung für die Bauleiter umgesetzt.
-                Die Bauleiter werden bei der Erfassung der Pendenzen, der Kommunikation mit den Handwerkern und der
-                Abnahme unterstützt.
-            </p>
-            <p>
-                Die Kombination aus Webseite und iOS App ist auf mehreren Baustellen im Einsatz und erlaubt auch auf
-                grossen Baustellen den Überblick
-                nicht zu verlieren.
-                Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter
-                angepasst.
-            </p>
-
-            <p>
-                Projektwebseite: <a href="https://mangel.io" target="_blank">mangel.io</a>
-            </p>
-
-            <img src="images/mangel.io/screenshot1.jpg" alt="Screenshot Pendenzenverwaltung mangel.io"
-                 class="mt-2 img-fluid img-screenshot">
         </div>
     </div>
 </section>
