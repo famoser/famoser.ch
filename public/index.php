@@ -51,23 +51,9 @@ include "../templates/head.html"
 <section>
     <div class="container">
         <div class="summary">
-            <h2>Background</h2>
-            <p>
-                Ich bin ein Freelancer mit langjähriger Erfahrung in der Entwicklung, dem Betrieb und der Wartung von
+            <p class="lead">
+                Ich bin Freelancer mit langjähriger Erfahrung in der Entwicklung, dem Betrieb und der Wartung von
                 Web-Applikationen.
-            </p>
-
-            <p>
-                Famose Applikationen sind kosteneffektiv in der Umsetzung und Wartung, werden fristgerecht fertig
-                gestellt und machen Freude bei der Nutzung.
-                Ein klares Verständnis der Nutzungsszenarien und ein frischer Blick auf die zu lösenden Probleme
-                erlauben einfache Lösungsansätze auch für komplexe Anwendungen.
-            </p>
-
-            <p>
-                Ich studiere an der ETH im Master Informatik mit einem Fokus auf Security und Application Engineering.
-                Bin ich nicht vor dem Computer, singe ich vermutlich gerade als Bass II in einem Projektchor, bin am
-                Wandern oder mache Sport.
             </p>
         </div>
     </div>
