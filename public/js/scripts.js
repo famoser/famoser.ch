@@ -1,6 +1,8 @@
 $(document).ready(function () {
     initializeExperienceHover();
     initializeSkills();
+
+    console.log('🌈');
 });
 
 function initializeExperienceHover() {
