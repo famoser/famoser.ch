@@ -1,4 +1,4 @@
-name: agnes-ui
+name: agnes UI
 purpose: ui for agnes which creates & deploys releases safely to various environments 
 
 source_url: https://github.com/famoser/agnes-ui

@@ -1,4 +1,4 @@
-name: pdf-generator
+name: PDF generator
 purpose: generate pdf with an easy to use php api
 implementation: |
   The pdf-generator takes a new approach at pdf generation, providing a higher level api independently of the pdf specific oddities.
