@@ -174,6 +174,9 @@ include "../templates/head.html"
                                     <?php if (strpos($project["source_url"], "github") > 0) { ?>
                                         <img class="icon" alt="source of <?= $project["name"] ?>"
                                                 src="icons/github.svg">
+                                    <?php } else if (strpos($project["source_url"], "gitlab") > 0) { ?>
+                                        <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                src="icons/gitlab.svg">
                                     <?php } else { ?>
                                         <img class="icon" alt="source of <?= $project["name"] ?>"
                                                 src="icons/external-link.svg">
@@ -220,6 +223,13 @@ include "../templates/head.html"
                     <?php
                     $jobs = [
                         [
+                            "class" => "freelancer",
+                            "title" => "Entwicklung & Projektleitung",
+                            "firm" => "Freelancer",
+                            "link" => "https://famoser.ch",
+                            "period" => "Jan. 2018 - jetzt"
+                        ],
+                        [
                             "class" => "vseth",
                             "title" => "Board Member, Ressort Internal Affairs",
                             "firm" => "VSETH - Dachverband der Studierenden ETH",
@@ -234,13 +244,6 @@ include "../templates/head.html"
                             "link" => "https://zuehlke.ch",
                             "period" => "Oct. 2018 - Jun. 2019",
                             "image_name" => "zuehlke.svg"
-                        ],
-                        [
-                            "class" => "freelancer",
-                            "title" => "Entwicklung & Projektleitung",
-                            "firm" => "Freelancer",
-                            "link" => "https://famoser.ch",
-                            "period" => "Jan. 2018 - jetzt"
                         ],
                         [
                             "class" => "jkweb",
