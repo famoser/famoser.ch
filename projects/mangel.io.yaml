@@ -1,5 +1,5 @@
 name: mangel.io
-purpose: improve issue management on construction sites
+purpose: issue management for construction sites
 implementation: |
   The issue management developed for a construction firm is meant for construction managers.
   Construction managers may inspect the construction site and create new issues in the iOS app.
@@ -12,7 +12,7 @@ publish_url: https://mangel.io
 
 kickoff_date: 2018-06
 publish_date: 2018-10
-last_activity_date: 2020-08
+last_activity_date: 2021-01
 archived: false
 
 frameworks: [Symfony, Vue.js]

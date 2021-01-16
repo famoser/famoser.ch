@@ -28,7 +28,7 @@ github_whitelist = ["csharp", "php", "symfony", "vuejs", "uwp", "sync-api", "flu
 # ignore topics about the purpose of the package (because this is explained elsewhere)
 ignore_whitelist = ["network-analysis", "bachelor-thesis", "netflix", "eth", "summaries", "crm-system", "lokalise", "console-application", "xkcd", "php-framework", "vseth", "compiler", "sync", "pdf-generation", "symfony-cli", "telemetry"]
 platform_mapping = {"windows-forms": "Windows", "windows-phone": "Windows Phone", "visual-studio-extension": "Visual Studio Extension", "nuget-package": "Nuget", "android": "Android", "mkdocs": "Web", "packagist": "Packagist","aur": "AUR"}
-blacklist = ["aur"]
+blacklist = ["aur", "spicetify"]
 
 normalizer = ProjectNormalizer()
 
@@ -62,6 +62,7 @@ def write_from_github(project, source):
         if topic in platform_mapping:
             project["platform"] = platform_mapping[topic]
 
+    return True
 
 github = Github(github_token)
 user = github.get_user()
