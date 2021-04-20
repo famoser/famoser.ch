@@ -30,19 +30,26 @@ include "../templates/head.html"
     <div class="container">
         <div class="main">
             <div class="teaser">
-                <p class="lead">Hallo!</p>
+                <div class="row">
+                    <div class="col-xl-8">
+                        <p class="lead">Hallo!</p>
 
-                <div class="spacer"></div>
+                        <div class="spacer"></div>
 
-                <p class="lead">
-                    Ich bin <b>F</b>lorian <b>A</b>. <b>Moser</b>.<br/>
-                    Programmierer <b>famoser</b> Applikationen<br/>
-                    für komplexe Anwendungen.
-                </p>
+                        <p class="lead">
+                            Ich bin <b>Florian Moser</b>.<br/>
+                            Programmierer <b>famoser</b> Applikationen<br/>
+                            für komplexe Anwendungen.
+                        </p>
 
-                <div class="spacer"></div>
+                        <div class="spacer"></div>
 
-                <p>Kontakt aufnehmen: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u></p>
+                        <p>Kontakt aufnehmen: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u></p>
+                    </div>
+                    <div class="col-xl-4 d-none d-xl-block">
+                        <img src="images/Florian Moser portrait.jpg" alt="Portrait Florian Moser" class="img-fluid img-screenshot">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
