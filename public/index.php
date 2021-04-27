@@ -47,7 +47,7 @@ include "../templates/head.html"
                         <p>Kontakt aufnehmen: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u></p>
                     </div>
                     <div class="col-xl-4 d-none d-xl-block">
-                        <img src="images/Florian Moser portrait.jpg" alt="Portrait Florian Moser" class="img-fluid img-screenshot">
+                        <img src="images/Florian Moser.jpg" alt="Portrait Florian Moser" class="img-fluid img-screenshot">
                     </div>
                 </div>
             </div>
