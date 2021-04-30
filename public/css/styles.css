@@ -148,13 +148,15 @@ besonders famos
         max-width: 1900px;
         padding-right: 380px;
     }
+
     .container-right-expand {
         max-width: 1900px;
         padding-left: 380px;
     }
+    
     .img-screenshot-expand {
-        margin: 0 7.2em;
-        width: calc(100% - 14.2em);
+        margin: 0 7.1rem!important;
+        width: calc(100% - 14.2rem);
     }
 }
 
