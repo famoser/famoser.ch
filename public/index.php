@@ -38,7 +38,7 @@ include "../templates/head.html"
 
                         <p class="lead">
                             Ich bin <b>Florian Moser</b>.<br/>
-                            Programmierer <b>famoser</b> Applikationen<br/>
+                            Entwickler <b>famoser</b> Applikationen<br/>
                             für komplexe Anwendungen.
                         </p>
 
@@ -66,158 +66,56 @@ include "../templates/head.html"
     </div>
 </section>
 
-<section class="secondary">
-    <div class="container">
-        <div class="featured">
-            <h2>Besonders famos: eVoting der Stände UZH</h2>
-            <p>
-                Für die Vertreterorganisationen V-ATP (administratives und technisches Personal), VFFL (externe
-                Dozierende) und VAUZ (Doktorierende und Postdocs) wurde ein Wahltool erstellt.
-                Die Wahlberechtigten können so auf einfachem Wege darüber abstimmen, wer sie in den jeweiligen UZH
-                Gremien vertreten soll.
-            </p>
-            <p>
-                Die Sicherheit des Tools wurde in einer umfassenden sicherheitstechnischen Analyse dargelegt und am
-                fertigen Projekt wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
-                durchgeführt.
-            </p>
-
-            <img src="images/eVoting/screenshot2.png" alt="Screenshot eVoting Stände"
-                 class="mt-2 img-fluid img-screenshot">
-        </div>
-    </div>
-</section>
-
-<section class="primary">
-    <div class="container">
-        <div class="featured">
-            <h2>Besonders famos: Pendenzenverwaltung mangel.io</h2>
-            <p>
-                Für eine Baufirma wurde eine Pendenzenverwaltung für die Bauleiter umgesetzt.
-                Die Bauleiter werden bei der Erfassung der Pendenzen, der Kommunikation mit den Handwerkern und der
-                Abnahme unterstützt.
-            </p>
-            <p>
-                Die Kombination aus Webseite und iOS App ist auf mehreren Baustellen im Einsatz und erlaubt auch auf
-                grossen Baustellen den Überblick
-                nicht zu verlieren.
-                Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter
-                angepasst.
-            </p>
-
-            <p>
-                Projektwebseite: <a href="https://mangel.io" target="_blank">mangel.io</a>
-            </p>
-
-            <img src="images/mangel.io/screenshot1.jpg" alt="Screenshot Pendenzenverwaltung mangel.io"
-                 class="mt-2 img-fluid img-screenshot">
+<section>
+    <div class="container container-left-expand">
+        <div class="row flex-row-reverse">
+            <div class="col-xl-6">
+                <h2>eVoting der Stände UZH</h2>
+                <p>
+                    Für die Vertreterorganisationen V-ATP (administratives und technisches Personal), VFFL (externe
+                    Dozierende) und VAUZ (Doktorierende und Postdocs) wurde ein Wahltool erstellt. Wahlberechtigte können
+                    Delegierte in UZH Gremien wählen.
+                </p>
+                <p>
+                    Das Konzept wurde in einer sicherheitstechnischen Analyse beschrieben und abgenommen. Am
+                    Quellcode wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
+                    durchgeführt.
+                </p>
+                <p>
+                    Das Wahl wurde bereits für mehrere Wahlen und Nachwahlen eingesetzt. Es ist darauf ausgelegt,
+                    langfristig die Organisationen weiter zu unterstützen.
+            </div>
+            <div class="col-xl-6">
+                <img src="images/eVoting/screenshot2.png" alt="Screenshot eVoting Stände"
+                    class="mt-4 mt-xl-0 img-right-correction img-fluid img-screenshot img-screenshot-expand">
+            </div>
         </div>
     </div>
 </section>
 
 <section>
-    <div class="container">
-        <div class="skills">
-            <h2>Skills</h2>
-            <div class="row mb-4">
-                <div class="col-md-4">
-                    <p><b>Language</b></p>
-                    <ul class="skill-filters primary clearfix">
-                        <li><a href="#" data-filter=".php">PHP</a></li>
-                        <li><a href="#" data-filter=".csharp">C#</a></li>
-                        <li><a href="#" data-filter=".javascript">JavaScript</a></li>
-                        <li><a href="#" data-filter=".css-html">CSS/HTML</a></li>
-                        <li><a href="#" data-filter=".kotlin">Kotlin</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p><b>Framework</b></p>
-                    <ul class="skill-filters secondary clearfix">
-                        <li><a href="#" data-filter=".symfony">Symfony</a></li>
-                        <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p><b>Platform</b></p>
-                    <ul class="skill-filters clearfix">
-                        <li><a href="#" data-filter=".web">Web</a></li>
-                        <li><a href="#" data-filter=".windows">Windows</a></li>
-                        <li><a href="#" data-filter=".android">Android</a></li>
-                    </ul>
-                </div>
+    <div class="container container-right-expand">
+        <div class="row">
+            <div class="col-xl-6">
+                <h2>Pendenzenverwaltung</h2>
+                <p>
+                    Für eine Baufirma wurde eine Pendenzenverwaltung für die Bauleiter umgesetzt.
+                    Die Bauleiter werden bei der Erfassung von Mängeln, der Abnahme und bei der Dokumentation der Baustelle unterstützt.
+                </p>
+                <p>
+                    Die Kombination aus Webseite und App ist auf mehreren Baustellen im Einsatz.
+                    Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter angepasst.
+                </p>
+
+                <p>
+                    Projektwebseite: <a href="https://mangel.io" target="_blank">mangel.io</a>
+                </p>
+            </div>
+            <div class="col-xl-6">
+                <img src="images/mangel.io/screenshot1.jpg" alt="Screenshot Pendenzenverwaltung mangel.io"
+                 class="mt-4 mt-xl-0 ml-xl-4 img-fluid img-screenshot img-screenshot-expand">
             </div>
         </div>
-    </div>
-    <div class="skills-grid-wrapper container">
-        <div class="skills-grid">
-            <?php
-            $projects = getProjects();
-            foreach ($projects as $project) {
-                $showDetails = isset($project["implementation"]) && $project["featured"];
-                ?>
-                <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $project["featured"] ? "featured " : "not-featured " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
-                    <h3><?= $project["name"] ?></h3>
-                    <p><?= $project["purpose"] ?></p>
-                    <?php if ($showDetails) { ?>
-                        <p class="description hidden">
-                            <?= $project["implementation"] ?>
-                        </p>
-                    <?php } ?>
-                    <p>
-                        <?php foreach ($project["languages"] as $language) { ?>
-                            <span class="skill primary"><?= $language ?></span>
-                        <?php } ?>
-                        <?php foreach ($project["frameworks"] as $framework) { ?>
-                            <span class="skill secondary"><?= $framework ?></span>
-                        <?php } ?>
-                        <?php if (isset($project["employer"])) { ?>
-                            <span class="skill"><?= $project["employer"] ?></span>
-                        <?php } ?>
-                    </p>
-                    <?php if (isset($project["source_url"]) || isset($project["publish_url"])) { ?>
-                        <p>
-                            <?php if (isset($project["source_url"])) { ?>
-                                <a href="<?= $project["source_url"] ?>" target="_blank">
-                                    <?php if (strpos($project["source_url"], "github") > 0) { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                src="icons/github.svg">
-                                    <?php } else if (strpos($project["source_url"], "gitlab") > 0) { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                src="icons/gitlab.svg">
-                                    <?php } else { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                src="icons/external-link.svg">
-                                    <?php } ?>
-                                </a>
-                            <?php } ?>
-                            <?php if (isset($project["publish_url"])) { ?>
-                                <a href="<?= $project["publish_url"] ?>" target="_blank">
-                                    <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
-                                        <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
-                                                src="icons/microsoft.svg">
-                                    <?php } else { ?>
-                                        <img class="icon" alt="visit <?= $project["name"] ?>"
-                                                src="icons/external-link.svg">
-                                    <?php } ?>
-                                </a>
-                            <?php } ?>
-                        </p>
-                    <?php } ?>
-                </div>
-            <?php } ?>
-        </div>
-
-        <p class="text-center">
-            <button id="show-all-active" class="m-5 btn btn-outline-secondary">
-                Show all active
-            </button>
-        </p>
-
-        <p class="text-center">
-            <button id="show-archived" class="m-5 btn btn-outline-secondary d-none">
-                Show archived
-            </button>
-        </p>
     </div>
 </section>
 
@@ -361,9 +259,31 @@ include "../templates/head.html"
 <section class="primary">
     <div class="container">
         <div class="research">
-            <h2>Research</h2>
+            <h2>Research & Teaching</h2>
             
-            <h3>Bachelor thesis: Identifying encrypted online video streams using bitrate profiles</h3>
+            <h3>
+                Report: Ein Pairing-Based Identification Protocol für CHVote
+                <span class="text-secondary">2021</span>
+            </h3>
+            <p>
+                <a href="https://eprint.iacr.org/2017/325">CHVote</a> ist ein E-Voting Protokoll für die direkte Demokratie in der Schweiz. Als Teil der Stimmabgabe authentifizieren die Wahlberechtigten ihre Stimme mit einem Code. Die Länge dieser Codes kann bei gleichbleibender Sicherheit durch eine Verbesserung der Authentifizierung halbiert werden. Der Report beweist diese Verbesserung als sicher. [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">herunterladen</a>]
+            </p>
+            
+            <h3 class="mt-5">
+                Advanced Systems Lab: Fast imlementation of Curve25519 on Intel Skylake
+                <span class="text-secondary">2020</span>
+            </h3>
+            <p>
+                Mit drei Kommilitonen wurde untersucht, inwiefern sich bestehende Implementierungen für eine für die Cryptographie sehr wichtige elliptische Kurve weiter optimieren lassen.
+                Mehrere Ansätze aus bestehender Literatur wurden kombiniert und erweitert und auf die Intel Skylake Architektur angewandt.
+                Die resultierende Implementierung war 10% schneller als alle anderen aus dem Bernstein Implementierungsvergleich.  
+                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>].
+            </p>
+
+            <h3 class="mt-5">
+                Bachelor thesis: Identifying encrypted online video streams using bitrate profiles
+                <span class="text-secondary">2018</span>
+            </h3>
             <p>
                 Es wurde untersucht, inwiefern sich Daten, die beim Schauen von Videos auf Netflix anfallen, zur Identifikation der angeschauten Videos dienen könnten.
                 Bestehende Verfahren wurden reproduziert, und ein neues Verfahren, dass mit noch weniger Annahmen funktioniert, vorgestellt: 
@@ -371,17 +291,123 @@ include "../templates/head.html"
                 [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>, <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
             </p>
             
-            <h3 class="mt-5">Advanced Systems Lab: Fast imlementation of Curve25519 on Intel Skylake</h3>
+
+            <h3 class="mt-5">
+                Teaching: TheAlternative und UZH Kursleiter
+            </h3>
             <p>
-                Mit drei Kommilitonen wurde untersucht, inwiefern sich bestehende Implementierungen für eine für die Cryptographie sehr wichtige elliptische Kurve weiter optimieren lassen.
-                Mehrere Ansätze aus bestehender Literatur wurden kombiniert und erweitert und auf die Intel Skylake Architektur angewandt.
-                Die resultierende Implementierung war 10% schneller als alle anderen aus dem Bernstein Implementierungsvergleich.  
-                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>].
-            </p>
+                Als Teil von <a href="https://thealternative.ch" target="_blank">TheAlternative</a> organisiere und gebe ich Kurse für andere Angehörige der ETH. 
+                Als Kursleiter der UZH gebe ich regelmässig Kurse zu git und GitLab zur Versionsverwaltung.
+            </p>  
         </div>
     </div>
 </section>
 
+<section>
+    <div class="container">
+        <div class="skills">
+            <h2>Projects</h2>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <p><b>Language</b></p>
+                    <ul class="skill-filters primary clearfix">
+                        <li><a href="#" data-filter=".php">PHP</a></li>
+                        <li><a href="#" data-filter=".csharp">C#</a></li>
+                        <li><a href="#" data-filter=".javascript">JavaScript</a></li>
+                        <li><a href="#" data-filter=".css-html">CSS/HTML</a></li>
+                        <li><a href="#" data-filter=".kotlin">Kotlin</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Framework</b></p>
+                    <ul class="skill-filters secondary clearfix">
+                        <li><a href="#" data-filter=".symfony">Symfony</a></li>
+                        <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Platform</b></p>
+                    <ul class="skill-filters clearfix">
+                        <li><a href="#" data-filter=".web">Web</a></li>
+                        <li><a href="#" data-filter=".windows">Windows</a></li>
+                        <li><a href="#" data-filter=".android">Android</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills-grid-wrapper container">
+        <div class="skills-grid">
+            <?php
+            $projects = getProjects();
+            foreach ($projects as $project) {
+                $showDetails = isset($project["implementation"]) && $project["featured"];
+                ?>
+                <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $project["featured"] ? "featured " : "not-featured " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
+                    <h3><?= $project["name"] ?></h3>
+                    <p><?= $project["purpose"] ?></p>
+                    <?php if ($showDetails) { ?>
+                        <p class="description hidden">
+                            <?= $project["implementation"] ?>
+                        </p>
+                    <?php } ?>
+                    <p>
+                        <?php foreach ($project["languages"] as $language) { ?>
+                            <span class="skill primary"><?= $language ?></span>
+                        <?php } ?>
+                        <?php foreach ($project["frameworks"] as $framework) { ?>
+                            <span class="skill secondary"><?= $framework ?></span>
+                        <?php } ?>
+                        <?php if (isset($project["employer"])) { ?>
+                            <span class="skill"><?= $project["employer"] ?></span>
+                        <?php } ?>
+                    </p>
+                    <?php if (isset($project["source_url"]) || isset($project["publish_url"])) { ?>
+                        <p>
+                            <?php if (isset($project["source_url"])) { ?>
+                                <a href="<?= $project["source_url"] ?>" target="_blank">
+                                    <?php if (strpos($project["source_url"], "github") > 0) { ?>
+                                        <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                src="icons/github.svg">
+                                    <?php } else if (strpos($project["source_url"], "gitlab") > 0) { ?>
+                                        <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                src="icons/gitlab.svg">
+                                    <?php } else { ?>
+                                        <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                src="icons/external-link.svg">
+                                    <?php } ?>
+                                </a>
+                            <?php } ?>
+                            <?php if (isset($project["publish_url"])) { ?>
+                                <a href="<?= $project["publish_url"] ?>" target="_blank">
+                                    <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
+                                        <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
+                                                src="icons/microsoft.svg">
+                                    <?php } else { ?>
+                                        <img class="icon" alt="visit <?= $project["name"] ?>"
+                                                src="icons/external-link.svg">
+                                    <?php } ?>
+                                </a>
+                            <?php } ?>
+                        </p>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+        </div>
+
+        <p class="text-center">
+            <button id="show-all-active" class="m-5 btn btn-outline-secondary">
+                Show all active
+            </button>
+        </p>
+
+        <p class="text-center">
+            <button id="show-archived" class="m-5 btn btn-outline-secondary d-none">
+                Show archived
+            </button>
+        </p>
+    </div>
+</section>
 
 <section>
     <div class="container">
