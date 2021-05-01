@@ -1,7 +1,7 @@
 name: feedback
 purpose: collect actionable feedback from lectures & workshops with minimal setup & instant evaluation
 implementation: |
-  Built for TheAlternaitve, a student society with semesterly lectures about topics of Open Source  & Free Software.
+  Built for TheAlternative, a student society with semesterly lectures about topics of Open Source  & Free Software.
   It gathers actionable feedback to further improve the courses for the next semester.
 
 source_url: https://github.com/TheAlternativeZurich/feedback

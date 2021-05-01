@@ -2,7 +2,7 @@ name: EGOI registration
 purpose: registration tool used for EGOI 2021
 implementation: |
   The European Girls' Olympiad in Informatics (EGOI) is a new programming competition just for girls.
-  Delegations use the registration tools to sign up for the contest.
+  Delegations use the registration tool to sign up for the contest.
 
 source_url: https://github.com/famoser/egoi-registration
 publish_url: https://registration.egoi.org

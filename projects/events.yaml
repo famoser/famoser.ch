@@ -1,7 +1,7 @@
 name: events
 purpose: registration for participants & contact tracing for organizers
 implementation: |
-  Built for TheAlternaitve, a student society with semesterly lectures about topics of Open Source  & Free Software.
+  Built for TheAlternative, a student society with semesterly lectures about topics of Open Source  & Free Software.
   It helps to sign up for events & allows contact tracing with minimal overhead.
 
 source_url: https://github.com/TheAlternativeZurich/events
