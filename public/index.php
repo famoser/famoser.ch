@@ -146,7 +146,7 @@ include "../templates/head.html"
                             "class" => "zuehlke",
                             "title" => "Professional Software Engineer",
                             "firm" => "Zühlke AG - Empowering Ideas",
-                            "link" => "https://zuehlke.ch",
+                            "link" => "https://www.zuehlke.com",
                             "period" => "Oct. 2018 - Jun. 2019",
                             "image_name" => "zuehlke.svg"
                         ],
