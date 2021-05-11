@@ -296,8 +296,12 @@ include "../templates/head.html"
                 Teaching: TheAlternative und UZH Kursleiter
             </h3>
             <p>
-                Als Teil von <a href="https://thealternative.ch" target="_blank">TheAlternative</a> organisiere und gebe ich Kurse für andere Angehörige der ETH. 
-                Als Kursleiter der UZH gebe ich regelmässig Kurse zu git und GitLab zur Versionsverwaltung.
+                Als Teil von <a href="https://thealternative.ch" target="_blank">TheAlternative</a> organisiere und gebe ich Kurse für andere Angehörige der ETH 
+                [<a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/project%20management" target="_blank">project management</a>,
+                    <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/web" target="_blank">web</a>,
+                    <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/pdf" target="_blank">pdf</a>]. 
+                Als Kursleiter der UZH gebe ich regelmässig Kurse zu git und GitLab zur Versionsverwaltung
+                [<a href="https://gitlab.uzh.ch/zi-it-training/git" target="_blank">git</a>].
             </p>  
         </div>
     </div>
