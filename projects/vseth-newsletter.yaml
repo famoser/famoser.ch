@@ -5,7 +5,7 @@ source_url: https://github.com/famoser/vseth-newsletter
 
 kickoff_date: 2020-03
 last_activity_date: 2020-04
-archived: false
+archived: true
 
 languages: [PHP]
 frameworks: [Symfony]
