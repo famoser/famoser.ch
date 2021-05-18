@@ -108,11 +108,11 @@ include "../templates/head.html"
                 </p>
 
                 <p>
-                    Projektwebseite: <a href="https://mangel.io" target="_blank">mangel.io</a>
+                    Projektwebseite: <a href="https://baupen.ch" target="_blank">baupen.ch</a>
                 </p>
             </div>
             <div class="col-xl-6">
-                <img src="images/mangel.io/screenshot1.jpg" alt="Screenshot Pendenzenverwaltung mangel.io"
+                <img src="images/baupen.ch/screenshot_desktop_dashboard.jpg" alt="Screenshot Pendenzenverwaltung baupen.ch"
                  class="mt-4 mt-xl-0 ml-xl-4 img-fluid img-screenshot img-screenshot-expand">
             </div>
         </div>
