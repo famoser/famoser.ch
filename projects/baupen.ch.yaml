@@ -1,4 +1,4 @@
-name: mangel.io
+name: baupen.ch
 purpose: issue management for construction sites
 implementation: |
   The issue management developed for a construction firm is meant for construction managers.
@@ -7,8 +7,8 @@ implementation: |
   The craftsman has its personal link with all assigned issues, and can mark them as complete.
   In the end, the construction manager reviews the complete issues.
 
-source_url: https://github.com/mangelio/web
-publish_url: https://mangel.io
+source_url: https://github.com/baupen/web
+publish_url: https://baupen.ch
 
 kickoff_date: 2018-06
 publish_date: 2018-10
