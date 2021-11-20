@@ -14,8 +14,8 @@ publish_date: 2017-11
 last_activity_date: 2021-01
 archived: false
 
-languages: [PHP]
-frameworks: [Symfony]
+languages: [PHP, JavaScript]
+frameworks: [Symfony, Vue.js]
 platform: Web
 
 featured: true
