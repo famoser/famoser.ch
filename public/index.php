@@ -266,7 +266,7 @@ include "../templates/head.html"
                 <span class="text-secondary">2021</span>
             </h3>
             <p>
-                <a href="https://eprint.iacr.org/2017/325">CHVote</a> ist ein E-Voting Protokoll für die direkte Demokratie in der Schweiz. Als Teil der Stimmabgabe authentifizieren die Wahlberechtigten ihre Stimme mit einem Code. Die Länge dieser Codes kann bei gleichbleibender Sicherheit durch eine Verbesserung der Authentifizierung halbiert werden. Der Report beweist diese Verbesserung als sicher [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">herunterladen</a>]
+                <a href="https://eprint.iacr.org/2017/325">CHVote</a> ist ein E-Voting Protokoll für die direkte Demokratie in der Schweiz. Als Teil der Stimmabgabe authentifizieren die Wahlberechtigten ihre Stimme mit einem Code. Die Länge dieser Codes kann bei gleichbleibender Sicherheit durch eine Verbesserung der Authentifizierung halbiert werden. Der Report beweist diese Verbesserung als sicher [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">herunterladen</a>].
             </p>
             
             <h3 class="mt-5">
@@ -277,8 +277,8 @@ include "../templates/head.html"
                 Mit drei Kommilitonen wurde untersucht, inwiefern sich bestehende Implementierungen für eine für die Cryptographie sehr wichtige elliptische Kurve weiter optimieren lassen.
                 Mehrere Ansätze aus bestehender Literatur wurden kombiniert und erweitert und auf die Intel Skylake Architektur angewandt.
                 Die resultierende Implementierung war 10% schneller als alle anderen aus dem Bernstein Implementierungsvergleich 
-                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>]
-                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake - code.zip" target="_blank">code</a>].
+                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>,
+                <a href="papers/Fast Implementation of Curve25519 on Intel Skylake - code.zip" target="_blank">code</a>].
             </p>
 
             <h3 class="mt-5">
@@ -289,7 +289,8 @@ include "../templates/head.html"
                 Es wurde untersucht, inwiefern sich Daten, die beim Schauen von Videos auf Netflix anfallen, zur Identifikation der angeschauten Videos dienen könnten.
                 Bestehende Verfahren wurden reproduziert, und ein neues Verfahren, dass mit noch weniger Annahmen funktioniert, vorgestellt: 
                 Lediglich anhand der durchschnittlich verbrauchten Datenmenge in verschiedenen Netzwerkkonditionen kann das entsprechende Video identifiziert werden
-                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>, <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
+                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>, 
+                <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
             </p>
             
             <h3 class="mt-5">

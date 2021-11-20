@@ -14,5 +14,3 @@ archived: false
 languages: [JavaScript, PHP]
 frameworks: [Symfony]
 platform: Web
-
-featured: true

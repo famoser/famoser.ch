@@ -1,0 +1,14 @@
+name: Fachinformationen UZH
+purpose: track subject-specific data sources and publish them on the webpage of the University of Zurich
+implementation: |
+  As part of the centralization effort of all libraries at University of Zurich, a tools is developed to manage subject-specific data sources more conviniently.
+  Data sources can be assigned to multiple subjects, and then composed into collections.
+  These collections are integrated into the Magnolia CMS to be displayed on the webpage of the University of Zurich.
+
+kickoff_date: 2021-11
+publish_date: 2021-11
+last_activity_date: 2021-11
+
+languages: [JavaScript, PHP]
+frameworks: [Symfony]
+platform: Web
