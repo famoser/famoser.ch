@@ -187,13 +187,13 @@ include "../templates/head.html"
                     <div class="job-wrapper">
                         <!--
                         10 width = 100% pensum
-                        0 = jan 2015, 11 = dez 2015, 78 dez 2020
+                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 90 dez 2021 
 
                         59 height = 59 months; from Sep 2015 - Juli 2020
                         -->
                         <svg class="jobs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 10 78"
-                             height="112%"
+                             viewBox="0 0 10 90"
+                             height="109%"
                              width="100%">
                             <filter id="dry">
                                 <feComponentTransfer>
@@ -211,7 +211,7 @@ include "../templates/head.html"
                                     0.8 sep 2020 - dez 2020 (11+60)
                                     -->
                                     <polygon points="0,8 10,8 10,13 8,13 8,45 0,45" fill="#1f4070"></polygon>
-                                    <polygon points="0,54 4,54 4,69 8,69 8,78 0,78" fill="#1f4070"></polygon>
+                                    <polygon points="0,54 4,54 4,69 8,69 8,90 0,90" fill="#1f4070"></polygon>
                                 </g>
                                 <g class="jkweb" filter="url(#dry)">
                                     <title>JKWeb</title>
@@ -241,7 +241,7 @@ include "../templates/head.html"
                                     10 Jul 2019 (6+48) - Sep 2019 (8+48)
                                     02 Oct 2020 (9+60) - Dez 2020 (11+60)
                                     -->
-                                    <polygon points="8,36 10,36 10,78 8,78 8,69 9,69 9,45 8,45"
+                                    <polygon points="8,36 10,36 10,90 8,90 8,69 9,69 9,45 8,45"
                                              fill="#8BBB9B"></polygon>
                                 </g>
                             </g>
