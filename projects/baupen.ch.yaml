@@ -15,7 +15,7 @@ publish_date: 2018-10
 last_activity_date: 2021-11
 archived: false
 
-frameworks: [Symfony, Vue.js]
+frameworks: [API Platform, Symfony, Vue.js]
 platform: Web
 
 featured: true
