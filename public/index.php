@@ -266,7 +266,7 @@ include "../templates/head.html"
                 <span class="text-secondary">2021</span>
             </h3>
             <p>
-                <a href="https://eprint.iacr.org/2017/325">CHVote</a> ist ein E-Voting Protokoll für die direkte Demokratie in der Schweiz. Als Teil der Stimmabgabe authentifizieren die Wahlberechtigten ihre Stimme mit einem Code. Die Länge dieser Codes kann bei gleichbleibender Sicherheit durch eine Verbesserung der Authentifizierung halbiert werden. Der Report beweist diese Verbesserung als sicher [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">herunterladen</a>].
+                <a href="https://eprint.iacr.org/2017/325">CHVote</a> ist ein E-Voting Protokoll für die direkte Demokratie in der Schweiz. Als Teil der Stimmabgabe authentifizieren die Wahlberechtigten ihre Stimme mit einem Code. Es wurde untersucht, ob die Länge dieser Codes bei gleichbleibender Sicherheit durch eine Verbesserung der Authentifizierung halbiert werden kann. Der Report beweist die grundsätzliche Konstruktion als sicher, dennoch darf die Schlüssellänge nicht halbiert werden, da ein Gegenbeispiel den one-way proof verunmöglicht [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way proof</a>].
             </p>
             
             <h3 class="mt-5">
