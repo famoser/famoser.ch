@@ -448,6 +448,8 @@ include "../templates/head.html"
                 </div>
             </div>
         </div>
+
+        <p class="text-center text-muted mt-5">famoser GmbH, CHE-498.133.112<br/>Witikonerstrasse 245, 8053 Zürich</p>
     </div>
 </section>
 
