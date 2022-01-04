@@ -82,7 +82,7 @@ include "../templates/head.html"
                     durchgeführt.
                 </p>
                 <p>
-                    Das Wahl wurde bereits für mehrere Wahlen und Nachwahlen eingesetzt. Es ist darauf ausgelegt,
+                    Das Wahltool wurde bereits für mehrere Wahlen und Nachwahlen eingesetzt. Es ist darauf ausgelegt,
                     langfristig die Organisationen weiter zu unterstützen.
             </div>
             <div class="col-xl-6">
@@ -266,7 +266,7 @@ include "../templates/head.html"
                 <span class="text-secondary">2021</span>
             </h3>
             <p>
-                <a href="https://eprint.iacr.org/2017/325">CHVote</a> ist ein E-Voting Protokoll für die direkte Demokratie in der Schweiz. Als Teil der Stimmabgabe authentifizieren die Wahlberechtigten ihre Stimme mit einem Code. Es wurde untersucht, ob die Länge dieser Codes bei gleichbleibender Sicherheit durch eine Verbesserung der Authentifizierung halbiert werden kann. Der Report beweist die grundsätzliche Konstruktion als sicher, dennoch darf die Schlüssellänge nicht halbiert werden, da ein Gegenbeispiel den one-way proof verunmöglicht [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way proof</a>].
+                <a href="https://eprint.iacr.org/2017/325">CHVote</a> ist ein E-Voting Protokoll für die direkte Demokratie in der Schweiz. Als Teil der Stimmabgabe authentifizieren die Wahlberechtigten ihre Stimme mit einem Code. Es wurde untersucht, ob durch eine neuartige Konstruktion die Länge dieser Codes halbiert werden darf unter gleichbleibender Sicherheit. Die Konstruktion konnte grundsätzlich als sicher bewiesen werden, jedoch darf die Schlüssellänge weiterhin nicht halbiert werden [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way proof</a>].
             </p>
             
             <h3 class="mt-5">
@@ -274,7 +274,7 @@ include "../templates/head.html"
                 <span class="text-secondary">2020</span>
             </h3>
             <p>
-                Mit drei Kommilitonen wurde untersucht, inwiefern sich bestehende Implementierungen für eine für die Cryptographie sehr wichtige elliptische Kurve weiter optimieren lassen.
+                Mit drei Kommilitonen wurde untersucht, inwiefern sich bestehende Implementierungen für eine für die Kryptographie sehr wichtige elliptische Kurve weiter optimieren lassen.
                 Mehrere Ansätze aus bestehender Literatur wurden kombiniert und erweitert und auf die Intel Skylake Architektur angewandt.
                 Die resultierende Implementierung war 10% schneller als alle anderen aus dem Bernstein Implementierungsvergleich 
                 [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>,
