@@ -1,0 +1,14 @@
+name: Submit Tool Hilti SLAM Challenge
+purpose: allow researchers to submit their results and evaluate them instantly
+implementation: |
+  Hilti organizes the yearly SLAM challenge: Researchers are given a data set (LIDAR, IMU, Camera) and have to infer the position of the device. 
+  Participating researchers can upload their best guesses, which are then automatically scored in a docker runtime. 
+  When the deadline has passed, the best teams are shown in a leaderboard.
+
+kickoff_date: 2022-02
+publish_date: 2022-02
+last_activity_date: 2022-02
+
+languages: [JavaScript, PHP]
+frameworks: [Symfony]
+platform: Web

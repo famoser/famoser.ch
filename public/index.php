@@ -130,9 +130,17 @@ include "../templates/head.html"
                         [
                             "class" => "freelancer",
                             "title" => "Entwicklung & Projektleitung",
-                            "firm" => "Freelancer",
+                            "firm" => "famoser GmbH",
                             "link" => "https://famoser.ch",
                             "period" => "Jan. 2018 - jetzt"
+                        ],
+                        [
+                            "class" => "eth-master",
+                            "title" => "Informatik Master",
+                            "firm" => "ETH - Eidgenössische Technische Hochschule Zürich",
+                            "link" => "https://ethz.ch",
+                            "period" => "Sep. 2019 - Feb. 2022",
+                            "image_name" => "eth.png"
                         ],
                         [
                             "class" => "vseth",
@@ -159,13 +167,13 @@ include "../templates/head.html"
                             "image_name" => "jkweb.png"
                         ],
                         [
-                            "class" => "eth",
-                            "title" => "Informatik Studium",
+                            "class" => "eth-bachelor",
+                            "title" => "Informatik Bachelor",
                             "firm" => "ETH - Eidgenössische Technische Hochschule Zürich",
                             "link" => "https://ethz.ch",
-                            "period" => "Sep. 2015 - jetzt",
+                            "period" => "Sep. 2015 - Sep. 2018",
                             "image_name" => "eth.png"
-                        ]
+                        ],
                     ];
 
                     foreach ($jobs as $job) { ?>
@@ -187,21 +195,32 @@ include "../templates/head.html"
                     <div class="job-wrapper">
                         <!--
                         10 width = 100% pensum
-                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 90 dez 2021 
+                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 92 feb 2022, 97 july 2022
 
                         59 height = 59 months; from Sep 2015 - Juli 2020
                         -->
                         <svg class="jobs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 10 90"
+                             viewBox="0 0 10 97"
                              height="109%"
-                             width="100%">
+                             width="109%">
                             <filter id="dry">
                                 <feComponentTransfer>
                                     <feFuncA type="table" tableValues="0 0.5"></feFuncA>
                                 </feComponentTransfer>
                             </filter>
                             <g transform="scale(-1,-1)" transform-origin="center">
-                                <g class="eth" filter="url(#dry)">
+                                <g class="eth-master" filter="url(#dry)">
+                                    <title>ETH</title>
+                                    <!--
+                                    10 sep 2015 (8) - jan 2016 (0+12)
+                                    0.8 feb 2016 - aug 2018 (7+36)
+                                    0 sep 2018 - aug 2019 (7+48)
+                                    0.5 sep 2019 - sep 2020 (8+60)
+                                    0.8 sep 2020 - dez 2020 (11+60)
+                                    -->
+                                    <polygon points="0,54 4,54 4,69 8,69 8,92 0,92" fill="#1f4070"></polygon>
+                                </g>
+                                <g class="eth-bachelor" filter="url(#dry)">
                                     <title>ETH</title>
                                     <!--
                                     10 sep 2015 (8) - jan 2016 (0+12)
@@ -211,7 +230,6 @@ include "../templates/head.html"
                                     0.8 sep 2020 - dez 2020 (11+60)
                                     -->
                                     <polygon points="0,8 10,8 10,13 8,13 8,45 0,45" fill="#1f4070"></polygon>
-                                    <polygon points="0,54 4,54 4,69 8,69 8,90 0,90" fill="#1f4070"></polygon>
                                 </g>
                                 <g class="jkweb" filter="url(#dry)">
                                     <title>JKWeb</title>
@@ -241,15 +259,15 @@ include "../templates/head.html"
                                     10 Jul 2019 (6+48) - Sep 2019 (8+48)
                                     02 Oct 2020 (9+60) - Dez 2020 (11+60)
                                     -->
-                                    <polygon points="8,36 10,36 10,90 8,90 8,69 9,69 9,45 8,45"
+                                    <polygon points="8,36 10,36 10,97 0,97 0,92 8,92 8,69 9,69 9,45 8,45"
                                              fill="#8BBB9B"></polygon>
                                 </g>
                             </g>
                         </svg>
-                        <p class="axis-top text-right text-secondary">jetzt</p>
-                        <p class="axis-bottom text-right text-secondary">2015</p>
+                        <small class="axis-top text-right text-secondary">jetzt</small>
+                        <small class="axis-bottom text-right text-secondary">2015</small>
                     </div>
-                    <p class="text-right text-secondary mr-5">Pensum</p>
+                    <small class="text-right text-secondary mr-4 d-block">Pensum</small>
                 </div>
             </div>
         </div>

@@ -184,7 +184,7 @@ g.active {
 }
 
 .job-wrapper {
-    height: 37em;
+    height: 42.5em;
     padding-left: 5em;
     width: calc(100% - 2.5em);
 }
@@ -199,7 +199,7 @@ g.active {
 }
 
 .axis-bottom {
-    bottom: 1.5em;
+    bottom: 2.5em;
     right: 0;
 }
 
