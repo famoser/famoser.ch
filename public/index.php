@@ -260,8 +260,19 @@ include "../templates/head.html"
     <div class="container">
         <div class="research">
             <h2>Research & Teaching</h2>
+
             
             <h3>
+                Master thesis: Swiss Internet Voting
+                <span class="text-secondary">2022</span>
+            </h3>
+            <p>
+                Die Master Arbeit untersucht Internetwahlen in der Schweiz. Zuerst wird ein Überblick über die Literatur gegeben, sowie relevante Ereignisse, Gesetze und politische Einflüsse in der Schweiz zusammengefasst. 
+                Zur Verbesserung der aktuellen Situation wird ein Code-Voting System vorgeschlagen, das die Komplexität der involvierten Kryptographie drastisch reduziert, und gleichzeitig stärkere Sicherheitseigenschaften erreicht. 
+                Es wird bewiesen, dass diese Konstruktion formelle Definitionen der rechtlichen Anforderungen erfüllt [<a href="papers/Swiss Internet Voting.pdf" target="_blank">herunterladen</a>].
+            </p>
+            
+            <h3 class="mt-5">
                 Report: Ein Pairing-Based Identification Protocol für CHVote
                 <span class="text-secondary">2021</span>
             </h3>
