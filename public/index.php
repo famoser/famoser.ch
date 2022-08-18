@@ -393,7 +393,10 @@ include "../templates/head.html"
                             <span class="skill secondary"><?= $framework ?></span>
                         <?php } ?>
                         <?php if (isset($project["employer"])) { ?>
-                            <span class="skill"><?= $project["employer"] ?></span>
+                            <span class="skill bg-light"><?= $project["employer"] ?></span>
+                        <?php } ?>
+                        <?php if (isset($project["focus"])) { ?>
+                            <span class="skill bg-light"><?= $project["focus"] ?></span>
                         <?php } ?>
                     </p>
                     <?php if (isset($project["source_url"]) || isset($project["publish_url"])) { ?>
