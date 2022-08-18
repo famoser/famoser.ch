@@ -1,0 +1,13 @@
+name: NTP UZH
+purpose: order, approval and procurement of software
+implementation: |
+  To centralize and unify software order at University of Zurich, a tools is developed to order software.
+  IT and financial responsible approve the order, after which it is fulfilled and billed.
+
+kickoff_date: 2022-03
+publish_date: 2022-08
+last_activity_date: 2022-08
+
+languages: [PHP]
+frameworks: [Symfony]
+platform: Web
