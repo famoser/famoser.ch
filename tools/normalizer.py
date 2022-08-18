@@ -8,10 +8,11 @@ class ProjectNormalizer:
     framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET", "slim-framework": "slim", "api-platform": "API Platform", "Api Platform": "API Platform"}
 
     valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist", "AUR"]
+    valid_focus = ["Project Management", "Implementation", "Research"]
 
     valid_employers = ["JKweb", "Zühlke", "unit.solutions"]
 
-    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "archived", "languages", "frameworks", "platform", "featured"]
+    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "archived", "languages", "frameworks", "platform", "focus", "featured"]
 
     def __init__(self):
         for language in self.valid_languages:
@@ -152,6 +153,7 @@ class ProjectNormalizer:
         self.__addOptionalWhitelistedList(lines, project, "languages", self.valid_languages, self.language_replaces)
         self.__addOptionalWhitelistedList(lines, project, "frameworks", self.valid_frameworks, self.framework_replaces)
         self.__addOptionalWhitelistedEntry(lines, project, "platform", self.valid_platforms)
+        self.__addOptionalWhitelistedEntry(lines, project, "focus", self.valid_focus)
 
         if len(lines) > lengthBeforeGroup:
             lines.append("")

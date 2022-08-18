@@ -4,13 +4,13 @@ implementation: |
   Before the driver's learning permit is issued, a theoretical exam has to be passed.
   The applications contains well structure theory, and questions which will be asked at the exam.
 
+publish_url: https://apps.apple.com/ch/app/dinitheorie-ch/id1637207971
+
 kickoff_date: 2022-03
 publish_date: 2022-09
 last_activity_date: 2022-09
 archived: false
 
-featured: true
-
-publish_url: https://apps.apple.com/ch/app/dinitheorie-ch/id1637207971
-
 focus: Project Management
+
+featured: true

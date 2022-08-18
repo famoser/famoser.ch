@@ -6,8 +6,7 @@ publish_url: https://kleintierpraxis-baselwest.ch
 kickoff_date: 2016-01
 publish_date: 2016-03
 last_activity_date: 2016-03
+archived: true
 
 languages: [JavaScript, PHP]
 platform: Web
-
-archived: true
