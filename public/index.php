@@ -195,14 +195,14 @@ include "../templates/head.html"
                     <div class="job-wrapper">
                         <!--
                         10 width = 100% pensum
-                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 92 feb 2022, 97 july 2022
+                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 92 feb 2022, 102 dez 2022
 
                         59 height = 59 months; from Sep 2015 - Juli 2020
                         -->
                         <svg class="jobs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 10 97"
+                             viewBox="0 0 10 102"
                              height="109%"
-                             width="109%">
+                             width="100%">
                             <filter id="dry">
                                 <feComponentTransfer>
                                     <feFuncA type="table" tableValues="0 0.5"></feFuncA>
@@ -259,15 +259,15 @@ include "../templates/head.html"
                                     10 Jul 2019 (6+48) - Sep 2019 (8+48)
                                     02 Oct 2020 (9+60) - Dez 2020 (11+60)
                                     -->
-                                    <polygon points="8,36 10,36 10,97 0,97 0,92 8,92 8,69 9,69 9,45 8,45"
+                                    <polygon points="8,36 10,36 10,102 0,102 0,92 8,92 8,69 9,69 9,45 8,45"
                                              fill="#8BBB9B"></polygon>
                                 </g>
                             </g>
                         </svg>
-                        <small class="axis-top text-right text-secondary">jetzt</small>
-                        <small class="axis-bottom text-right text-secondary">2015</small>
+                        <small class="axis-top text-end text-secondary">jetzt</small>
+                        <small class="axis-bottom text-end text-secondary">2015</small>
                     </div>
-                    <small class="text-right text-secondary mr-4 d-block">Pensum</small>
+                    <small class="text-center text-secondary ms-5 mt-1 d-block">Pensum</small>
                 </div>
             </div>
         </div>
@@ -279,17 +279,17 @@ include "../templates/head.html"
         <div class="research">
             <h2>Research & Teaching</h2>
 
-            
+
             <h3>
                 Master thesis: Swiss Internet Voting
                 <span class="text-secondary">2022</span>
             </h3>
             <p>
-                Die Master Arbeit untersucht Internetwahlen in der Schweiz. Zuerst wird ein Überblick über die Literatur gegeben, sowie relevante Ereignisse, Gesetze und politische Einflüsse in der Schweiz zusammengefasst. 
-                Zur Verbesserung der aktuellen Situation wird ein Code-Voting System vorgeschlagen, das die Komplexität der involvierten Kryptographie drastisch reduziert, und gleichzeitig stärkere Sicherheitseigenschaften erreicht. 
+                Die Master Arbeit untersucht Internetwahlen in der Schweiz. Zuerst wird ein Überblick über die Literatur gegeben, sowie relevante Ereignisse, Gesetze und politische Einflüsse in der Schweiz zusammengefasst.
+                Zur Verbesserung der aktuellen Situation wird ein Code-Voting System vorgeschlagen, das die Komplexität der involvierten Kryptographie drastisch reduziert, und gleichzeitig stärkere Sicherheitseigenschaften erreicht.
                 Es wird bewiesen, dass diese Konstruktion formelle Definitionen der rechtlichen Anforderungen erfüllt [<a href="papers/Swiss Internet Voting.pdf" target="_blank">herunterladen</a>].
             </p>
-            
+
             <h3 class="mt-5">
                 Report: Ein Pairing-Based Identification Protocol für CHVote
                 <span class="text-secondary">2021</span>
@@ -297,7 +297,7 @@ include "../templates/head.html"
             <p>
                 <a href="https://eprint.iacr.org/2017/325">CHVote</a> ist ein E-Voting Protokoll für die direkte Demokratie in der Schweiz. Als Teil der Stimmabgabe authentifizieren die Wahlberechtigten ihre Stimme mit einem Code. Es wurde untersucht, ob durch eine neuartige Konstruktion die Länge dieser Codes halbiert werden darf unter gleichbleibender Sicherheit. Die Konstruktion konnte grundsätzlich als sicher bewiesen werden, jedoch darf die Schlüssellänge weiterhin nicht halbiert werden [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way proof</a>].
             </p>
-            
+
             <h3 class="mt-5">
                 Advanced Systems Lab: Fast imlementation of Curve25519 on Intel Skylake
                 <span class="text-secondary">2020</span>
@@ -305,7 +305,7 @@ include "../templates/head.html"
             <p>
                 Mit drei Kommilitonen wurde untersucht, inwiefern sich bestehende Implementierungen für eine für die Kryptographie sehr wichtige elliptische Kurve weiter optimieren lassen.
                 Mehrere Ansätze aus bestehender Literatur wurden kombiniert und erweitert und auf die Intel Skylake Architektur angewandt.
-                Die resultierende Implementierung war 10% schneller als alle anderen aus dem Bernstein Implementierungsvergleich 
+                Die resultierende Implementierung war 10% schneller als alle anderen aus dem Bernstein Implementierungsvergleich
                 [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>,
                 <a href="papers/Fast Implementation of Curve25519 on Intel Skylake - code.zip" target="_blank">code</a>].
             </p>
@@ -316,23 +316,23 @@ include "../templates/head.html"
             </h3>
             <p>
                 Es wurde untersucht, inwiefern sich Daten, die beim Schauen von Videos auf Netflix anfallen, zur Identifikation der angeschauten Videos dienen könnten.
-                Bestehende Verfahren wurden reproduziert, und ein neues Verfahren, dass mit noch weniger Annahmen funktioniert, vorgestellt: 
+                Bestehende Verfahren wurden reproduziert, und ein neues Verfahren, dass mit noch weniger Annahmen funktioniert, vorgestellt:
                 Lediglich anhand der durchschnittlich verbrauchten Datenmenge in verschiedenen Netzwerkkonditionen kann das entsprechende Video identifiziert werden
-                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>, 
+                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>,
                 <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
             </p>
-            
+
             <h3 class="mt-5">
                 Teaching: TheAlternative und UZH Kursleiter
             </h3>
             <p>
-                Als Teil von <a href="https://thealternative.ch" target="_blank">TheAlternative</a> organisiere und gebe ich Kurse für andere Angehörige der ETH 
+                Als Teil von <a href="https://thealternative.ch" target="_blank">TheAlternative</a> organisiere und gebe ich Kurse für andere Angehörige der ETH
                 [<a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/project%20management" target="_blank">project management</a>,
                     <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/web" target="_blank">web</a>,
-                    <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/pdf" target="_blank">pdf</a>]. 
+                    <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/pdf" target="_blank">pdf</a>].
                 Als Kursleiter der UZH gebe ich regelmässig Kurse zu git und GitLab zur Versionsverwaltung
                 [<a href="https://gitlab.uzh.ch/zi-it-training/git" target="_blank">git</a>].
-            </p>  
+            </p>
         </div>
     </div>
 </section>
