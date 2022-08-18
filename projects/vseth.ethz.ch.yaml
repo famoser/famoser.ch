@@ -1,4 +1,4 @@
-name: vseth.ethz.ch
+name: VSETH Webpage
 purpose: present VSETH and its services
 implementation: |
   Describes what VSETH is for students, ETH members and others.
