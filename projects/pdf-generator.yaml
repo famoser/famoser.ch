@@ -1,10 +1,10 @@
 name: PDF writer
-purpose: generate pdf with an easy to use php api
+purpose: fast pdf generation with a high-level api
 implementation: |
   A high-level API abstracts components cleanly - such as paragraphs or tables - for an easier and faster implementation experience.
   The lower-level API provides PDF-specific building blocks while still abstracting PDF implementation details.
   With no external dependencies, the most common pdf functionality is implemented, such as text, images and custom fonts.
-  To support custom fonts, a parser & generator of TTF files had to be implemented.
+  To support custom fonts, a parser and writer of TTF is also part of the project.
 
 source_url: https://github.com/famoser/pdf-generator
 

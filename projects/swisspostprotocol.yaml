@@ -1,5 +1,5 @@
 name: Proof of the Swiss Post Voting System
-purpose: review the computational proof of the Swiss Post Voting System
+purpose: review of the computational proof of the Swiss Post Voting System
 implementation: |
   Review and suggest changes to the computational proof of the Swiss Post Voting System protocol. 
   The proof argues mathematically for security properties of the system and is a necessary requirement for federal elections.
