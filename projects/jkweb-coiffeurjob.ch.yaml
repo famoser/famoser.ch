@@ -11,3 +11,5 @@ archived: true
 languages: [PHP]
 frameworks: [Symfony]
 platform: Web
+
+hours: 40

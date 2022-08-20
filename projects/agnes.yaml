@@ -15,3 +15,5 @@ languages: [PHP]
 platform: Packagist
 
 featured: true
+
+hours: 40

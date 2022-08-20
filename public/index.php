@@ -346,10 +346,9 @@ include "../templates/head.html"
                     <p><b>Language</b></p>
                     <ul class="skill-filters primary clearfix">
                         <li><a href="#" data-filter=".php">PHP</a></li>
-                        <li><a href="#" data-filter=".csharp">C#</a></li>
                         <li><a href="#" data-filter=".javascript">JavaScript</a></li>
-                        <li><a href="#" data-filter=".css-html">CSS/HTML</a></li>
-                        <li><a href="#" data-filter=".kotlin">Kotlin</a></li>
+                        <li><a href="#" data-filter=".c-sharp">C#</a></li>
+                        <li><a href="#" data-filter=".java">Java</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -357,6 +356,9 @@ include "../templates/head.html"
                     <ul class="skill-filters secondary clearfix">
                         <li><a href="#" data-filter=".symfony">Symfony</a></li>
                         <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
+                        <li><a href="#" data-filter=".angular">Angular</a></li>
+                        <li><a href="#" data-filter=".play">Play</a></li>
+                        <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">

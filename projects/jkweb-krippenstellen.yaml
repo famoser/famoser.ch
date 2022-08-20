@@ -1,7 +1,10 @@
 name: krippenstellen
 purpose: job platform specifically for cribs
 implementation: |
-  Ffind a job or register for a membership to publish a notice. Fully automated invioce and payment reminder manageme
+  For job-seekers to find the next opportunity.
+  For employers which can publish notices against a fee. 
+  Fully automated invioce and payment reminder management.
+
 employer: JKweb
 
 kickoff_date: 2016-03
@@ -11,3 +14,6 @@ archived: true
 
 languages: [PHP]
 platform: Web
+
+hours: 40
+focus: Invoice System

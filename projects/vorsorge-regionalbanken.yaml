@@ -11,3 +11,5 @@ archived: true
 languages: [PHP]
 frameworks: [Wordpress]
 platform: Web
+
+hours: 60

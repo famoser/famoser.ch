@@ -1,5 +1,5 @@
 name: ExpenseMonitor
-purpose: keeps track of your expenses, combine them into groups and sync them over your devices
+purpose: keeps track of your grouped expenses and sync them over your devices
 
 source_url: https://github.com/famoser/ExpenseMonitor
 
@@ -9,3 +9,5 @@ archived: true
 
 languages: [C#]
 frameworks: [UWP]
+
+hours: 20

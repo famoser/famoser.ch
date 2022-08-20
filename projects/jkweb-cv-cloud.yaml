@@ -1,7 +1,8 @@
 name: cv-cloud
 purpose: easily find people looking for jobs in the catering industry
 implementation: |
-  CVs of job seekers can be looked up. Filter options like age, region, jobs and more helps companies find potential new employees who match their profi
+  CVs of job seekers can be looked up. Filter options like age, region, jobs and more helps companies find potential new employees who match their profile.
+  
 employer: JKweb
 
 publish_url: https://cv-cloud.ch/
@@ -14,3 +15,5 @@ archived: true
 languages: [PHP]
 frameworks: [Symfony]
 platform: Web
+
+hours: 20

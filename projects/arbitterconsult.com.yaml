@@ -1,5 +1,5 @@
 name: arbitterconsult.com
-purpose: present services of a consultant service
+purpose: present services of a consultant
 
 publish_url: https://arbitterconsult.com
 
@@ -10,3 +10,5 @@ archived: true
 
 languages: [PHP]
 platform: Web
+
+hours: 20

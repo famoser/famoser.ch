@@ -1,5 +1,8 @@
 name: wadmin
 purpose: A framework for a universal administration web application
+implementation: |
+  Generic UI & php framework for administration applications.
+  On top of php-frame, provides the basic UI design for the knabenkantorei and AV Froburger member management.
 
 source_url: https://github.com/famoser/wadmin
 
@@ -8,3 +11,5 @@ last_activity_date: 2017-03
 archived: true
 
 languages: [PHP]
+
+hours: 30

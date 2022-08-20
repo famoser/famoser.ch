@@ -1,5 +1,8 @@
 name: php-frame
 purpose: a php framework with ready to use CRUD controllers
+implementation: |
+  Abstract common functionality to serve as a small framework.
+  Provides the basis for the knabenkantorei and AV Froburger member management.
 
 source_url: https://github.com/famoser/php-frame
 
@@ -8,3 +11,5 @@ last_activity_date: 2017-03
 archived: true
 
 languages: [PHP]
+
+hours: 60

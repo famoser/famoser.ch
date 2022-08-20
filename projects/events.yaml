@@ -15,3 +15,5 @@ archived: false
 languages: [JavaScript, PHP]
 frameworks: [Symfony]
 platform: Web
+
+hours: 20

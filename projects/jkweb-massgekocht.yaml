@@ -1,0 +1,16 @@
+name: massgekocht
+purpose: weekly nutritios menus with personalized recommendations
+employer: JKweb
+
+publish_url: https://massgekocht.ch
+
+kickoff_date: 2016-12
+publish_date: 2017-01
+last_activity_date: 2016-12
+archived: true
+
+languages: [PHP]
+frameworks: [Symfony]
+platform: Web
+
+hours: 40

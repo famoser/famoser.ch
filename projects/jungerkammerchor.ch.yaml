@@ -1,7 +1,8 @@
 name: jungerkammerchor.ch
 purpose: present project choir from Basel
 implementation: |
-  Videos and images from the last concert are displayed prominently. Upcoming concerts are displayed if availab
+  Videos and images from the last concert are displayed prominently. 
+  Upcoming concerts are displayed if available.
 
 publish_url: https://jungerkammerchor.ch
 
@@ -12,3 +13,5 @@ archived: true
 
 languages: [PHP]
 platform: Web
+
+hours: 20

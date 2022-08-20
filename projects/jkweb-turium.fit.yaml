@@ -1,7 +1,5 @@
 name: turium.fit
-purpose: allow to sign up to courses online
-implementation: |
-  api connection to mindbodyonline d
+purpose: fitness studio with registration-only courses
 
 kickoff_date: 2016-10
 last_activity_date: 2016-10
@@ -9,3 +7,6 @@ archived: true
 
 languages: [PHP]
 platform: Web
+
+focus: Mindbodyonline Integration
+hours: 40

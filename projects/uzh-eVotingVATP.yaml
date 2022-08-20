@@ -1,0 +1,19 @@
+name: Internet Voting UZH
+purpose: online voting for representatives in committees of the University of Zurich
+implementation: |
+  Developed for the three representative body associations at UZH (PhDs, technical & administrative staff, external lecturers).
+  Candidates can be voted into different committees for each faculty.
+  Voters are two-factor authenticated and the admin area is hardened against abuse.
+  An extensive security analysis and a code review by an external firm was performed.
+
+kickoff_date: 2018-09
+publish_date: 2019-06
+last_activity_date: 2022-08
+
+languages: [JavaScript, PHP]
+frameworks: [Symfony, Vue.js]
+platform: Web
+
+featured: true
+
+hours: 150

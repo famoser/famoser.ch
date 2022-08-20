@@ -36,7 +36,10 @@ function initializeSkills()
     $container.isotope({
         layoutMode: 'masonry',
         itemSelector: '.skills-grid-item',
-        stamp: '.stamp'
+        stamp: '.stamp',
+        masonry: {
+            columnWidth: 1
+        }
     });
 
     // Set up the click event for filtering

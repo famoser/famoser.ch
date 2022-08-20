@@ -1,0 +1,21 @@
+name: farbstoff-design
+purpose: big online shop for a printing firm
+implementation: |
+  Online shop for over 3000 and over 100'000 variations such as clothes, bags and much more. 
+  With many filters available and a performance-optimized query mechanism. 
+  On checkout, printing options can be specified and the complex pricing mechanism determines a realistic offer.
+
+employer: JKweb
+
+publish_url: https://farbstoff-design.ch/
+
+kickoff_date: 2017-03
+publish_date: 2017-05
+last_activity_date: 2017-03
+archived: true
+
+languages: [PHP]
+frameworks: [Symfony]
+platform: Web
+
+hours: 40

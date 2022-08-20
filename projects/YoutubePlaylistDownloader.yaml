@@ -1,5 +1,5 @@
 name: YoutubePlaylistDownloader
-purpose: download videos from selected playlists and convert them to music files
+purpose: download playlists to audio files
 
 source_url: https://github.com/famoser/YoutubePlaylistDownloader
 
@@ -9,3 +9,5 @@ archived: true
 
 languages: [C#]
 platform: Windows
+
+hours: 60

@@ -9,3 +9,5 @@ archived: true
 
 languages: [C#, PHP]
 platform: Nuget
+
+hours: 40

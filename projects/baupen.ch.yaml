@@ -1,11 +1,9 @@
 name: baupen.ch
 purpose: issue management for construction sites
 implementation: |
-  The issue management developed for a construction firm is meant for construction managers.
-  Construction managers may inspect the construction site and create new issues in the iOS app.
-  In the office, on a webpage all open issues can be reviewed, pdf reports can be generated and the craftsman can be informed per e-mail.
-  The craftsman has its personal link with all assigned issues, and can mark them as complete.
-  In the end, the construction manager reviews the complete issues.
+  In the iOS app, construction managers may inspect the construction site and collect issues.
+  The webpage allows batch-processing of issues, extensive filter and search as well as report generation.
+  The craftsman is informed per email over assigned issues and can mark them as complete.
 
 source_url: https://github.com/baupen/web
 publish_url: https://baupen.ch
@@ -19,3 +17,5 @@ frameworks: [API Platform, Symfony, Vue.js]
 platform: Web
 
 featured: true
+
+hours: 300

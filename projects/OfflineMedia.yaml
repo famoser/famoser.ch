@@ -1,10 +1,9 @@
 name: OfflineMedia
-purpose: read articles from multiple news sources under a clean and consistent design.
+purpose: read news from multiple newspapers
 implementation: |
-  Downloads and saves all articles of the selected feeds of the respective newspaper.
-  The consistent interface allows to explore related articles of other newspapers.
-  There are many options to help read the text easier.
-  Includes nearly all bigger newspapers of Switzerland and some of Germany as well.
+  Supports almost all newspapers of Switzerland and some of Germany. 
+  Explore articles by category and similarity.
+  Careful typography and reading tools improve UX.
 
 source_url: https://github.com/famoser/OfflineMedia
 
@@ -16,3 +15,5 @@ languages: [C#]
 frameworks: [UWP]
 
 featured: true
+
+hours: 150

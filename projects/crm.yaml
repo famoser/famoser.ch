@@ -17,3 +17,5 @@ languages: [PHP]
 platform: Web
 
 featured: true
+
+hours: 40

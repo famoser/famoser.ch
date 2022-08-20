@@ -1,5 +1,5 @@
 name: SqliteWrapper
-purpose: opinionated sqlite abstraction simplifying the mapping of model classes to entity classes and back
+purpose: opinionated sqlite abstraction to map model to entity classes and back
 
 source_url: https://github.com/famoser/SqliteWrapper
 
@@ -9,3 +9,5 @@ archived: true
 
 languages: [C#]
 platform: Nuget
+
+hours: 50

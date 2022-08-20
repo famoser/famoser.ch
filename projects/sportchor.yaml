@@ -7,3 +7,6 @@ archived: true
 
 languages: [PHP]
 platform: Web
+
+hours: 25
+hide: true

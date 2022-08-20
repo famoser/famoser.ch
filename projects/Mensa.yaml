@@ -1,7 +1,8 @@
 name: Mensa
 purpose: eth & uzh mensas in zurich
 implementation: |
-  Using directly the APIs of ETH and UZH, and with heavily optimized UI, this is the fastest Mensa application on the campus.
+  Displays available menus of the various Mensas on the campus of ETH and UZH.
+  Optimized UI and networking performance for a snappy UX.
 
 source_url: https://github.com/famoser/Mensa
 publish_url: https://play.google.com/store/apps/details?id=ch.famoser.mensa
@@ -13,3 +14,5 @@ archived: false
 
 languages: [Kotlin]
 platform: Android
+
+hours: 40

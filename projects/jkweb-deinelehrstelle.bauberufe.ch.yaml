@@ -1,7 +1,9 @@
 name: deinelehrstelle.bauberufe.ch
-purpose: make it easy to find an apprenticeship for young career starters
+purpose: make it easy to apply to an apprenticeship
 implementation: |
-  fill out your personal information, education, interests, motivation and add images to create a cv fit to apply to an apprentices
+  Fill out your personal information, education, interests, motivation and add images.
+  The tool then creates a cv fit to apply to an apprenticeship.
+
 employer: JKweb
 
 publish_url: https://deinelehrstelle.bauberufe.ch/
@@ -14,3 +16,5 @@ archived: true
 languages: [PHP]
 frameworks: [Symfony]
 platform: Web
+
+hours: 30

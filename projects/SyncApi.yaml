@@ -1,9 +1,9 @@
 name: SyncApi
 purpose: a nuget portable library to sync models in a very convenient way
 implementation: |
-  This library manages the synchronization of data between multiple installations of the same user.
-  You may save entities of any type, which will be synchronized typesafe.
-  Included is some sort of version control (you will be able to access older versions of an entity).
+  Synchronization of data between multiple installations of the same user.
+  Included are forms of type-safety and version control.
+  Used as the data layer in various apps such as Bookmarked or RememberLess.
 
 source_url: https://github.com/famoser/SyncApi
 
@@ -11,8 +11,9 @@ kickoff_date: 2016-10
 last_activity_date: 2017-08
 archived: true
 
-languages: [C#]
-frameworks: [SyncApi]
+languages: [C#, PHP]
+frameworks: [SyncApi, slim]
 platform: Nuget
 
 featured: true
+hours: 150

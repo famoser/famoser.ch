@@ -2,6 +2,7 @@ name: thealternative.ch
 purpose: webpage for a student society
 implementation: |
   TheAlternative is a student society with semesterly lectures about topics of Open Source  & Free Software.
+  The webpage shows future and past events, who is involved and motivates the mission of TheAlternative. 
 
 source_url: https://gitlab.ethz.ch/thealternative/website
 publish_url: https://thealternative.ch
@@ -13,3 +14,5 @@ archived: false
 
 languages: [PHP]
 platform: Web
+
+hours: 50
