@@ -1,10 +1,10 @@
 import yaml
 
 class ProjectNormalizer:
-    valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin", "latex"]
+    valid_languages = ["PHP", "C#", "JavaScript", "Python", "Kotlin", "latex", "Java"]
     language_replaces = {"csharp": "C#"}
 
-    valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "Flutter", "ASP.NET", "Wordpress", "UWP", "WinRT", "WPF", "Windows Forms", "API Platform", "SyncApi", "wadmin"]
+    valid_frameworks = ["Symfony", "slim", "API Platform", "Sonata Admin", "Vue.js", "Angular", "Flutter", "ASP.NET", "Wordpress", "UWP", "WinRT", "WPF", "Windows Forms", "API Platform", "SyncApi", "wadmin", "Play", "Spring"]
     framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET", "slim-framework": "slim", "api-platform": "API Platform", "Api Platform": "API Platform"}
 
     valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist", "AUR"]

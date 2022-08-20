@@ -347,7 +347,7 @@ include "../templates/head.html"
                     <ul class="skill-filters primary clearfix">
                         <li><a href="#" data-filter=".php">PHP</a></li>
                         <li><a href="#" data-filter=".javascript">JavaScript</a></li>
-                        <li><a href="#" data-filter=".c-sharp">C#</a></li>
+                        <li><a href="#" data-filter=".csharp">C#</a></li>
                         <li><a href="#" data-filter=".java">Java</a></li>
                     </ul>
                 </div>

@@ -1,0 +1,19 @@
+name: BlueConnect
+purpose: E-Mail client for clinics which integrates other services
+implementation: |
+  The solution for clinics helps to organize emails and integrates other third-party services.
+  Vue, which will gradually replace the current UI technonology, was introduced to improve developer productivity and UX.
+  Technical dept in integration and E2E tests was reduced to improve the speed of the migration.
+  Changes to structure and design leading to simpler implementation and improved UX were aligned with sales and support.
+
+kickoff_date: 2022-03
+publish_date: 2022-08
+last_activity_date: 2022-08
+archived: true
+
+languages: [Java, JavaScript]
+frameworks: [Play, Vue]
+platform: Web
+hours: 800
+
+focus: Frontend Architect

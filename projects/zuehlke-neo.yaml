@@ -14,3 +14,5 @@ languages: [C#, JavaScript]
 frameworks: [ASP.NET, Angular]
 platform: Web
 hours: 1300
+
+focus: Full-Stack
