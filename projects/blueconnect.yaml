@@ -14,6 +14,5 @@ archived: true
 languages: [Java, JavaScript]
 frameworks: [Play, Vue]
 platform: Web
-hours: 800
-
 focus: Frontend Architect
+hours: 800
