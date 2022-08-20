@@ -3,7 +3,6 @@ purpose: All-in-one solution for underwriters in the international property busi
 implementation: |
   The in-house solution for international propery underwriters is continously developed in an agile setting.
   The crucial new feature is contract generation: Out of the world-wide agreement country-specific contracts are generated which respect local laws. 
-
 employer: Zühlke
 
 kickoff_date: 2018-10
@@ -14,5 +13,4 @@ archived: true
 languages: [C#, JavaScript]
 frameworks: [ASP.NET, Angular]
 platform: Web
-
 hours: 1300

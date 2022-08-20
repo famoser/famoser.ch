@@ -3,7 +3,6 @@ purpose: import of SAP inventory into Woocommerce
 implementation: |
   Wordpress plugin to import SAP inventory into Woocommerce.
   Uses another plugin under the hood and repeats data inconsistencies.
-
 employer: JKweb
 
 publish_url: https://metu.ch
@@ -14,5 +13,4 @@ archived: true
 
 languages: [PHP]
 platform: Web
-
 hours: 20

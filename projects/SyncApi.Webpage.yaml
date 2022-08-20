@@ -9,5 +9,4 @@ archived: true
 
 languages: [PHP]
 frameworks: [SyncApi, slim]
-
 hours: 150

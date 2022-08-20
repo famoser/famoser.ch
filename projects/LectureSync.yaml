@@ -9,5 +9,4 @@ archived: true
 
 languages: [C#]
 frameworks: [SyncApi, UWP]
-
 hours: 30

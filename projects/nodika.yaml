@@ -17,7 +17,6 @@ archived: false
 languages: [JavaScript, PHP]
 frameworks: [Symfony, Vue.js]
 platform: Web
+hours: 100
 
 featured: true
-
-hours: 100

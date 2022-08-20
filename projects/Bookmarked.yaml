@@ -16,5 +16,4 @@ archived: true
 languages: [C#]
 frameworks: [SyncApi, UWP]
 platform: Windows Phone
-
 hours: 60

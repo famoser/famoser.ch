@@ -13,7 +13,6 @@ archived: false
 
 languages: [PHP]
 platform: Packagist
+hours: 40
 
 featured: true
-
-hours: 40

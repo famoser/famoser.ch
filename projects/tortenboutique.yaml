@@ -1,6 +1,6 @@
 name: tortenboutique
 purpose: colorful retro webpage for a pie store
-  
+
 publish_url: https://tortenboutique.ch
 
 kickoff_date: 2014-03
@@ -9,5 +9,4 @@ last_activity_date: 2014-03
 archived: true
 
 platform: Web
-
 hours: 50

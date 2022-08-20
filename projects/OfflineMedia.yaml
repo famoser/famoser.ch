@@ -13,7 +13,6 @@ archived: true
 
 languages: [C#]
 frameworks: [UWP]
+hours: 150
 
 featured: true
-
-hours: 150

@@ -10,5 +10,4 @@ archived: true
 languages: [C#]
 frameworks: [UWP]
 platform: Nuget
-
 hours: 30

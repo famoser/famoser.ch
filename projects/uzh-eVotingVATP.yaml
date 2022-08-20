@@ -13,7 +13,6 @@ last_activity_date: 2022-08
 languages: [JavaScript, PHP]
 frameworks: [Symfony, Vue.js]
 platform: Web
+hours: 150
 
 featured: true
-
-hours: 150

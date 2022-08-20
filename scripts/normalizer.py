@@ -10,7 +10,7 @@ class ProjectNormalizer:
     valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist", "AUR"]
     valid_employers = ["JKweb", "Zühlke", "unit.solutions"]
 
-    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "archived", "languages", "frameworks", "platform", "focus", "featured", "hours", "hidden"]
+    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "archived", "languages", "frameworks", "platform", "focus", "featured", "hours", "hide"]
 
     def __init__(self):
         for language in self.valid_languages:

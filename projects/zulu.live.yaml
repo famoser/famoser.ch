@@ -9,5 +9,4 @@ languages: [C#]
 frameworks: [ASP.NET]
 platform: Web
 focus: Code Review
-
 hours: 20

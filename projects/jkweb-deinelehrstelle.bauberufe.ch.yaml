@@ -3,7 +3,6 @@ purpose: make it easy to apply to an apprenticeship
 implementation: |
   Fill out your personal information, education, interests, motivation and add images.
   The tool then creates a cv fit to apply to an apprenticeship.
-
 employer: JKweb
 
 publish_url: https://deinelehrstelle.bauberufe.ch/
@@ -16,5 +15,4 @@ archived: true
 languages: [PHP]
 frameworks: [Symfony]
 platform: Web
-
 hours: 30

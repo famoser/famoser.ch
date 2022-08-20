@@ -3,7 +3,6 @@ purpose: help customers & craftmen find each other
 implementation: |
   Present your business and see published adverts.
   Create adverts to receive offers from different businesses.
-
 employer: JKweb
 
 publish_url: https://swisshandwerker.ch/
@@ -16,5 +15,4 @@ archived: true
 languages: [PHP]
 frameworks: [Symfony]
 platform: Web
-
 hours: 60

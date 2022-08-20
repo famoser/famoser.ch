@@ -15,7 +15,6 @@ archived: false
 
 frameworks: [API Platform, Symfony, Vue.js]
 platform: Web
+hours: 300
 
 featured: true
-
-hours: 300

@@ -4,7 +4,6 @@ implementation: |
   For the administration of Uri to record the quality of roads.
   A one-page form with quick navigation saves time in the field.
   Exports and in-built analysis helps to choose which road to renovate.
-
 employer: unit.solutions
 
 kickoff_date: 2015-04
@@ -15,5 +14,4 @@ archived: true
 languages: [C#]
 frameworks: [WinRT]
 platform: Windows
-
 hours: 800

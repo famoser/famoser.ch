@@ -3,7 +3,6 @@ purpose: online voting for representatives in the VSUZH Rat
 implementation: |
   Developed for the student association of UZH.
   Candidates can be elected into the VSUZH Rat in a multi-party system.
-
 employer: JKweb
 
 kickoff_date: 2016-08
@@ -13,5 +12,4 @@ last_activity_date: 2017-08
 languages: [JavaScript, PHP]
 frameworks: [Sonata Admin, Symfony]
 platform: Web
-
 hours: 50
