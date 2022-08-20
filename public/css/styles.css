@@ -226,6 +226,10 @@ skills
     float: left;
 }
 
+.skill-filters .active {
+    border: 1px solid #a1a1a1;
+}
+
 .skill-filters a {
     background-color: #fff;
     color: #000;

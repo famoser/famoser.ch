@@ -38,18 +38,22 @@ function initializeSkills()
         itemSelector: '.skills-grid-item',
         stamp: '.stamp',
         masonry: {
-            columnWidth: 1
+            columnWidth: 1 // fix layout if first element is not shown
         }
     });
 
     // Set up the click event for filtering
-    $('.skill-filters').on('click', 'a', function (event) {
+    let $skillFilters = $('.skill-filters a');
+    $skillFilters.on('click', function (event) {
         event.preventDefault();
+        $skillFilters.removeClass("active")
 
-        const $filter = $(this).attr('data-filter');
+        let $currentElement = $(this);
+        const $filter = $currentElement.attr('data-filter');
         if (current_filter === $filter) {
             current_filter = null;
         } else {
+            $currentElement.addClass("active")
             current_filter = $filter;
         }
 
@@ -82,10 +86,6 @@ function initializeSkills()
     )
 
     const skillsGridWrapper = $(".skills-grid-wrapper");
-    const setOptimalSkillsGridColumns = function() {
-        const width = skillsGridWrapper.width();
-        console.log(width);
-    };
     showAllActiveButton.on("click", function (e) {
         e.preventDefault();
 
