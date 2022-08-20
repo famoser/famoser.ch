@@ -57,6 +57,15 @@ class ProjectNormalizer:
 
         lines.append(key + ": " + output)
 
+    def __addOptionalNumberEntry(self, lines, dictionary, key):
+        if key not in dictionary:
+            return
+
+        if not type(dictionary[key]) == int:
+            print("Fail: " + str(dictionary[key]) + " is not a number at " + key)
+
+        lines.append(key + ": " + output)
+
     def __addOptionalUrlLine(self, lines, dictionary, key):
         if key not in dictionary:
             return
@@ -154,11 +163,13 @@ class ProjectNormalizer:
         self.__addOptionalWhitelistedList(lines, project, "frameworks", self.valid_frameworks, self.framework_replaces)
         self.__addOptionalWhitelistedEntry(lines, project, "platform", self.valid_platforms)
         self.__addOptionalWhitelistedEntry(lines, project, "focus", self.valid_focus)
+        self.__addOptionalNumberEntry(lines, project, "hours")
 
         if len(lines) > lengthBeforeGroup:
             lines.append("")
         lengthBeforeGroup = len(lines)
 
         self.__addOptionalBooleanEntry(lines, project, "featured")
+        self.__addOptionalBooleanEntry(lines, project, "hidden")
 
         return "\n".join(lines)
