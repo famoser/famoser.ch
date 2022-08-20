@@ -361,14 +361,6 @@ include "../templates/head.html"
                         <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <p><b>Platform</b></p>
-                    <ul class="skill-filters clearfix">
-                        <li><a href="#" data-filter=".web">Web</a></li>
-                        <li><a href="#" data-filter=".windows">Windows</a></li>
-                        <li><a href="#" data-filter=".android">Android</a></li>
-                    </ul>
-                </div>
             </div>
         </div>
     </div>
