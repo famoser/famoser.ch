@@ -8,7 +8,9 @@ function getProjects(): array
 
     foreach (glob(__DIR__ . "/../projects/*.yaml") as $projectFilePath) {
         $project = getProject($projectFilePath);
-        $projects[$project["last_activity_date"]][] = $project;
+        if (!isset($project["hide"]) || !$project["hide"]) {
+            $projects[$project["last_activity_date"]][] = $project;
+        }
     }
 
     krsort($projects);
@@ -31,20 +33,29 @@ function getProject(string $filePath)
      * taken from projects/normalize.py
      */
 
-    $languageToClass = ["PHP" => "php", "C#" => "csharp", "JavaScript" => "javascript", "Python" => "python", "Kotlin" => "kotlin"];
-    $frameworkToClass = ["Symfony" => "symfony", "Vue.js" => "vuejs", "Angular" => "angular", "ASP.NET" => "asp-net", "Wordpress" => "wordpress"];
+    $languageToClass = ["PHP" => "php", "C#" => "csharp", "JavaScript" => "javascript", "Python" => "python", "Kotlin" => "kotlin", "Java" => "java"];
+    $frameworkToClass = ["Symfony" => "symfony", "Vue.js" => "vuejs", "Angular" => "angular", "ASP.NET" => "asp-net", "Wordpress" => "wordpress", "Play" => "play"];
     $platformToClass = ["Web" => "web", "Windows" => "windows", "Android" => "android"];
 
     $frameworkThatImpliesLanguage = [
         "Symfony" => "PHP",
-        "Vue.js" => "JavaScript",
+        "Laravel" => "PHP",
+
         "UWP" => "C#",
         "Windows Forms" => "C#",
-        "Angular" => "JavaScript",
         "Asp.NET" => "C#",
+
+        "Vue.js" => "JavaScript",
+        "Angular" => "JavaScript",
+        "React" => "JavaScript",
+
         "Slim" => "PHP",
         "Api Platform" => "PHP",
-        "Flutter" => "Dart"
+
+        "Play" => "Java",
+        "Spring" => "Java",
+
+        "Flutter" => "Dart",
     ];
 
     $frameworkThatImpliesPlatform = [
@@ -87,12 +98,27 @@ function getProject(string $filePath)
         }
     }
 
-    $project["class"] = implode(" ", $classes);
+    if (key_exists("hours", $project)) {
+        $hours = $project["hours"];
+        if ($hours >= 300) {
+            $classes[] = "hours-300-plus";
+        }
+    }
 
-    $project["languages"] = isset($project["languages"]) ? $project["languages"] : [];
-    $project["frameworks"] = isset($project["frameworks"]) ? $project["frameworks"] : [];
     $project["featured"] = isset($project["featured"]) && $project["featured"];
     $project["archived"] = isset($project["archived"]) && $project["archived"];
+    if ($project["featured"]) {
+        $classes[] = "featured";
+    }
+    if (!$project["archived"]) {
+        $classes[] = "active";
+    }
+
+    $project["class"] = implode(" ", $classes);
+
+    $project["languages"] = $project["languages"] ?? [];
+    $project["frameworks"] = $project["frameworks"] ?? [];
+    $project["hide"] = isset($project["hide"]) && $project["hide"];
 
     if (isset($project["last_relevant_activity_date"])) {
         $project["last_activity_date"] = $project["last_relevant_activity_date"];

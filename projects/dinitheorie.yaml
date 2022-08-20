@@ -2,7 +2,7 @@ name: DiniTheorie.ch
 purpose: app for car driver theory
 implementation: |
   Before the driver's learning permit is issued, a theoretical exam has to be passed.
-  The applications contains well structure theory, and questions which will be asked at the exam.
+  The application contains well structure theory, and questions which will be asked at the exam.
 
 publish_url: https://apps.apple.com/ch/app/dinitheorie-ch/id1637207971?platform=iphone
 

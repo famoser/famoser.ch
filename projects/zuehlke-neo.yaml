@@ -4,7 +4,6 @@ implementation: |
   The in-house solution by a big insurance in Zürich is developed in an agile setting.
   It supports underwriters of international property from risk analysis until contract structuring, integrating many other services. 
   The crucial new feature is contract generation: When the world-wide agreement stands, country-specific contracts are generated which respect local laws.
-
 employer: Zühlke
 
 kickoff_date: 2018-10

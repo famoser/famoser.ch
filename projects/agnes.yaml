@@ -3,7 +3,7 @@ purpose: create & deploy releases safely to various environments
 implementation: |
   Command line utility to create releases (and optionally publish to github).
   These releases can then be deployed to the specified servers & their respective environments.
-  Deployments are zero-downtime; rollbacks and other useful commands exist.
+  Deployments are zero-downtime (as are rollbacks).
 
 source_url: https://github.com/famoser/agnes
 

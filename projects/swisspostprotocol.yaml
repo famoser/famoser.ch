@@ -1,8 +1,9 @@
 name: Proof of the Swiss Post Voting System
 purpose: review of the computational proof of the Swiss Post Voting System
 implementation: |
-  Review and suggest changes to the computational proof of the Swiss Post Voting System protocol. 
-  The proof argues mathematically for security properties of the system and is a necessary requirement for federal elections.
+  The computational proof argues mathematically for security properties of the system and is a necessary requirement for federal elections.
+  The proof was reworked to reflect changes in the system and align more closely to the current state of research.
+  The necessary changes were reviewed as well as improvements were suggested and implemented.
 
 source_url: https://gitlab.com/swisspost-evoting/e-voting/e-voting-documentation/-/blob/07b84497c0ef4ab42cb9f2f4fb5393884e682659/Protocol/Swiss_Post_Voting_Protocol_Computational_proof.pdf
 
