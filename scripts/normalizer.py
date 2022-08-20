@@ -8,11 +8,9 @@ class ProjectNormalizer:
     framework_replaces = {"vuejs": "Vue.js", "sync-api": "SyncApi", "forms": "Windows Forms", "asp-net": "ASP.NET", "slim-framework": "slim", "api-platform": "API Platform", "Api Platform": "API Platform"}
 
     valid_platforms = ["Web", "Windows", "Windows Phone", "Android", "Nuget", "Visual Studio Extension", "Packagist", "AUR"]
-    valid_focus = ["Project Management", "Implementation", "Research"]
-
     valid_employers = ["JKweb", "Zühlke", "unit.solutions"]
 
-    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "archived", "languages", "frameworks", "platform", "focus", "featured"]
+    valid_keys = ["name", "purpose", "implementation", "involvement", "employer", "publish_url", "source_url", "kickoff_date", "publish_date", "last_activity_date", "last_relevant_activity_date", "archived", "languages", "frameworks", "platform", "focus", "featured", "hours", "hidden"]
 
     def __init__(self):
         for language in self.valid_languages:
@@ -23,6 +21,12 @@ class ProjectNormalizer:
     def __addMandatoryLine(self, lines, dictionary, key):
         if key not in dictionary:
             print("Fail: " + key + " not found")
+            return
+
+        lines.append(key + ": " + dictionary[key])
+
+    def __addOptionalLine(self, lines, dictionary, key):
+        if key not in dictionary:
             return
 
         lines.append(key + ": " + dictionary[key])
@@ -64,7 +68,7 @@ class ProjectNormalizer:
         if not type(dictionary[key]) == int:
             print("Fail: " + str(dictionary[key]) + " is not a number at " + key)
 
-        lines.append(key + ": " + output)
+        lines.append(key + ": " + str(dictionary[key]))
 
     def __addOptionalUrlLine(self, lines, dictionary, key):
         if key not in dictionary:
@@ -162,7 +166,7 @@ class ProjectNormalizer:
         self.__addOptionalWhitelistedList(lines, project, "languages", self.valid_languages, self.language_replaces)
         self.__addOptionalWhitelistedList(lines, project, "frameworks", self.valid_frameworks, self.framework_replaces)
         self.__addOptionalWhitelistedEntry(lines, project, "platform", self.valid_platforms)
-        self.__addOptionalWhitelistedEntry(lines, project, "focus", self.valid_focus)
+        self.__addOptionalLine(lines, project, "focus")
         self.__addOptionalNumberEntry(lines, project, "hours")
 
         if len(lines) > lengthBeforeGroup:
@@ -170,6 +174,6 @@ class ProjectNormalizer:
         lengthBeforeGroup = len(lines)
 
         self.__addOptionalBooleanEntry(lines, project, "featured")
-        self.__addOptionalBooleanEntry(lines, project, "hidden")
+        self.__addOptionalBooleanEntry(lines, project, "hide")
 
         return "\n".join(lines)
