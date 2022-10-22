@@ -1,9 +1,11 @@
 name: Underwriter bench
 purpose: all-in-one solution for underwriters in the international property business
 implementation: |
-  The in-house solution by a big insurance in Zürich is developed in an agile setting.
-  It supports underwriters of international property from risk analysis until contract structuring, integrating many other services. 
-  The crucial new feature is contract generation: When the world-wide agreement stands, country-specific contracts are generated which respect local laws.
+  The in-house solution supports underwriters of international property.
+  The whole process from risk analysis until contract structuring is covered, integrating other services where necessary. 
+  Newly introduced is contract generation: When the world-wide agreement stands, country-specific contracts are generated which respect local laws.
+  By two scrum teams of 6, the software is developed in an agile setting by the a big insurance in Zürich.
+
 employer: Zühlke
 
 kickoff_date: 2018-10

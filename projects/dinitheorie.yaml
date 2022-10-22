@@ -12,6 +12,8 @@ last_activity_date: 2022-09
 archived: false
 
 focus: Project Management
-hours: 20
+languages: [Kotlin]
+platform: Android
+hours: 40
 
 featured: true
