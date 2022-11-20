@@ -75,7 +75,7 @@ include "../templates/head.html"
                 </p>
             </div>
             <div class="col-xl-8">
-                <img src="images/baupen.ch/screenshot_desktop_dashboard.jpg" alt="Screenshot Pendenzenverwaltung baupen.ch"
+                <img src="images/projects/baupen.ch.png" alt="Screenshot Pendenzenverwaltung baupen.ch"
                  class="mt-4 mt-xl-0 ml-xl-4 img-fluid img-screenshot">
             </div>
         </div>
@@ -99,7 +99,7 @@ include "../templates/head.html"
                     It is continously being extended to further reduce administrational effort and increase usability.
             </div>
             <div class="col-xl-8">
-                <img src="images/eVoting/screenshot2.png" alt="Screenshot eVoting Stände"
+                <img src="images/projects/evoting.png" alt="Screenshot eVoting Stände"
                     class="mt-4 mt-xl-0 img-right-correction img-fluid img-screenshot">
             </div>
         </div>
