@@ -19,8 +19,8 @@ include "../templates/head.html"
     <section>
         <div class="container">
             <div class="alert alert-danger">
-                Entschuldigung, diese Seite wurde leider nicht gefunden.
-                Kontaktieren Sie mich und ich finde sie :)
+                Sorry, but this page could not be found.
+                Contact me, and we will find it together :)
             </div>
         </div>
     </section>
@@ -32,22 +32,18 @@ include "../templates/head.html"
             <div class="teaser">
                 <div class="row">
                     <div class="col-xl-8">
-                        <p class="lead">Hallo!</p>
+                        <p class="lead">Hi!</p>
 
-                        <div class="spacer"></div>
-
-                        <p class="lead">
-                            Ich bin <b>Florian Moser</b>.<br/>
-                            Entwickler <b>famoser</b> Applikationen<br/>
-                            für komplexe Anwendungen.
+                        <p class="lead mt-5">
+                            I am Florian Moser.<br/>
+                            <a href="#develop">Developer</a> of big and small applications.<br>
+                            <a href="#research">Researcher</a> of internet voting schemes.<br>
                         </p>
 
-                        <div class="spacer"></div>
-
-                        <p>Haben Sie ein Projekt für mich? Kontakt aufnehmen: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u></p>
+                        <p class="mt-5">Do you have a new project for me? Contact me: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u></p>
                     </div>
                     <div class="col-xl-4 d-none d-xl-block">
-                        <img src="images/Florian Moser.jpg" alt="Portrait Florian Moser" class="img-fluid img-screenshot">
+                        <img src="images/Florian Moser.jpg" alt="Portrait Florian Moser" class="img-fluid img-profile">
                     </div>
                 </div>
             </div>
@@ -55,71 +51,231 @@ include "../templates/head.html"
     </div>
 </section>
 
-<section>
+<section id="develop">
     <div class="container">
-        <div class="summary">
-            <p class="lead">
-                Ich bin Freelancer mit langjähriger Erfahrung in der Entwicklung, dem Betrieb und der Wartung von
-                Web-Applikationen.
+        <h2>Projects</h2>
+    </div>
+
+    <div class="spacer-half"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4">
+                <h3>Baupen</h2>
+                <p>
+                    The issue management system supports site managers in the recording of defects, as well as the acceptance and the documentation of the construction site.
+                </p>
+                <p>
+                    The combination of webpage and app is in use on dozens of construction sites.
+                    Since the release, the tool has been continuously adapted to the way site managers work.
+                </p>
+
+                <p>
+                    Project webpage: <a href="https://baupen.ch" target="_blank">baupen.ch</a>
+                </p>
+            </div>
+            <div class="col-xl-8">
+                <img src="images/baupen.ch/screenshot_desktop_dashboard.jpg" alt="Screenshot Pendenzenverwaltung baupen.ch"
+                 class="mt-4 mt-xl-0 ml-xl-4 img-fluid img-screenshot">
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+    
+    <div class="container">
+        <div class="row flex-row-reverse">
+            <div class="col-xl-4">
+                <h3>E-Voting for the University of Zürich</h2>
+                <p>
+                    Members of V-ATP (administrative and technical staff), VFFL (senior researchers and teaching staff) and VAUZ (junior researchers) elect delegates into University committees.
+                </p>
+                <p>
+                    A security analysis of the concept was created for and reviewed by the University. 
+                    The source code underwent a code review by <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>.
+                </p>
+                <p>
+                    The tool is being used for binding elections since 2018 and has seen multiple election cycles.
+                    It is continously being extended to further reduce administrational effort and increase usability.
+            </div>
+            <div class="col-xl-8">
+                <img src="images/eVoting/screenshot2.png" alt="Screenshot eVoting Stände"
+                    class="mt-4 mt-xl-0 img-right-correction img-fluid img-screenshot">
+            </div>
+        </div>
+    </div>
+
+    <div class="spacer"></div>
+    
+    <div class="container">
+        <div class="skills">
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <p><b>Language</b></p>
+                    <ul class="skill-filters primary clearfix">
+                        <li><a href="#" data-filter=".php">PHP</a></li>
+                        <li><a href="#" data-filter=".javascript">JavaScript</a></li>
+                        <li><a href="#" data-filter=".csharp">C#</a></li>
+                        <li><a href="#" data-filter=".java">Java</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p><b>Framework</b></p>
+                    <ul class="skill-filters secondary clearfix">
+                        <li><a href="#" data-filter=".symfony">Symfony</a></li>
+                        <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
+                        <li><a href="#" data-filter=".angular">Angular</a></li>
+                        <li><a href="#" data-filter=".play">Play</a></li>
+                        <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills-grid-wrapper container">
+        <div class="skills-grid">
+            <?php
+            $projects = getProjects();
+            foreach ($projects as $project) {
+                $showDetails = isset($project["implementation"]) && $project["featured"];
+                ?>
+                <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $project["featured"] ? "featured " : "not-featured " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
+                    <h3><?= $project["name"] ?></h3>
+                    <p><?= $project["purpose"] ?></p>
+                    <?php if ($showDetails) { ?>
+                        <p class="description hidden">
+                            <?= $project["implementation"] ?>
+                        </p>
+                    <?php } ?>
+                    <p>
+                        <?php foreach ($project["languages"] as $language) { ?>
+                            <span class="skill primary"><?= $language ?></span>
+                        <?php } ?>
+                        <?php foreach ($project["frameworks"] as $framework) { ?>
+                            <span class="skill secondary"><?= $framework ?></span>
+                        <?php } ?>
+                        <?php if (isset($project["employer"])) { ?>
+                            <span class="skill bg-light"><?= $project["employer"] ?></span>
+                        <?php } ?>
+                        <?php if (isset($project["focus"])) { ?>
+                            <span class="skill bg-light"><?= $project["focus"] ?></span>
+                        <?php } ?>
+                    </p>
+                    <?php if (isset($project["source_url"]) || isset($project["publish_url"])) { ?>
+                        <p>
+                            <?php if (isset($project["source_url"])) { ?>
+                                <a href="<?= $project["source_url"] ?>" target="_blank">
+                                    <?php if (strpos($project["source_url"], "github") > 0) { ?>
+                                        <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                src="icons/github.svg">
+                                    <?php } else if (strpos($project["source_url"], "gitlab") > 0) { ?>
+                                        <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                src="icons/gitlab.svg">
+                                    <?php } else { ?>
+                                        <img class="icon" alt="source of <?= $project["name"] ?>"
+                                                src="icons/external-link.svg">
+                                    <?php } ?>
+                                </a>
+                            <?php } ?>
+                            <?php if (isset($project["publish_url"])) { ?>
+                                <a href="<?= $project["publish_url"] ?>" target="_blank">
+                                    <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
+                                        <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
+                                                src="icons/microsoft.svg">
+                                    <?php } else { ?>
+                                        <img class="icon" alt="visit <?= $project["name"] ?>"
+                                                src="icons/external-link.svg">
+                                    <?php } ?>
+                                </a>
+                            <?php } ?>
+                        </p>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+        </div>
+
+        <p class="text-center">
+            <button id="show-all-active" class="m-5 btn btn-outline-secondary">
+                Show all active
+            </button>
+        </p>
+
+        <p class="text-center">
+            <button id="show-archived" class="m-5 btn btn-outline-secondary d-none">
+                Show archived
+            </button>
+        </p>
+    </div>
+</section>
+
+<section id="research" class="primary">
+    <div class="container">
+        <div class="research">
+            <h2>Research & Teaching</h2>
+
+            <h3>
+                Research proposal: Code Voting for Swiss Internet Voting
+                <span class="text-secondary">2022, <a href="https://e-vote-id.org/">E-Vote ID 2022</a></span>
+            </h3>
+            <p>
+                Complexity of the Swiss internet voting proposals is identified as a repeatedly voiced concern in reviews. Code voting is proposed as an additional mechanism, which reduces the complexity of the involved cryptography while increasing security. The protocol, security definitions motivated by Swiss law and corresponding proofs are sketched [<a href="papers/Code Voting for Swiss Internet Voting.pdf" target="_blank">download</a>].
+            </p>
+
+            <h3 class="mt-5">
+                Master thesis: Swiss Internet Voting
+                <span class="text-secondary">2022</span>
+            </h3>
+            <p>
+                The Master's thesis examines internet voting in Switzerland. First, an overview of the scientific literature is given, and then relevant events, laws and political influences in Switzerland are summarised. To improve the current situation, a code-voting system is proposed that drastically reduces the complexity of the cryptography involved, while achieving stronger security properties. It is proven that this design meets formal definitions of legal requirements [<a href="papers/Swiss Internet Voting.pdf" target="_blank">download</a>].
+            </p>
+
+            <h3 class="mt-5">
+                Report: A Pairing-Based Identification Protocol for CHVote
+                <span class="text-secondary">2021</span>
+            </h3>
+            <p>
+                <a href="https://eprint.iacr.org/2017/325">CHVote</a> is an internet voting protocol suitable for use in Switzerland. As part of the casting procedure, voters authenticate their vote by entering an authentication key. In an effort to increase usability, a novel pairing-based identification protocol was proposed which requires only half the key for the same security guarantee than the previous proposal. The report proves the protocol secure, but asserts that the key size cannot be halved [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way proof</a>].
+            </p>
+
+            <h3 class="mt-5">
+                Advanced Systems Lab: Fast imlementation of Curve25519 on Intel Skylake
+                <span class="text-secondary">2020</span>
+            </h3>
+            <p>
+                As a joint work with three other students, it was investigated whether existing implementations of the widely used Curve25519 could be further improved. Multiple approaches out of existing literature were combined and extended. The resulting implementation for the Intel Skylake architecture was 10% faster than all other implementations of the Bernstein comparison
+                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>,
+                <a href="papers/Fast Implementation of Curve25519 on Intel Skylake - code.zip" target="_blank">code</a>].
+            </p>
+
+            <h3 class="mt-5">
+                Bachelor thesis: Identifying encrypted online video streams using bitrate profiles
+                <span class="text-secondary">2018</span>
+            </h3>
+            <p>
+                It was investigated whether passively observable network traffic of netflix could be used to identify the currently watched content. Existing approaches were replicated, and extended. The resulting implementation needed only to measure the in average used bandwidth to identify what content is being watched
+                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>,
+                <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
+            </p>
+
+            <h3 class="mt-5">
+                Teaching: TheAlternative 
+                <span class="text-secondary">2016-2022</span>
+                and University of Zürich 
+                <span class="text-secondary">since 2020</span>
+            </h3>
+            <p>
+                As part of <a href="https://thealternative.ch" target="_blank">TheAlternative</a>, I used to organize and give lectures 
+                [<a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/project%20management" target="_blank">project management</a>,
+                <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/web" target="_blank">web</a>,
+                <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/pdf" target="_blank">pdf</a>].
+                As a course instructor for <a href="https://www.uzh.ch" target="_blank">University of Zürich</a>, I regularely give a course about git and GitLab 
+                [<a href="https://gitlab.uzh.ch/zi-it-training/git" target="_blank">git</a>].
             </p>
         </div>
     </div>
 </section>
 
 <section>
-    <div class="container container-left-expand">
-        <div class="row flex-row-reverse">
-            <div class="col-xl-6">
-                <h2>eVoting der Stände UZH</h2>
-                <p>
-                    Für die Vertreterorganisationen V-ATP (administratives und technisches Personal), VFFL (externe
-                    Dozierende) und VAUZ (Doktorierende und Postdocs) wurde ein Wahltool erstellt. Wahlberechtigte können
-                    Delegierte in UZH Gremien wählen.
-                </p>
-                <p>
-                    Das Konzept wurde in einer sicherheitstechnischen Analyse beschrieben und abgenommen. Am
-                    Quellcode wurde ein Code Review durch <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>
-                    durchgeführt.
-                </p>
-                <p>
-                    Das Wahltool wurde bereits für mehrere Wahlen und Nachwahlen eingesetzt. Es ist darauf ausgelegt,
-                    langfristig die Organisationen weiter zu unterstützen.
-            </div>
-            <div class="col-xl-6">
-                <img src="images/eVoting/screenshot2.png" alt="Screenshot eVoting Stände"
-                    class="mt-4 mt-xl-0 img-right-correction img-fluid img-screenshot img-screenshot-expand">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="container container-right-expand">
-        <div class="row">
-            <div class="col-xl-6">
-                <h2>Pendenzenverwaltung</h2>
-                <p>
-                    Für eine Baufirma wurde eine Pendenzenverwaltung für die Bauleiter umgesetzt.
-                    Die Bauleiter werden bei der Erfassung von Mängeln, der Abnahme und bei der Dokumentation der Baustelle unterstützt.
-                </p>
-                <p>
-                    Die Kombination aus Webseite und App ist auf mehreren Baustellen im Einsatz.
-                    Kontinuierlich wird das Tool seit der Veröffentlichung weiter an die Arbeitsweise der Bauleiter angepasst.
-                </p>
-
-                <p>
-                    Projektwebseite: <a href="https://baupen.ch" target="_blank">baupen.ch</a>
-                </p>
-            </div>
-            <div class="col-xl-6">
-                <img src="images/baupen.ch/screenshot_desktop_dashboard.jpg" alt="Screenshot Pendenzenverwaltung baupen.ch"
-                 class="mt-4 mt-xl-0 ml-xl-4 img-fluid img-screenshot img-screenshot-expand">
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="secondary">
     <div class="container">
         <div class="experience">
             <h2>Experience</h2>
@@ -129,17 +285,17 @@ include "../templates/head.html"
                     $jobs = [
                         [
                             "class" => "freelancer",
-                            "title" => "Entwicklung & Projektleitung",
+                            "title" => "Developer & Scientist",
                             "firm" => "famoser GmbH",
                             "link" => "https://famoser.ch",
                             "period" => "Jan. 2018 - jetzt"
                         ],
                         [
                             "class" => "eth-master",
-                            "title" => "Informatik Master",
+                            "title" => "Master of Science ETH in Computer Science",
                             "firm" => "ETH - Eidgenössische Technische Hochschule Zürich",
                             "link" => "https://ethz.ch",
-                            "period" => "Sep. 2019 - Feb. 2022",
+                            "period" => "Sep. 2019 - Feb. 2022, grade average top 15%",
                             "image_name" => "eth.png"
                         ],
                         [
@@ -168,7 +324,7 @@ include "../templates/head.html"
                         ],
                         [
                             "class" => "eth-bachelor",
-                            "title" => "Informatik Bachelor",
+                            "title" => "Bachelor of Science ETH in Computer Science",
                             "firm" => "ETH - Eidgenössische Technische Hochschule Zürich",
                             "link" => "https://ethz.ch",
                             "period" => "Sep. 2015 - Sep. 2018",
@@ -274,173 +430,7 @@ include "../templates/head.html"
     </div>
 </section>
 
-<section class="primary">
-    <div class="container">
-        <div class="research">
-            <h2>Research & Teaching</h2>
-
-
-            <h3>
-                Master thesis: Swiss Internet Voting
-                <span class="text-secondary">2022</span>
-            </h3>
-            <p>
-                Die Master Arbeit untersucht Internetwahlen in der Schweiz. Zuerst wird ein Überblick über die Literatur gegeben, sowie relevante Ereignisse, Gesetze und politische Einflüsse in der Schweiz zusammengefasst.
-                Zur Verbesserung der aktuellen Situation wird ein Code-Voting System vorgeschlagen, das die Komplexität der involvierten Kryptographie drastisch reduziert, und gleichzeitig stärkere Sicherheitseigenschaften erreicht.
-                Es wird bewiesen, dass diese Konstruktion formelle Definitionen der rechtlichen Anforderungen erfüllt [<a href="papers/Swiss Internet Voting.pdf" target="_blank">herunterladen</a>].
-            </p>
-
-            <h3 class="mt-5">
-                Report: Ein Pairing-Based Identification Protocol für CHVote
-                <span class="text-secondary">2021</span>
-            </h3>
-            <p>
-                <a href="https://eprint.iacr.org/2017/325">CHVote</a> ist ein E-Voting Protokoll für die direkte Demokratie in der Schweiz. Als Teil der Stimmabgabe authentifizieren die Wahlberechtigten ihre Stimme mit einem Code. Es wurde untersucht, ob durch eine neuartige Konstruktion die Länge dieser Codes halbiert werden darf unter gleichbleibender Sicherheit. Die Konstruktion konnte grundsätzlich als sicher bewiesen werden, jedoch darf die Schlüssellänge weiterhin nicht halbiert werden [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way proof</a>].
-            </p>
-
-            <h3 class="mt-5">
-                Advanced Systems Lab: Fast imlementation of Curve25519 on Intel Skylake
-                <span class="text-secondary">2020</span>
-            </h3>
-            <p>
-                Mit drei Kommilitonen wurde untersucht, inwiefern sich bestehende Implementierungen für eine für die Kryptographie sehr wichtige elliptische Kurve weiter optimieren lassen.
-                Mehrere Ansätze aus bestehender Literatur wurden kombiniert und erweitert und auf die Intel Skylake Architektur angewandt.
-                Die resultierende Implementierung war 10% schneller als alle anderen aus dem Bernstein Implementierungsvergleich
-                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>,
-                <a href="papers/Fast Implementation of Curve25519 on Intel Skylake - code.zip" target="_blank">code</a>].
-            </p>
-
-            <h3 class="mt-5">
-                Bachelor thesis: Identifying encrypted online video streams using bitrate profiles
-                <span class="text-secondary">2018</span>
-            </h3>
-            <p>
-                Es wurde untersucht, inwiefern sich Daten, die beim Schauen von Videos auf Netflix anfallen, zur Identifikation der angeschauten Videos dienen könnten.
-                Bestehende Verfahren wurden reproduziert, und ein neues Verfahren, dass mit noch weniger Annahmen funktioniert, vorgestellt:
-                Lediglich anhand der durchschnittlich verbrauchten Datenmenge in verschiedenen Netzwerkkonditionen kann das entsprechende Video identifiziert werden
-                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>,
-                <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
-            </p>
-
-            <h3 class="mt-5">
-                Teaching: TheAlternative und UZH Kursleiter
-            </h3>
-            <p>
-                Als Teil von <a href="https://thealternative.ch" target="_blank">TheAlternative</a> organisiere und gebe ich Kurse für andere Angehörige der ETH
-                [<a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/project%20management" target="_blank">project management</a>,
-                    <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/web" target="_blank">web</a>,
-                    <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/pdf" target="_blank">pdf</a>].
-                Als Kursleiter der UZH gebe ich regelmässig Kurse zu git und GitLab zur Versionsverwaltung
-                [<a href="https://gitlab.uzh.ch/zi-it-training/git" target="_blank">git</a>].
-            </p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="container">
-        <div class="skills">
-            <h2>Projects</h2>
-            <div class="row mb-4">
-                <div class="col-md-4">
-                    <p><b>Language</b></p>
-                    <ul class="skill-filters primary clearfix">
-                        <li><a href="#" data-filter=".php">PHP</a></li>
-                        <li><a href="#" data-filter=".javascript">JavaScript</a></li>
-                        <li><a href="#" data-filter=".csharp">C#</a></li>
-                        <li><a href="#" data-filter=".java">Java</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p><b>Framework</b></p>
-                    <ul class="skill-filters secondary clearfix">
-                        <li><a href="#" data-filter=".symfony">Symfony</a></li>
-                        <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
-                        <li><a href="#" data-filter=".angular">Angular</a></li>
-                        <li><a href="#" data-filter=".play">Play</a></li>
-                        <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="skills-grid-wrapper container">
-        <div class="skills-grid">
-            <?php
-            $projects = getProjects();
-            foreach ($projects as $project) {
-                $showDetails = isset($project["implementation"]) && $project["featured"];
-                ?>
-                <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $project["featured"] ? "featured " : "not-featured " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
-                    <h3><?= $project["name"] ?></h3>
-                    <p><?= $project["purpose"] ?></p>
-                    <?php if ($showDetails) { ?>
-                        <p class="description hidden">
-                            <?= $project["implementation"] ?>
-                        </p>
-                    <?php } ?>
-                    <p>
-                        <?php foreach ($project["languages"] as $language) { ?>
-                            <span class="skill primary"><?= $language ?></span>
-                        <?php } ?>
-                        <?php foreach ($project["frameworks"] as $framework) { ?>
-                            <span class="skill secondary"><?= $framework ?></span>
-                        <?php } ?>
-                        <?php if (isset($project["employer"])) { ?>
-                            <span class="skill bg-light"><?= $project["employer"] ?></span>
-                        <?php } ?>
-                        <?php if (isset($project["focus"])) { ?>
-                            <span class="skill bg-light"><?= $project["focus"] ?></span>
-                        <?php } ?>
-                    </p>
-                    <?php if (isset($project["source_url"]) || isset($project["publish_url"])) { ?>
-                        <p>
-                            <?php if (isset($project["source_url"])) { ?>
-                                <a href="<?= $project["source_url"] ?>" target="_blank">
-                                    <?php if (strpos($project["source_url"], "github") > 0) { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                src="icons/github.svg">
-                                    <?php } else if (strpos($project["source_url"], "gitlab") > 0) { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                src="icons/gitlab.svg">
-                                    <?php } else { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                src="icons/external-link.svg">
-                                    <?php } ?>
-                                </a>
-                            <?php } ?>
-                            <?php if (isset($project["publish_url"])) { ?>
-                                <a href="<?= $project["publish_url"] ?>" target="_blank">
-                                    <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
-                                        <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
-                                                src="icons/microsoft.svg">
-                                    <?php } else { ?>
-                                        <img class="icon" alt="visit <?= $project["name"] ?>"
-                                                src="icons/external-link.svg">
-                                    <?php } ?>
-                                </a>
-                            <?php } ?>
-                        </p>
-                    <?php } ?>
-                </div>
-            <?php } ?>
-        </div>
-
-        <p class="text-center">
-            <button id="show-all-active" class="m-5 btn btn-outline-secondary">
-                Show all active
-            </button>
-        </p>
-
-        <p class="text-center">
-            <button id="show-archived" class="m-5 btn btn-outline-secondary d-none">
-                Show archived
-            </button>
-        </p>
-    </div>
-</section>
-
-<section>
+<section  class="secondary">
     <div class="container">
         <div class="network">
             <div class="row">
@@ -475,7 +465,7 @@ include "../templates/head.html"
             </div>
         </div>
 
-        <p class="text-center text-muted mt-5">famoser GmbH, CHE-498.133.112<br/>Witikonerstrasse 245, 8053 Zürich</p>
+        <p class="text-center text-muted mt-5">famoser GmbH, CHE-498.133.112<br/>Moosburgstrasse 25, 8307 Effretikon</p>
     </div>
 </section>
 

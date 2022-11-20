@@ -92,11 +92,11 @@ section {
 }
 
 .spacer {
-    margin-top: 12em;
+    margin-top: 9em;
 }
 
 .spacer-half {
-    margin: 5.4em 0;
+    margin-top: 4.5em;
 }
 
 /**
@@ -126,38 +126,16 @@ a:hover, a:focus,
 }
 
 /**
-besonders famos
+Projects
  */
+
+.img-profile {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .06), 0 4px 16px 0 rgba(0, 0, 0, .12);
+    max-height: 22em;
+}
 
 .img-screenshot {
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .06), 0 4px 16px 0 rgba(0, 0, 0, .12);
-}
-
-@media (min-width: 1200px) {
-    .img-right-correction {
-        max-width: calc(100% - 1.5rem);
-    }
-}
-
-@media (min-width: 1900px) {
-    .img-right-correction {
-        max-width: 100%;
-    }
-
-    .container-left-expand {
-        max-width: 1900px;
-        padding-right: 380px;
-    }
-
-    .container-right-expand {
-        max-width: 1900px;
-        padding-left: 380px;
-    }
-
-    .img-screenshot-expand {
-        margin: 0 7.1rem!important;
-        width: calc(100% - 14.2rem);
-    }
 }
 
 /**
