@@ -75,7 +75,7 @@ include "../templates/head.html"
                 </p>
             </div>
             <div class="col-xl-8">
-                <img src="images/projects/baupen.ch.png" alt="Screenshot Pendenzenverwaltung baupen.ch"
+                <img src="images/projects/baupen.png" alt="Screenshot Pendenzenverwaltung baupen.ch"
                  class="mt-4 mt-xl-0 ml-xl-4 img-fluid img-screenshot">
             </div>
         </div>
