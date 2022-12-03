@@ -246,8 +246,13 @@ skills
 }
 
 @media ( max-width: 599px ) {
+    .skills-grid {
+        margin-right: 0;
+    }
+
     .skills-grid-item {
-        width: calc(100% - 0.5em);
+        width: 100%;
+        margin-right: 0em;
     }
 }
 
@@ -376,4 +381,10 @@ network
 
 .network .icon:hover {
     opacity: 1;
+}
+
+@media ( max-width: 999px ) {
+    .network .icon {
+        height: 2em;
+    }
 }

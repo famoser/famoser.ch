@@ -75,8 +75,10 @@ include "../templates/head.html"
                 </p>
             </div>
             <div class="col-xl-8">
-                <img src="images/projects/baupen.png" alt="Screenshot Pendenzenverwaltung baupen.ch"
-                 class="mt-4 mt-xl-0 ml-xl-4 img-fluid img-screenshot">
+                <div class="ps-xl-5 mt-4 mt-xl-0">
+                    <img src="images/projects/baupen.png" alt="Screenshot Pendenzenverwaltung baupen.ch"
+                        class="img-fluid img-screenshot">
+                </div>
             </div>
         </div>
     </div>
@@ -99,8 +101,10 @@ include "../templates/head.html"
                     It is continously being extended to further reduce administrational effort and increase usability.
             </div>
             <div class="col-xl-8">
-                <img src="images/projects/evoting.png" alt="Screenshot eVoting Stände"
-                    class="mt-4 mt-xl-0 img-right-correction img-fluid img-screenshot">
+                <div class="pe-xl-5 mt-4 mt-xl-0">
+                    <img src="images/projects/evoting.png" alt="Screenshot eVoting Stände"
+                        class="img-fluid img-screenshot">
+                </div>
             </div>
         </div>
     </div>
@@ -434,28 +438,28 @@ include "../templates/head.html"
     <div class="container">
         <div class="network">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-3">
                     <p>
                         <a href="https://github.com/famoser/" target="_blank">
                             <img class="icon" src="icons/github.svg" alt="github icon">
                         </a>
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-3">
                     <p>
                         <a href="https://stackoverflow.com/users/2259391/florian-moser" target="_blank">
                             <img class="icon" src="icons/stackoverflow.svg" alt="stackoverflow icon">
                         </a>
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-3">
                     <p>
                         <a href="https://linkedin.com/in/famoser" target="_blank">
                             <img class="icon" src="icons/linkedin.svg" alt="linkedin icon">
                         </a>
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-3">
                     <p>
                         <a href="https://gitlab.com/famoser" target="_blank">
                             <img class="icon" src="icons/gitlab.svg" alt="gitlab icon">
