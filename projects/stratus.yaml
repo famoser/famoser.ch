@@ -10,8 +10,8 @@ kickoff_date: 2022-09
 last_activity_date: 2022-09
 archived: false
 
-languages: [Java, JavaScript]
-frameworks: [Spring, React]
+languages: [JavaScript]
+frameworks: [React]
 platform: Web
 focus: Frontend Engineer
 hours: 200
