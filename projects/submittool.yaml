@@ -3,13 +3,15 @@ purpose: allow researchers to submit their results and evaluate them instantly
 implementation: |
   For the yearly SLAM challenge of Hilti, researchers are given a data set (LIDAR, IMU, Camera) and then have to infer the position of the device as exact as possible. 
   Participating researchers can upload their best guesses, which are then automatically scored in a docker runtime. 
-  When the deadline has passed, the best teams are shown in a leaderboard.
+  When the deadline has passed, the best teams are shown on a leaderboard.
 
 kickoff_date: 2022-02
 publish_date: 2022-02
-last_activity_date: 2022-02
+last_activity_date: 2023-03
 
 languages: [JavaScript, PHP]
 frameworks: [Symfony]
 platform: Web
-hours: 40
+hours: 60
+
+featured: true

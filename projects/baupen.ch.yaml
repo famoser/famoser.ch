@@ -10,7 +10,7 @@ publish_url: https://baupen.ch
 
 kickoff_date: 2018-06
 publish_date: 2018-10
-last_activity_date: 2022-02
+last_activity_date: 2023-03
 archived: false
 
 frameworks: [API Platform, Symfony, Vue.js]

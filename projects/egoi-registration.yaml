@@ -9,7 +9,7 @@ publish_url: https://registration.egoi.org
 
 kickoff_date: 2020-11
 last_activity_date: 2021-01
-archived: false
+archived: true
 
 languages: [JavaScript, PHP]
 frameworks: [Symfony]
