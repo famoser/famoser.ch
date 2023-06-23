@@ -33,9 +33,8 @@ function getProject(string $filePath)
      * taken from projects/normalize.py
      */
 
-    $languageToClass = ["PHP" => "php", "C#" => "csharp", "JavaScript" => "javascript", "Python" => "python", "Kotlin" => "kotlin", "Java" => "java"];
-    $frameworkToClass = ["Symfony" => "symfony", "Vue.js" => "vuejs", "Angular" => "angular", "ASP.NET" => "asp-net", "Wordpress" => "wordpress", "Play" => "play"];
-    $platformToClass = ["Web" => "web", "Windows" => "windows", "Android" => "android"];
+    $languageToClass = ["PHP" => "php", "JavaScript" => "javascript", "C#" => "csharp", "Python" => "python", "Java" => "java"];
+    $frameworkToClass = ["Symfony" => "symfony", "Vue.js" => "vuejs", "React" => "react"];
 
     $frameworkThatImpliesLanguage = [
         "Symfony" => "PHP",
@@ -93,22 +92,14 @@ function getProject(string $filePath)
         if ($project["platform"] == "Web") {
             $classes[] = "css-html";
         }
-        if (key_exists($project["platform"], $platformToClass)) {
-            $classes[] = $platformToClass[$project["platform"]];
-        }
-    }
-
-    if (key_exists("hours", $project)) {
-        $hours = $project["hours"];
-        if ($hours >= 300) {
-            $classes[] = "hours-300-plus";
-        }
     }
 
     $project["featured"] = isset($project["featured"]) && $project["featured"];
     $project["archived"] = isset($project["archived"]) && $project["archived"];
-    if ($project["featured"]) {
+    if ($project["featured"] && key_exists("hours", $project) && $project["hours"] >= 150) {
         $classes[] = "featured";
+    } else {
+        $classes[] = "not-featured";
     }
     if (!$project["archived"]) {
         $classes[] = "active";

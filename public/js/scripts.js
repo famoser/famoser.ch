@@ -21,6 +21,9 @@ function initializeExperienceHover() {
 let current_filter = "";
 function initializeSkills()
 {
+    const collapseElementList = document.querySelectorAll('.collapse')
+    const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
+
     // initialize archive functionality
     const skillsGrid = $(".skills-grid");
     skillsGrid.addClass("hide-archived");

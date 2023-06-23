@@ -10,11 +10,11 @@ publish_url: https://baupen.ch
 
 kickoff_date: 2018-06
 publish_date: 2018-10
-last_activity_date: 2023-03
+last_activity_date: 2023-06
 archived: false
 
 frameworks: [API Platform, Symfony, Vue.js]
 platform: Web
-hours: 300
+hours: 700
 
 featured: true

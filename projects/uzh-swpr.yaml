@@ -1,4 +1,4 @@
-name: NTP UZH
+name: SWPr UZH
 purpose: order, approval and procurement of software
 implementation: |
   To centralize and unify software order at University of Zurich, a tools is developed to order software.
@@ -6,9 +6,9 @@ implementation: |
 
 kickoff_date: 2022-03
 publish_date: 2022-08
-last_activity_date: 2022-08
+last_activity_date: 2023-05
 
 languages: [PHP]
 frameworks: [Symfony]
 platform: Web
-hours: 100
+hours: 150

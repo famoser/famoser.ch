@@ -40,7 +40,8 @@ include "../templates/head.html"
                             <a href="#research">Researcher</a> of internet voting schemes.<br>
                         </p>
 
-                        <p class="mt-5">Do you have a new project for me? Contact me: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u></p>
+                        <p class="mt-5">Do you have a new project for me? Contact me: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u>
+                        </p>
                     </div>
                     <div class="col-xl-4 d-none d-xl-block">
                         <img src="images/Florian Moser.jpg" alt="Portrait Florian Moser" class="img-fluid img-profile">
@@ -61,9 +62,10 @@ include "../templates/head.html"
     <div class="container">
         <div class="row">
             <div class="col-xl-4">
-                <h3>Baupen</h2>
+                <h3>Baupen</h3>
                 <p>
-                    The issue management system supports site managers in the recording of defects, as well as the acceptance and the documentation of the construction site.
+                    The issue management system supports site managers in the recording of defects, as well as the
+                    acceptance and the documentation of the construction site.
                 </p>
                 <p>
                     The combination of webpage and app is in use on dozens of construction sites.
@@ -77,23 +79,24 @@ include "../templates/head.html"
             <div class="col-xl-8">
                 <div class="ps-xl-5 mt-4 mt-xl-0">
                     <img src="images/projects/baupen.png" alt="Screenshot Pendenzenverwaltung baupen.ch"
-                        class="img-fluid img-screenshot">
+                         class="img-fluid img-screenshot">
                 </div>
             </div>
         </div>
     </div>
 
     <div class="spacer"></div>
-    
+
     <div class="container">
         <div class="row flex-row-reverse">
             <div class="col-xl-4">
-                <h3>E-Voting for the University of Zürich</h2>
+                <h3>E-Voting for the University of Zürich</h3>
                 <p>
-                    Members of V-ATP (administrative and technical staff), VFFL (senior researchers and teaching staff) and VAUZ (junior researchers) elect delegates into University committees.
+                    Members of V-ATP (administrative and technical staff), VFFL (senior researchers and teaching staff)
+                    and VAUZ (junior researchers) elect delegates into University committees.
                 </p>
                 <p>
-                    A security analysis of the concept was created for and reviewed by the University. 
+                    A security analysis of the concept was created for and reviewed by the University.
                     The source code underwent a code review by <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>.
                 </p>
                 <p>
@@ -103,14 +106,14 @@ include "../templates/head.html"
             <div class="col-xl-8">
                 <div class="pe-xl-5 mt-4 mt-xl-0">
                     <img src="images/projects/evoting.png" alt="Screenshot eVoting Stände"
-                        class="img-fluid img-screenshot">
+                         class="img-fluid img-screenshot">
                 </div>
             </div>
         </div>
     </div>
 
     <div class="spacer"></div>
-    
+
     <div class="container">
         <div class="skills">
             <div class="row mb-4">
@@ -128,9 +131,7 @@ include "../templates/head.html"
                     <ul class="skill-filters secondary clearfix">
                         <li><a href="#" data-filter=".symfony">Symfony</a></li>
                         <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
-                        <li><a href="#" data-filter=".angular">Angular</a></li>
-                        <li><a href="#" data-filter=".play">Play</a></li>
-                        <li><a href="#" data-filter=".asp-net">ASP.NET</a></li>
+                        <li><a href="#" data-filter=".react">React</a></li>
                     </ul>
                 </div>
             </div>
@@ -143,7 +144,7 @@ include "../templates/head.html"
             foreach ($projects as $project) {
                 $showDetails = isset($project["implementation"]) && $project["featured"];
                 ?>
-                <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $project["featured"] ? "featured " : "not-featured " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
+                <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
                     <h3><?= $project["name"] ?></h3>
                     <p><?= $project["purpose"] ?></p>
                     <?php if ($showDetails) { ?>
@@ -171,13 +172,13 @@ include "../templates/head.html"
                                 <a href="<?= $project["source_url"] ?>" target="_blank">
                                     <?php if (strpos($project["source_url"], "github") > 0) { ?>
                                         <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                src="icons/github.svg">
+                                             src="icons/github.svg">
                                     <?php } else if (strpos($project["source_url"], "gitlab") > 0) { ?>
                                         <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                src="icons/gitlab.svg">
+                                             src="icons/gitlab.svg">
                                     <?php } else { ?>
                                         <img class="icon" alt="source of <?= $project["name"] ?>"
-                                                src="icons/external-link.svg">
+                                             src="icons/external-link.svg">
                                     <?php } ?>
                                 </a>
                             <?php } ?>
@@ -185,10 +186,10 @@ include "../templates/head.html"
                                 <a href="<?= $project["publish_url"] ?>" target="_blank">
                                     <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
                                         <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
-                                                src="icons/microsoft.svg">
+                                             src="icons/microsoft.svg">
                                     <?php } else { ?>
                                         <img class="icon" alt="visit <?= $project["name"] ?>"
-                                                src="icons/external-link.svg">
+                                             src="icons/external-link.svg">
                                     <?php } ?>
                                 </a>
                             <?php } ?>
@@ -200,7 +201,7 @@ include "../templates/head.html"
 
         <p class="text-center">
             <button id="show-all-active" class="m-5 btn btn-outline-secondary">
-                Show all active
+                Include smaller projects
             </button>
         </p>
 
@@ -215,14 +216,29 @@ include "../templates/head.html"
 <section id="research" class="primary">
     <div class="container">
         <div class="research">
-            <h2>Research & Teaching</h2>
+            <h2>Research</h2>
 
-            <h3>
+            <blockquote class="blockquote">
+                <p>We explore internet voting in real-world settings (e.g. political elections, university
+                    elections). In these settings, we design novel schemes giving strong guarantees under permissible
+                    assumptions. We optimize usability and security trade-offs using acceptable user experiences (e.g.
+                    code voting). We target low complexity of the resulting specification while choosing simple
+                    cryptographic primitives (e.g. XOR). We formulate understandable security definitions by focusing on
+                    clarity (e.g. clear structure). We prove these properties with computational proofs and with formal
+                    verification tools such as ProVerif or Tamarin.</p>
+                <footer class="blockquote-footer">Research statement of PhD at LORIA</footer>
+            </blockquote>
+
+            <h3 class="mt-5">
                 Research proposal: Code Voting for Swiss Internet Voting
                 <span class="text-secondary">2022, <a href="https://e-vote-id.org/">E-Vote ID 2022</a></span>
             </h3>
             <p>
-                Complexity of the Swiss internet voting proposals is identified as a repeatedly voiced concern in reviews. Code voting is proposed as an additional mechanism, which reduces the complexity of the involved cryptography while increasing security. The protocol, security definitions motivated by Swiss law and corresponding proofs are sketched [<a href="papers/Code Voting for Swiss Internet Voting.pdf" target="_blank">download</a>].
+                Complexity of the Swiss internet voting proposals is identified as a repeatedly voiced concern in
+                reviews. Code voting is proposed as an additional mechanism, which reduces the complexity of the
+                involved cryptography while increasing security. The protocol, security definitions motivated by Swiss
+                law and corresponding proofs are sketched [<a href="papers/Code Voting for Swiss Internet Voting.pdf"
+                                                              target="_blank">download</a>].
             </p>
 
             <h3 class="mt-5">
@@ -230,7 +246,12 @@ include "../templates/head.html"
                 <span class="text-secondary">2022</span>
             </h3>
             <p>
-                The Master's thesis examines internet voting in Switzerland. First, an overview of the scientific literature is given, and then relevant events, laws and political influences in Switzerland are summarised. To improve the current situation, a code-voting system is proposed that drastically reduces the complexity of the cryptography involved, while achieving stronger security properties. It is proven that this design meets formal definitions of legal requirements [<a href="papers/Swiss Internet Voting.pdf" target="_blank">download</a>].
+                The Master's thesis examines internet voting in Switzerland. First, an overview of the scientific
+                literature is given, and then relevant events, laws and political influences in Switzerland are
+                summarised. To improve the current situation, a code-voting system is proposed that drastically reduces
+                the complexity of the cryptography involved, while achieving stronger security properties. It is proven
+                that this design meets formal definitions of legal requirements [<a
+                        href="papers/Swiss Internet Voting.pdf" target="_blank">download</a>].
             </p>
 
             <h3 class="mt-5">
@@ -238,7 +259,15 @@ include "../templates/head.html"
                 <span class="text-secondary">2021</span>
             </h3>
             <p>
-                <a href="https://eprint.iacr.org/2017/325">CHVote</a> is an internet voting protocol suitable for use in Switzerland. As part of the casting procedure, voters authenticate their vote by entering an authentication key. In an effort to increase usability, a novel pairing-based identification protocol was proposed which requires only half the key for the same security guarantee than the previous proposal. The report proves the protocol secure, but asserts that the key size cannot be halved [<a href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>, <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way proof</a>].
+                <a href="https://eprint.iacr.org/2017/325">CHVote</a> is an internet voting protocol suitable for use in
+                Switzerland. As part of the casting procedure, voters authenticate their vote by entering an
+                authentication key. In an effort to increase usability, a novel pairing-based identification protocol
+                was proposed which requires only half the key for the same security guarantee than the previous
+                proposal. The report proves the protocol secure, but asserts that the key size cannot be halved [<a
+                        href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>,
+                <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>,
+                <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way
+                    proof</a>].
             </p>
 
             <h3 class="mt-5">
@@ -246,8 +275,12 @@ include "../templates/head.html"
                 <span class="text-secondary">2020</span>
             </h3>
             <p>
-                As a joint work with three other students, it was investigated whether existing implementations of the widely used Curve25519 could be further improved. Multiple approaches out of existing literature were combined and extended. The resulting implementation for the Intel Skylake architecture was 10% faster than all other implementations of the Bernstein comparison
-                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf" target="_blank">herunterladen</a>,
+                As a joint work with three other students, it was investigated whether existing implementations of the
+                widely used Curve25519 could be further improved. Multiple approaches out of existing literature were
+                combined and extended. The resulting implementation for the Intel Skylake architecture was 10% faster
+                than all other implementations of the Bernstein comparison
+                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf"
+                    target="_blank">herunterladen</a>,
                 <a href="papers/Fast Implementation of Curve25519 on Intel Skylake - code.zip" target="_blank">code</a>].
             </p>
 
@@ -256,23 +289,29 @@ include "../templates/head.html"
                 <span class="text-secondary">2018</span>
             </h3>
             <p>
-                It was investigated whether passively observable network traffic of netflix could be used to identify the currently watched content. Existing approaches were replicated, and extended. The resulting implementation needed only to measure the in average used bandwidth to identify what content is being watched
+                It was investigated whether passively observable network traffic of netflix could be used to identify
+                the currently watched content. Existing approaches were replicated, and extended. The resulting
+                implementation needed only to measure the in average used bandwidth to identify what content is being
+                watched
                 [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>,
                 <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
             </p>
 
             <h3 class="mt-5">
-                Teaching: TheAlternative 
-                <span class="text-secondary">2016-2022</span>
-                and University of Zürich 
-                <span class="text-secondary">since 2020</span>
+                Teaching: TheAlternative
+                <span class="text-secondary">2016-2023</span>
+                and University of Zürich
+                <span class="text-secondary">2020-2023</span>
             </h3>
             <p>
-                As part of <a href="https://thealternative.ch" target="_blank">TheAlternative</a>, I used to organize and give lectures 
-                [<a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/project%20management" target="_blank">project management</a>,
+                As part of <a href="https://thealternative.ch" target="_blank">TheAlternative</a>, I used to organize
+                and give lectures
+                [<a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/project%20management"
+                    target="_blank">project management</a>,
                 <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/web" target="_blank">web</a>,
                 <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/pdf" target="_blank">pdf</a>].
-                As a course instructor for <a href="https://www.uzh.ch" target="_blank">University of Zürich</a>, I regularely give a course about git and GitLab 
+                As a course instructor for <a href="https://www.uzh.ch" target="_blank">University of Zürich</a>, I
+                regularely gave a course about git and GitLab
                 [<a href="https://gitlab.uzh.ch/zi-it-training/git" target="_blank">git</a>].
             </p>
         </div>
@@ -288,16 +327,24 @@ include "../templates/head.html"
                     <?php
                     $jobs = [
                         [
+                            "class" => "phd",
+                            "title" => "PhD student in group PESTO (Véronique Cortier)",
+                            "firm" => "INRIA Nancy - French Institute for Research in Computer Science",
+                            "link" => "https://www.inria.fr/en/inria-nancy-grand-est-centre",
+                            "period" => "since Jul. 2023",
+                            "image_name" => "inria.png"
+                        ],
+                        [
                             "class" => "freelancer",
                             "title" => "Developer & Scientist",
                             "firm" => "famoser GmbH",
                             "link" => "https://famoser.ch",
-                            "period" => "Jan. 2018 - jetzt"
+                            "period" => "since Jan. 2018"
                         ],
                         [
                             "class" => "eth-master",
                             "title" => "Master of Science ETH in Computer Science",
-                            "firm" => "ETH - Eidgenössische Technische Hochschule Zürich",
+                            "firm" => "ETH Zürich - Federal Institute of Technology",
                             "link" => "https://ethz.ch",
                             "period" => "Sep. 2019 - Feb. 2022, grade average top 15%",
                             "image_name" => "eth.png"
@@ -305,7 +352,7 @@ include "../templates/head.html"
                         [
                             "class" => "vseth",
                             "title" => "Board Member, Ressort Internal Affairs",
-                            "firm" => "VSETH - Dachverband der Studierenden ETH",
+                            "firm" => "VSETH - Umbrella organisation of all students ETH",
                             "link" => "https://vseth.ethz.ch",
                             "period" => "Sep. 2019 - Sep. 2020",
                             "image_name" => "vseth.png"
@@ -329,7 +376,7 @@ include "../templates/head.html"
                         [
                             "class" => "eth-bachelor",
                             "title" => "Bachelor of Science ETH in Computer Science",
-                            "firm" => "ETH - Eidgenössische Technische Hochschule Zürich",
+                            "firm" => "ETH Zürich - Federal Institute of Technology",
                             "link" => "https://ethz.ch",
                             "period" => "Sep. 2015 - Sep. 2018",
                             "image_name" => "eth.png"
@@ -355,12 +402,13 @@ include "../templates/head.html"
                     <div class="job-wrapper">
                         <!--
                         10 width = 100% pensum
-                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 92 feb 2022, 102 dez 2022
+                        1 height = 1 month
+                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 92 feb 2022, 108 jun 2022
 
                         59 height = 59 months; from Sep 2015 - Juli 2020
                         -->
                         <svg class="jobs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 10 102"
+                             viewBox="0 0 10 108"
                              height="109%"
                              width="100%">
                             <filter id="dry">
@@ -419,22 +467,22 @@ include "../templates/head.html"
                                     10 Jul 2019 (6+48) - Sep 2019 (8+48)
                                     02 Oct 2020 (9+60) - Dez 2020 (11+60)
                                     -->
-                                    <polygon points="8,36 10,36 10,102 0,102 0,92 8,92 8,69 9,69 9,45 8,45"
+                                    <polygon points="8,36 10,36 10,108 0,108 0,92 8,92 8,69 9,69 9,45 8,45"
                                              fill="#8BBB9B"></polygon>
                                 </g>
                             </g>
                         </svg>
-                        <small class="axis-top text-end text-secondary">jetzt</small>
+                        <small class="axis-top text-end text-secondary">today</small>
                         <small class="axis-bottom text-end text-secondary">2015</small>
                     </div>
-                    <small class="text-center text-secondary ms-5 mt-1 d-block">Pensum</small>
+                    <small class="text-center text-secondary ms-5 mt-1 d-block">Workload</small>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section  class="secondary">
+<section class="secondary">
     <div class="container">
         <div class="network">
             <div class="row">
@@ -469,7 +517,8 @@ include "../templates/head.html"
             </div>
         </div>
 
-        <p class="text-center text-muted mt-5">famoser GmbH, CHE-498.133.112<br/>Moosburgstrasse 25, 8307 Effretikon</p>
+        <p class="text-center text-muted mt-5">famoser GmbH, CHE-498.133.112<br/>c/o Florian Moser, Moosburgstrasse 25,
+            CH-8307 Effretikon</p>
     </div>
 </section>
 

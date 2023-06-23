@@ -170,7 +170,7 @@ g.active {
 
 .axis-top, .axis-bottom {
     position: absolute;
-    right: -2.5em;
+    right: -2.8em;
 }
 
 .axis-top {
@@ -186,7 +186,7 @@ g.active {
     position: absolute;
     top: 1em;
     right: 1em;
-    max-width: 10em;
+    max-width: 12em;
     max-height: 5.5em;
 }
 

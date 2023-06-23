@@ -7,13 +7,13 @@ implementation: |
   By a team of 8 in Zürich, and a team of 10 in Cluj, the software is developed in an agile setting for Basler & Hofmann AG in Zürich.
 
 kickoff_date: 2022-09
-last_activity_date: 2023-03
+last_activity_date: 2023-06
 archived: false
 
 languages: [JavaScript]
 frameworks: [React]
 platform: Web
-focus: Frontend Engineer
-hours: 200
+focus: Frontend Architect
+hours: 1600
 
 featured: true
