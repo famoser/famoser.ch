@@ -339,14 +339,14 @@ include "../templates/head.html"
                             "title" => "Developer & Scientist",
                             "firm" => "famoser GmbH",
                             "link" => "https://famoser.ch",
-                            "period" => "since Jan. 2018"
+                            "period" => "since Jan. 2018, incorporated since Dec. 2022"
                         ],
                         [
-                            "class" => "eth-master",
+                            "class" => "eth",
                             "title" => "Master of Science ETH in Computer Science",
                             "firm" => "ETH Zürich - Federal Institute of Technology",
                             "link" => "https://ethz.ch",
-                            "period" => "Sep. 2019 - Feb. 2022, grade average top 15%",
+                            "period" => "Sep. 2015 - Sep. 2018, Sep. 2019 - Feb. 2022, grade average top 15%",
                             "image_name" => "eth.png"
                         ],
                         [
@@ -371,16 +371,8 @@ include "../templates/head.html"
                             "firm" => "JKweb GmbH - Schöne und schlichte Webseiten",
                             "link" => "https://jkweb.ch",
                             "period" => "Feb. 2016 - Dez. 2017",
-                            "image_name" => "jkweb.png"
-                        ],
-                        [
-                            "class" => "eth-bachelor",
-                            "title" => "Bachelor of Science ETH in Computer Science",
-                            "firm" => "ETH Zürich - Federal Institute of Technology",
-                            "link" => "https://ethz.ch",
-                            "period" => "Sep. 2015 - Sep. 2018",
-                            "image_name" => "eth.png"
-                        ],
+                            "image_name" => "jkweb.svg"
+                        ]
                     ];
 
                     foreach ($jobs as $job) { ?>
@@ -417,8 +409,8 @@ include "../templates/head.html"
                                 </feComponentTransfer>
                             </filter>
                             <g transform="scale(-1,-1)" transform-origin="center">
-                                <g class="eth-master" filter="url(#dry)">
-                                    <title>ETH</title>
+                                <g class="eth" filter="url(#dry)">
+                                    <title>ETH Master</title>
                                     <!--
                                     10 sep 2015 (8) - jan 2016 (0+12)
                                     0.8 feb 2016 - aug 2018 (7+36)
@@ -428,8 +420,8 @@ include "../templates/head.html"
                                     -->
                                     <polygon points="0,54 4,54 4,69 8,69 8,92 0,92" fill="#1f4070"></polygon>
                                 </g>
-                                <g class="eth-bachelor" filter="url(#dry)">
-                                    <title>ETH</title>
+                                <g class="eth" filter="url(#dry)">
+                                    <title>ETH Bachelor</title>
                                     <!--
                                     10 sep 2015 (8) - jan 2016 (0+12)
                                     0.8 feb 2016 - aug 2018 (7+36)
