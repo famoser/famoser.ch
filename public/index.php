@@ -219,14 +219,9 @@ include "../templates/head.html"
             <h2>Research</h2>
 
             <blockquote class="blockquote">
-                <p>We explore internet voting in real-world settings (e.g. political elections, university
-                    elections). In these settings, we design novel schemes giving strong guarantees under permissible
-                    assumptions. We optimize usability and security trade-offs using acceptable user experiences (e.g.
-                    code voting). We target low complexity of the resulting specification while choosing simple
-                    cryptographic primitives (e.g. XOR). We formulate understandable security definitions by focusing on
-                    clarity (e.g. clear structure). We prove these properties with computational proofs and with formal
-                    verification tools such as ProVerif or Tamarin.</p>
-                <footer class="blockquote-footer">Research statement of PhD at LORIA</footer>
+                <p><b>We explore internet voting in real-world settings (e.g. political elections, university
+                    elections).</b> We design novel schemes achiving strong guarantees under realistic assumptions, balancing usability and security, while targeting low complexity of the resulting specification. We formulate clear security definitions, and then prove the security properties formally using computational and symbolic proofs.</p>
+                <footer class="blockquote-footer">Research statement of PhD at LORIA (non-verbatim)</footer>
             </blockquote>
 
             <h3 class="mt-5 collapse-anchor" role="button" aria-controls="research-proposal">
@@ -243,7 +238,7 @@ include "../templates/head.html"
 
             <h3 class="mt-5 collapse-anchor" role="button" aria-controls="master-thesis">
                 Master thesis: Swiss Internet Voting
-                <span class="text-secondary">2022</span>
+                <span class="text-secondary">2022, <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/535992">ETH Research Collection</a></span>
             </h3>
             <p id="master-thesis" aria-expanded="false" class="d-none">
                 The Master's thesis examines internet voting in Switzerland. First, an overview of the scientific
