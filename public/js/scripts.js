@@ -1,9 +1,24 @@
 $(document).ready(function () {
     initializeExperienceHover();
     initializeSkills();
+    initializeCollapse();
 
     console.log('🌈');
 });
+
+function initializeCollapse() {
+    const collapseAnchors = $(".collapse-anchor");
+    collapseAnchors.on("click", function (e) {
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        const targetId = $(this).attr('aria-controls');
+        $('#' + targetId).toggleClass('d-none');
+        $('#' + targetId).attr('aria-expanded', $(this).hasClass('active'));
+
+        return false
+    })
+}
 
 function initializeExperienceHover() {
     $('div.job').hover(
@@ -21,9 +36,6 @@ function initializeExperienceHover() {
 let current_filter = "";
 function initializeSkills()
 {
-    const collapseElementList = document.querySelectorAll('.collapse')
-    const collapseList = [...collapseElementList].map(collapseEl => new bootstrap.Collapse(collapseEl))
-
     // initialize archive functionality
     const skillsGrid = $(".skills-grid");
     skillsGrid.addClass("hide-archived");

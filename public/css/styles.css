@@ -138,6 +138,23 @@ Projects
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .06), 0 4px 16px 0 rgba(0, 0, 0, .12);
 }
 
+/** 
+Research
+ */
+
+.collapse-anchor::before {
+    display: inline-block;
+    content: url('/icons/chevron-right.svg');
+    height: 1em;
+    width: 1em;
+    transition: transform 0.2s;
+    transform-origin: 40% 60%;
+}
+
+.collapse-anchor.active::before {
+    transform: rotate(90deg);
+}
+
 /**
 Experience
  */

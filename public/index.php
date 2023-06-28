@@ -229,11 +229,11 @@ include "../templates/head.html"
                 <footer class="blockquote-footer">Research statement of PhD at LORIA</footer>
             </blockquote>
 
-            <h3 class="mt-5">
+            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="research-proposal">
                 Research proposal: Code Voting for Swiss Internet Voting
                 <span class="text-secondary">2022, <a href="https://e-vote-id.org/">E-Vote ID 2022</a></span>
             </h3>
-            <p>
+            <p id="research-proposal" aria-expanded="false" class="d-none">
                 Complexity of the Swiss internet voting proposals is identified as a repeatedly voiced concern in
                 reviews. Code voting is proposed as an additional mechanism, which reduces the complexity of the
                 involved cryptography while increasing security. The protocol, security definitions motivated by Swiss
@@ -241,11 +241,11 @@ include "../templates/head.html"
                                                               target="_blank">download</a>].
             </p>
 
-            <h3 class="mt-5">
+            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="master-thesis">
                 Master thesis: Swiss Internet Voting
                 <span class="text-secondary">2022</span>
             </h3>
-            <p>
+            <p id="master-thesis" aria-expanded="false" class="d-none">
                 The Master's thesis examines internet voting in Switzerland. First, an overview of the scientific
                 literature is given, and then relevant events, laws and political influences in Switzerland are
                 summarised. To improve the current situation, a code-voting system is proposed that drastically reduces
@@ -254,11 +254,11 @@ include "../templates/head.html"
                         href="papers/Swiss Internet Voting.pdf" target="_blank">download</a>].
             </p>
 
-            <h3 class="mt-5">
+            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="report-chvote-pairing-based-id">
                 Report: A Pairing-Based Identification Protocol for CHVote
                 <span class="text-secondary">2021</span>
             </h3>
-            <p>
+            <p id="report-chvote-pairing-based-id" aria-expanded="false" class="d-none">
                 <a href="https://eprint.iacr.org/2017/325">CHVote</a> is an internet voting protocol suitable for use in
                 Switzerland. As part of the casting procedure, voters authenticate their vote by entering an
                 authentication key. In an effort to increase usability, a novel pairing-based identification protocol
@@ -270,11 +270,11 @@ include "../templates/head.html"
                     proof</a>].
             </p>
 
-            <h3 class="mt-5">
+            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="curve25519">
                 Advanced Systems Lab: Fast imlementation of Curve25519 on Intel Skylake
                 <span class="text-secondary">2020</span>
             </h3>
-            <p>
+            <p id="curve25519" aria-expanded="false" class="d-none">
                 As a joint work with three other students, it was investigated whether existing implementations of the
                 widely used Curve25519 could be further improved. Multiple approaches out of existing literature were
                 combined and extended. The resulting implementation for the Intel Skylake architecture was 10% faster
@@ -284,11 +284,11 @@ include "../templates/head.html"
                 <a href="papers/Fast Implementation of Curve25519 on Intel Skylake - code.zip" target="_blank">code</a>].
             </p>
 
-            <h3 class="mt-5">
+            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="bachelor-thesis">
                 Bachelor thesis: Identifying encrypted online video streams using bitrate profiles
                 <span class="text-secondary">2018</span>
             </h3>
-            <p>
+            <p id="bachelor-thesis" aria-expanded="false" class="d-none">
                 It was investigated whether passively observable network traffic of netflix could be used to identify
                 the currently watched content. Existing approaches were replicated, and extended. The resulting
                 implementation needed only to measure the in average used bandwidth to identify what content is being
@@ -297,13 +297,13 @@ include "../templates/head.html"
                 <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
             </p>
 
-            <h3 class="mt-5">
+            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="teaching">
                 Teaching: TheAlternative
                 <span class="text-secondary">2016-2023</span>
                 and University of Zürich
                 <span class="text-secondary">2020-2023</span>
             </h3>
-            <p>
+            <p id="teaching" aria-expanded="false" class="d-none">
                 As part of <a href="https://thealternative.ch" target="_blank">TheAlternative</a>, I used to organize
                 and give lectures
                 [<a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/project%20management"
@@ -311,7 +311,7 @@ include "../templates/head.html"
                 <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/web" target="_blank">web</a>,
                 <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/pdf" target="_blank">pdf</a>].
                 As a course instructor for <a href="https://www.uzh.ch" target="_blank">University of Zürich</a>, I
-                regularely gave a course about git and GitLab
+                regularely gave courses about git and GitLab
                 [<a href="https://gitlab.uzh.ch/zi-it-training/git" target="_blank">git</a>].
             </p>
         </div>
