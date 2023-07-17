@@ -226,7 +226,7 @@ include "../templates/head.html"
 
             <h3 class="mt-5 collapse-anchor" role="button" aria-controls="research-proposal">
                 Research proposal: Code Voting for Swiss Internet Voting
-                <span class="text-secondary">2022, <a href="https://e-vote-id.org/">E-Vote ID 2022</a></span>
+                <span class="text-secondary">2022, <a href="https://e-vote-id.org/" target="_blank">E-Vote ID 2022</a></span>
             </h3>
             <p id="research-proposal" aria-expanded="false" class="d-none">
                 Complexity of the Swiss internet voting proposals is identified as a repeatedly voiced concern in
@@ -238,7 +238,7 @@ include "../templates/head.html"
 
             <h3 class="mt-5 collapse-anchor" role="button" aria-controls="master-thesis">
                 Master thesis: Swiss Internet Voting
-                <span class="text-secondary">2022, <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/535992">ETH Research Collection</a></span>
+                <span class="text-secondary">2022, <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/535992" target="_blank">ETH Research Collection</a></span>
             </h3>
             <p id="master-thesis" aria-expanded="false" class="d-none">
                 The Master's thesis examines internet voting in Switzerland. First, an overview of the scientific
@@ -258,7 +258,7 @@ include "../templates/head.html"
                 Switzerland. As part of the casting procedure, voters authenticate their vote by entering an
                 authentication key. In an effort to increase usability, a novel pairing-based identification protocol
                 was proposed which requires only half the key for the same security guarantee than the previous
-                proposal. The report proves the protocol secure, but asserts that the key size cannot be halved [<a
+                proposal. The analysis proves the protocol secure, but asserts that the key size cannot be halved [<a
                         href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>,
                 <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>,
                 <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way

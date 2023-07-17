@@ -9,14 +9,16 @@ $(document).ready(function () {
 function initializeCollapse() {
     const collapseAnchors = $(".collapse-anchor");
     collapseAnchors.on("click", function (e) {
-        e.preventDefault();
+        if (e.target.nodeName === 'A') {
+            return;
+        }
 
+        e.preventDefault();
         $(this).toggleClass('active');
         const targetId = $(this).attr('aria-controls');
         $('#' + targetId).toggleClass('d-none');
         $('#' + targetId).attr('aria-expanded', $(this).hasClass('active'));
-
-        return false
+        return false;
     })
 }
 
