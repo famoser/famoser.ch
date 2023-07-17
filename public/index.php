@@ -220,7 +220,7 @@ include "../templates/head.html"
 
             <blockquote class="blockquote">
                 <p><b>We explore internet voting in real-world settings (e.g. political elections, university
-                    elections).</b> We design novel schemes achiving strong guarantees under realistic assumptions, balancing usability and security, while targeting low complexity of the resulting specification. We formulate clear security definitions, and then prove the security properties formally using computational and symbolic proofs.</p>
+                    elections).</b> We design novel schemes achieving strong guarantees under realistic assumptions, balancing usability and security, while targeting low complexity of the resulting specification. We formulate clear security definitions, and then prove the security properties formally using computational and symbolic proofs.</p>
                 <footer class="blockquote-footer">Research statement of PhD at LORIA (non-verbatim)</footer>
             </blockquote>
 
@@ -275,7 +275,7 @@ include "../templates/head.html"
                 combined and extended. The resulting implementation for the Intel Skylake architecture was 10% faster
                 than all other implementations of the Bernstein comparison
                 [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf"
-                    target="_blank">herunterladen</a>,
+                    target="_blank">download</a>,
                 <a href="papers/Fast Implementation of Curve25519 on Intel Skylake - code.zip" target="_blank">code</a>].
             </p>
 
@@ -288,7 +288,7 @@ include "../templates/head.html"
                 the currently watched content. Existing approaches were replicated, and extended. The resulting
                 implementation needed only to measure the in average used bandwidth to identify what content is being
                 watched
-                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">herunterladen</a>,
+                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">download</a>,
                 <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
             </p>
 
@@ -341,7 +341,7 @@ include "../templates/head.html"
                             "title" => "Master of Science ETH in Computer Science",
                             "firm" => "ETH Zürich - Federal Institute of Technology",
                             "link" => "https://ethz.ch",
-                            "period" => "Sep. 2015 - Sep. 2018, Sep. 2019 - Feb. 2022, grade average top 15%",
+                            "period" => "Sep. 2015 - Feb. 2022, grade average top 15%",
                             "image_name" => "eth.png"
                         ],
                         [
