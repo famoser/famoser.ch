@@ -263,7 +263,7 @@ include "../templates/head.html"
             </p>
 
             <h3 class="mt-5 collapse-anchor" role="button" aria-controls="curve25519">
-                Advanced Systems Lab: Fast imlementation of Curve25519 on Intel Skylake
+                Advanced Systems Lab: Fast implementation of Curve25519 on Intel Skylake
                 <span class="text-secondary">2020</span>
             </h3>
             <p id="curve25519" aria-expanded="false" class="d-none">
