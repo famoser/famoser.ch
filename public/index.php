@@ -258,11 +258,8 @@ include "../templates/head.html"
                 Switzerland. As part of the casting procedure, voters authenticate their vote by entering an
                 authentication key. In an effort to increase usability, a novel pairing-based identification protocol
                 was proposed which requires only half the key for the same security guarantee than the previous
-                proposal. The analysis proves the protocol secure, but asserts that the key size cannot be halved [<a
-                        href="papers/Evaluate a Pairing Based Identification Protocol.pdf" target="_blank">report</a>,
-                <a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>,
-                <a href="papers/Evaluate a Pairing Based Identification Protocol - One-way proof.pdf" target="_blank">one-way
-                    proof</a>].
+                proposal. The analysis proves the protocol secure, but asserts that the key size cannot be halved
+                [<a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>].
             </p>
 
             <h3 class="mt-5 collapse-anchor" role="button" aria-controls="curve25519">
@@ -306,7 +303,7 @@ include "../templates/head.html"
                 <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/web" target="_blank">web</a>,
                 <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/pdf" target="_blank">pdf</a>].
                 As a course instructor for <a href="https://www.uzh.ch" target="_blank">University of Zürich</a>, I
-                regularely gave courses about git and GitLab
+                regularly gave courses about git and GitLab
                 [<a href="https://gitlab.uzh.ch/zi-it-training/git" target="_blank">git</a>].
             </p>
         </div>
