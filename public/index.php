@@ -36,8 +36,8 @@ include "../templates/head.html"
 
                         <p class="lead mt-5">
                             I am Florian Moser.<br/>
-                            <a href="#develop">Developer</a> of big and small applications.<br>
                             <a href="#research">Researcher</a> of internet voting schemes.<br>
+                            <a href="#develop">Developer</a> of big and small applications.<br>
                         </p>
 
                         <p class="mt-5">Do you have a new project for me? Contact me: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u>
@@ -387,12 +387,12 @@ include "../templates/head.html"
                         <!--
                         10 width = 100% pensum
                         1 height = 1 month
-                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 92 feb 2022, 108 jun 2022
+                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 92 feb 2022, 108 jun 2023, 114 dez 2023
 
                         59 height = 59 months; from Sep 2015 - Juli 2020
                         -->
                         <svg class="jobs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 10 108"
+                             viewBox="0 0 10 114"
                              height="109%"
                              width="100%">
                             <filter id="dry">
@@ -451,8 +451,18 @@ include "../templates/head.html"
                                     10 Jul 2019 (6+48) - Sep 2019 (8+48)
                                     02 Oct 2020 (9+60) - Dez 2020 (11+60)
                                     -->
-                                    <polygon points="8,36 10,36 10,108 0,108 0,92 8,92 8,69 9,69 9,45 8,45"
+                                    <polygon points="8,36 10,36 10,114 8,114 8,108 0,108 0,92 8,92 8,69 9,69 9,45 8,45"
                                              fill="#8BBB9B"></polygon>
+                                </g>
+                                <g class="phd" filter="url(#dry)">
+                                    <title>PhD</title>
+                                    <!--
+                                    02 Jan 2018 (0+36) - Sep 2018 (8+36)
+                                    10 Jul 2019 (6+48) - Sep 2019 (8+48)
+                                    02 Oct 2020 (9+60) - Dez 2020 (11+60)
+                                    -->
+                                    <polygon points="0,108 8,108 8,114 0,114"
+                                             fill="#EE2D20"></polygon>
                                 </g>
                             </g>
                         </svg>
