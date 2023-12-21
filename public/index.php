@@ -521,8 +521,10 @@ include "../templates/head.html"
             </div>
         </div>
 
-        <p class="text-center text-muted mt-5">famoser GmbH, CHE-498.133.112<br/>c/o Florian Moser, Moosburgstrasse 25,
-            CH-8307 Effretikon</p>
+        <p class="text-center text-muted mt-5">
+            famoser GmbH, CHE-498.133.112<br/>
+            c/o Florian Moser, Ochsengasse 66, CH-4123 Allschwil
+        </p>
     </div>
 </section>
 
