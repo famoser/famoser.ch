@@ -219,10 +219,20 @@ include "../templates/head.html"
             <h2>Research</h2>
 
             <blockquote class="blockquote">
-                <p><b>We explore internet voting in real-world settings (e.g. political elections, university
-                    elections).</b> We design novel schemes achieving strong guarantees under realistic assumptions, balancing usability and security, while targeting low complexity of the resulting specification. We formulate clear security definitions, and then prove the security properties formally using computational and symbolic proofs.</p>
-                <footer class="blockquote-footer">Research statement of PhD at LORIA (non-verbatim)</footer>
+                <p>
+                    <b>We explore internet voting in real-world settings (e.g. political elections, university elections).</b> 
+                    We design novel schemes achieving strong guarantees under realistic assumptions, balancing usability and security, while targeting low complexity of the resulting specification. We formulate clear security definitions, and then prove the security properties formally using computational and symbolic proofs.
+                </p>
+                <footer class="blockquote-footer">Research statement of PhD at INRIA (non-verbatim)</footer>
             </blockquote>
+
+            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="short-voting-codes">
+                Short Voting Codes For Practical Code Voting
+                <span class="text-secondary">2023, <a href="https://arxiv.org/abs/2311.12710" target="_blank">arXiv</a></span>
+            </h3>
+            <p id="short-voting-codes" aria-expanded="false" class="d-none">
+                To preserve voter secrecy on untrusted voter devices we propose to use short voting codes. This ensures voting codes remain practical even if the voter is able to select multiple voting choices. We embed the mechanism in a protocol that avoids complex cryptography in both the setup and the voting phase and relies only on standard cryptographic primitives. Trusting the setup, and one out of multiple server components, the protocol provides vote secrecy, cast-as-intended, recorded-as-cast, tallied-as-recorded, eligibility and universal verifiability [<a href="papers/Short Voting Codes.pdf" target="_blank">download</a>].
+            </p>
 
             <h3 class="mt-5 collapse-anchor" role="button" aria-controls="research-proposal">
                 Research proposal: Code Voting for Swiss Internet Voting
