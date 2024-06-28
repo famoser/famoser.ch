@@ -25,11 +25,13 @@ include "../templates/head.html"
 <section class="sidebar">
     <div class="profile">
         <img alt="Florian Moser" src="../images/Florian Moser.jpg">
-        <h2>Florian Moser</h2>
-        <p>
-            florian.moser (at) famoser.ch <br>
-            write me in en, de, de-ch or fr
-        </p>
+        <div class="presentation">
+            <h2>Florian Moser</h2>
+            <p>
+                florian.moser (at) famoser.ch <br>
+                write me in en, de, de-ch or fr
+            </p>
+        </div>
     </div>
 
     <div class="presentation">
