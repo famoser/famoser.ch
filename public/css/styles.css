@@ -62,13 +62,12 @@ body {
 .full-page {
     height: 100%;
     width: calc(100% - 22em);
-    padding: 1em;
+    padding: 4em;
     box-sizing: border-box;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2em;
 }
 
 
@@ -102,11 +101,12 @@ body {
 }
 
 .footer {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 .footer p {
     margin: 0;
+    font-size: 0.8em;
 }
 
 
@@ -115,17 +115,17 @@ body {
     position: fixed;
     width: 22em;
     right: 0;
-    padding: 1em;
+    padding: 4em 2em;
     box-sizing: border-box;
 }
 
 
 .profile img {
-    max-width: 100%;
+    max-width: calc(100% - 2em);
 }
 
 .profile h2 {
-    margin-top: 1em;
+    margin-top: 1.2em;
     margin-bottom: 0;
 }
 
@@ -146,7 +146,7 @@ body {
 }
 
 .education, .experience {
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 
