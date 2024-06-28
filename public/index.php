@@ -16,94 +16,92 @@ include "../templates/head.html"
 <body>
 
 <?php if ($invalidUri) { ?>
-    <section>
-        <div class="container">
-            <div class="alert alert-danger">
-                Sorry, but this page could not be found.
-                Contact me, and we will find it together :)
-            </div>
-        </div>
-    </section>
+    <p class="not-found background-red">
+        Sorry, but this page could not be found.
+        Contact me, and we will find it together :)
+    </p>
 <?php } ?>
 
 <section class="sidebar">
-    <div class="profile">
-        <img alt="Florian Moser" src="../images/Florian Moser.jpg">
-        <h2>Florian Moser</h2>
-        <p>
-            florian.moser (at) famoser.ch <br>
-            write me in en, de, de-ch or fr
-        </p>
-    </div>
+    <div class="sidebar-content">
+        <div class="profile">
+            <img alt="Florian Moser" src="../images/Florian Moser.jpg">
+            <h2>Florian Moser</h2>
+            <p>
+                florian.moser (at) famoser.ch <br>
+                write me in en, de, de-ch or fr
+            </p>
+        </div>
 
-    <div class="education">
-        <table class="time-table">
-            <tbody>
-            <tr>
-                <!-- My topic is internet voting protocols. -->
-                <!-- My method is primarily formal proofs. -->
-                <td>now</td>
-                <td>PhD Cand. <a href="https://inria.fr">INRIA</a> in Computer Science</td>
-            </tr>
-            <tr>
-                <!-- I focused on information security, and finished with a grade average top 15%. -->
-                <!-- The Master's thesis is entitled "Swiss Internet Voting". -->
-                <td>2022</td>
-                <td>Msc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
-            </tr>
-            <tr>
-                <!-- I focused on software engineering and security, and finished in the minimal time. -->
-                <!-- The Bachelor's thesis is entitled "Identifying encrypted online video streams using bitrate profiles". -->
-                <td>2018</td>
-                <td>Bsc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+        <div class="education">
+            <table class="time-table">
+                <tbody>
+                <tr>
+                    <!-- My topic is internet voting protocols. -->
+                    <!-- My method is primarily formal proofs. -->
+                    <td>now</td>
+                    <td>PhD Cand. <a href="https://inria.fr">INRIA</a> in Computer Science</td>
+                </tr>
+                <tr>
+                    <!-- I focused on information security, and finished with a grade average top 15%. -->
+                    <!-- The Master's thesis is entitled "Swiss Internet Voting". -->
+                    <td>2022</td>
+                    <td>Msc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
+                </tr>
+                <tr>
+                    <!-- I focused on software engineering and security, and finished in the minimal time. -->
+                    <!-- The Bachelor's thesis is entitled "Identifying encrypted online video streams using bitrate profiles". -->
+                    <td>2018</td>
+                    <td>Bsc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <div class="experience">
-        <table class="time-table">
-            <tbody>
-            <tr>
-                <!-- I develop on big and small products, or provide scientific consulting. -->
-                <!-- Customers include Teqable (BlueCare, Basler & Hofmann), Hilti, University of Zürich, Swiss Post, Federal Office for Information Security Germany, and others -->
-                <!-- Hire me! :) -->
-                <td>now</td>
-                <td>
-                    Developer & Scientist
-                    <a href="https://famoser.ch">famoser GmbH</a>
-                </td>
-            </tr>
-            <tr>
-                <!-- I was responsible to coordinate with the many organizations VSETH is in contact with, and is composed out of. -->
-                <td>2019</td>
-                <td>
-                    Board Member Internal Affairs
-                    <a href="https://vseth.ethz.ch" target="_blank">VSETH</a>
-                </td>
-            </tr>
-            <tr>
-                <!-- I worked in a Scrum team on a product in the insurance sector. -->
-                <td>2018</td>
-                <td>
-                    Professional Software Engineer
-                    <a href="https://www.zuehlke.com" target="_blank">Zühlke</a>
-                </td>
-            </tr>
-            <tr>
-                <!-- I conceptualized and implemented functionality-heavy websites, such as online shops. -->
-                <td>2016</td>
-                <td>
-                    Developer and Project Manager
-                    <a href="https://novu.ch" target="_blank">Novu</a>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+        <div class="experience">
+            <table class="time-table">
+                <tbody>
+                <tr>
+                    <!-- I develop on big and small products, or provide scientific consulting. -->
+                    <!-- Customers include Teqable (BlueCare, Basler & Hofmann), Hilti, University of Zürich, Swiss Post, Federal Office for Information Security Germany, and others -->
+                    <!-- Hire me! :) -->
+                    <td>now</td>
+                    <td>
+                        Developer & Scientist
+                        <a href="https://famoser.ch">famoser GmbH</a>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- I was responsible to coordinate with the many organizations VSETH is in contact with, and is composed out of. -->
+                    <td>2019</td>
+                    <td>
+                        Board Member Internal Affairs
+                        <a href="https://vseth.ethz.ch" target="_blank">VSETH</a>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- I worked in a Scrum team on a product in the insurance sector. -->
+                    <td>2018</td>
+                    <td>
+                        Professional Software Engineer
+                        <a href="https://www.zuehlke.com" target="_blank">Zühlke</a>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- I conceptualized and implemented functionality-heavy websites, such as online shops. -->
+                    <td>2016</td>
+                    <td>
+                        Developer and Project Manager
+                        <a href="https://novu.ch" target="_blank">Novu</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </section>
 
-<section class="full-page">
+<section class="full-page first">
     <div class="top">
         <div class="title">
             <h1>Development</h1>
@@ -128,7 +126,8 @@ include "../templates/head.html"
                 <!-- If current state-of-the-art lacks in quality, I also bring highly-technical projects into production. -->
                 create
                 <a href="https://github.com/famoser/pdf-generator" target="_blank">PDF writers</a>,
-                <a href="https://github.com/ProVerif/vscode-proverif-language-service" target="_blank">language servers</a> and
+                <a href="https://github.com/ProVerif/vscode-proverif-language-service" target="_blank">language
+                    servers</a> and
                 <a href="https://github.com/famoser/agnes" target="_blank">deployment tools</a>;
                 <br>
 
@@ -140,7 +139,7 @@ include "../templates/head.html"
         </div>
 
         <div class="footer">
-            <p class="text-center text-muted">
+            <p>
                 famoser GmbH,
                 c/o Florian Moser,
                 Ochsengasse 66,
@@ -187,7 +186,7 @@ include "../templates/head.html"
         </div>
 
         <div class="footer">
-            <p class="text-center text-muted">
+            <p>
                 Équipe PESTO,
                 Centre Inria University De Lorraine,
                 615 Rue du Jardin-Botanique,
