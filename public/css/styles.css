@@ -242,7 +242,7 @@ body {
 /* smartphone */
 @media (max-width: 950px) and (max-height: 950px) {
     html, body {
-        font-size: 3vw;
+        font-size: 2.4vw;
     }
 
     .sidebar {
@@ -262,8 +262,27 @@ body {
         margin-top: 1em;
     }
 
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+
+    .education {
+        margin-top: 0;
+    }
+
+    .education .time-table {
+        margin-top: -0.5em;
+    }
+
+    .experience {
+        margin-top: 2.5em;
+    }
+
     .education, .experience {
-        display: none;
+        font-size: 1em;
     }
 
     .full-page {
@@ -286,7 +305,10 @@ body {
         padding: 1em;
         border-radius: 0.2em;
     }
+
     .description p {
         font-size: 1em;
+        line-height: 1.6em;
+        font-weight: normal;
     }
 }

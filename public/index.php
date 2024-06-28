@@ -23,16 +23,16 @@ include "../templates/head.html"
 <?php } ?>
 
 <section class="sidebar">
-    <div class="sidebar-content">
-        <div class="profile">
-            <img alt="Florian Moser" src="../images/Florian Moser.jpg">
-            <h2>Florian Moser</h2>
-            <p>
-                florian.moser (at) famoser.ch <br>
-                write me in en, de, de-ch or fr
-            </p>
-        </div>
+    <div class="profile">
+        <img alt="Florian Moser" src="../images/Florian Moser.jpg">
+        <h2>Florian Moser</h2>
+        <p>
+            florian.moser (at) famoser.ch <br>
+            write me in en, de, de-ch or fr
+        </p>
+    </div>
 
+    <div class="presentation">
         <div class="education">
             <table class="time-table">
                 <tbody>
