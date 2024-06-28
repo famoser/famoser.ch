@@ -26,505 +26,156 @@ include "../templates/head.html"
     </section>
 <?php } ?>
 
-<section class="primary">
-    <div class="container">
-        <div class="main">
-            <div class="teaser">
-                <div class="row">
-                    <div class="col-xl-8">
-                        <p class="lead">Hi!</p>
-
-                        <p class="lead mt-5">
-                            I am Florian Moser.<br/>
-                            <a href="#research">Researcher</a> of internet voting schemes.<br>
-                            <a href="#develop">Developer</a> of big and small applications.<br>
-                        </p>
-
-                        <p class="mt-5">Do you have a new project for me? Contact me: <u class="link">me&nbsp;(&#x200b;a&#x200b;t&#x200b;)&nbsp;famoser.ch</u>
-                        </p>
-                    </div>
-                    <div class="col-xl-4 d-none d-xl-block">
-                        <img src="images/Florian Moser.jpg" alt="Portrait Florian Moser" class="img-fluid img-profile">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="develop">
-    <div class="container">
-        <h2>Projects</h2>
-    </div>
-
-    <div class="spacer-half"></div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4">
-                <h3>Baupen</h3>
-                <p>
-                    The issue management system supports site managers in the recording of defects, as well as the
-                    acceptance and the documentation of the construction site.
-                </p>
-                <p>
-                    The combination of webpage and app is in use on dozens of construction sites.
-                    Since the release, the tool has been continuously adapted to the way site managers work.
-                </p>
-
-                <p>
-                    Project webpage: <a href="https://baupen.ch" target="_blank">baupen.ch</a>
-                </p>
-            </div>
-            <div class="col-xl-8">
-                <div class="ps-xl-5 mt-4 mt-xl-0">
-                    <img src="images/projects/baupen.png" alt="Screenshot Pendenzenverwaltung baupen.ch"
-                         class="img-fluid img-screenshot">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="spacer"></div>
-
-    <div class="container">
-        <div class="row flex-row-reverse">
-            <div class="col-xl-4">
-                <h3>E-Voting for the University of Zürich</h3>
-                <p>
-                    Members of V-ATP (administrative and technical staff), VFFL (senior researchers and teaching staff)
-                    and VAUZ (junior researchers) elect delegates into University committees.
-                </p>
-                <p>
-                    A security analysis of the concept was created for and reviewed by the University.
-                    The source code underwent a code review by <a href="https://www.cnlab.ch/" target="_blank">cnlab</a>.
-                </p>
-                <p>
-                    The tool is being used for binding elections since 2018 and has seen multiple election cycles.
-                    It is continously being extended to further reduce administrational effort and increase usability.
-            </div>
-            <div class="col-xl-8">
-                <div class="pe-xl-5 mt-4 mt-xl-0">
-                    <img src="images/projects/evoting.png" alt="Screenshot eVoting Stände"
-                         class="img-fluid img-screenshot">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="spacer"></div>
-
-    <div class="container">
-        <div class="skills">
-            <div class="row mb-4">
-                <div class="col-md-4">
-                    <p><b>Language</b></p>
-                    <ul class="skill-filters primary clearfix">
-                        <li><a href="#" data-filter=".php">PHP</a></li>
-                        <li><a href="#" data-filter=".javascript">JavaScript</a></li>
-                        <li><a href="#" data-filter=".csharp">C#</a></li>
-                        <li><a href="#" data-filter=".java">Java</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p><b>Framework</b></p>
-                    <ul class="skill-filters secondary clearfix">
-                        <li><a href="#" data-filter=".symfony">Symfony</a></li>
-                        <li><a href="#" data-filter=".vuejs">Vue.js</a></li>
-                        <li><a href="#" data-filter=".react">React</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="skills-grid-wrapper container">
-        <div class="skills-grid">
-            <?php
-            $projects = getProjects();
-            foreach ($projects as $project) {
-                $showDetails = isset($project["implementation"]) && $project["featured"];
-                ?>
-                <div class="skills-grid-item <?= $project["archived"] ? "archived " : " " ?><?= $showDetails ? "expandable " : "" ?><?= $project["class"] ?>">
-                    <h3><?= $project["name"] ?></h3>
-                    <p><?= $project["purpose"] ?></p>
-                    <?php if ($showDetails) { ?>
-                        <p class="description hidden">
-                            <?= $project["implementation"] ?>
-                        </p>
-                    <?php } ?>
-                    <p>
-                        <?php foreach ($project["languages"] as $language) { ?>
-                            <span class="skill primary"><?= $language ?></span>
-                        <?php } ?>
-                        <?php foreach ($project["frameworks"] as $framework) { ?>
-                            <span class="skill secondary"><?= $framework ?></span>
-                        <?php } ?>
-                        <?php if (isset($project["employer"])) { ?>
-                            <span class="skill bg-light"><?= $project["employer"] ?></span>
-                        <?php } ?>
-                        <?php if (isset($project["focus"])) { ?>
-                            <span class="skill bg-light"><?= $project["focus"] ?></span>
-                        <?php } ?>
-                    </p>
-                    <?php if (isset($project["source_url"]) || isset($project["publish_url"])) { ?>
-                        <p>
-                            <?php if (isset($project["source_url"])) { ?>
-                                <a href="<?= $project["source_url"] ?>" target="_blank">
-                                    <?php if (strpos($project["source_url"], "github") > 0) { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                             src="icons/github.svg">
-                                    <?php } else if (strpos($project["source_url"], "gitlab") > 0) { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                             src="icons/gitlab.svg">
-                                    <?php } else { ?>
-                                        <img class="icon" alt="source of <?= $project["name"] ?>"
-                                             src="icons/external-link.svg">
-                                    <?php } ?>
-                                </a>
-                            <?php } ?>
-                            <?php if (isset($project["publish_url"])) { ?>
-                                <a href="<?= $project["publish_url"] ?>" target="_blank">
-                                    <?php if (strpos($project["publish_url"], "microsoft") > 0) { ?>
-                                        <img class="icon" alt="app <?= $project["name"] ?> in microsoft store"
-                                             src="icons/microsoft.svg">
-                                    <?php } else { ?>
-                                        <img class="icon" alt="visit <?= $project["name"] ?>"
-                                             src="icons/external-link.svg">
-                                    <?php } ?>
-                                </a>
-                            <?php } ?>
-                        </p>
-                    <?php } ?>
-                </div>
-            <?php } ?>
-        </div>
-
-        <p class="text-center">
-            <button id="show-all-active" class="m-5 btn btn-outline-secondary">
-                Include smaller projects
-            </button>
-        </p>
-
-        <p class="text-center">
-            <button id="show-archived" class="m-5 btn btn-outline-secondary d-none">
-                Show archived
-            </button>
+<section class="sidebar">
+    <div class="profile">
+        <img alt="Florian Moser" src="../images/Florian Moser.jpg">
+        <h2>Florian Moser</h2>
+        <p>
+            florian.moser (at) famoser.ch <br>
+            write me in en, de, de-ch or fr
         </p>
     </div>
+
+    <div class="education">
+        <table class="time-table">
+            <tbody>
+            <tr>
+                <td>now</td>
+                <td>PhD Cand. <a href="https://inria.fr">INRIA</a> in Computer Science</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>Msc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Bsc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="experience">
+        <table class="time-table">
+            <tbody>
+            <tr>
+                <td>now</td>
+                <td>
+                    Developer & Scientist
+                    <a href="https://famoser.ch">famoser GmbH</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>
+                    Board Member Internal Affairs
+                    <a href="https://vseth.ethz.ch" target="_blank">VSETH</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>
+                    Professional Software Engineer
+                    <a href="https://www.zuehlke.com" target="_blank">Zühlke</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>
+                    Developer and Project Manager
+                    <a href="https://novu.ch" target="_blank">Novu</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 
-<section id="research" class="primary">
-    <div class="container">
-        <div class="research">
-            <h2>Research</h2>
+<section class="full-page">
+    <div class="top">
+        <div class="title">
+            <h1>Development</h1>
+            <p>of custom high-quality web-applications</p>
+        </div>
+    </div>
 
-            <blockquote class="blockquote">
-                <p>
-                    <b>We explore internet voting in real-world settings (e.g. political elections, university elections).</b> 
-                    We design novel schemes achieving strong guarantees under realistic assumptions, balancing usability and security, while targeting low complexity of the resulting specification. We formulate clear security definitions, and then prove the security properties formally using computational and symbolic proofs.
-                </p>
-                <footer class="blockquote-footer">Research statement of PhD at INRIA (non-verbatim)</footer>
-            </blockquote>
+    <div class="bottom">
+        <div class="description background-green">
+            <p>
+                I develop, operate and maintain
+                <a href="https://baupen.ch" target="_blank">baupen</a> and
+                <a href="https://github.com/famoser/nodika" target="_blank">nodika</a>;
 
-            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="short-voting-codes">
-                Short Voting Codes For Practical Code Voting
-                <span class="text-secondary">2023, <a href="https://arxiv.org/abs/2311.12710" target="_blank">arXiv</a></span>
-            </h3>
-            <p id="short-voting-codes" aria-expanded="false" class="d-none">
-                To preserve voter secrecy on untrusted voter devices we propose to use short voting codes. This ensures voting codes remain practical even if the voter is able to select multiple voting choices. We embed the mechanism in a protocol that avoids complex cryptography in both the setup and the voting phase and relies only on standard cryptographic primitives. Trusting the setup, and one out of multiple server components, the protocol provides vote secrecy, cast-as-intended, recorded-as-cast, tallied-as-recorded, eligibility and universal verifiability [<a href="papers/Short Voting Codes.pdf" target="_blank">download</a>].
+                <br>
+                automate internal processes of the
+                <a href="https://uzh.ch" target="_blank">University of Zürich</a>;
+
+                <br>
+                create
+                <a href="https://github.com/famoser/pdf-generator" target="_blank">PDF writers</a>,
+                <a href="https://github.com/ProVerif/vscode-proverif-language-service" target="_blank">language servers</a> and
+                <a href="https://github.com/famoser/agnes" target="_blank">deployment tools</a>;
+
+                <br>
+                and was part of the teams powering
+                <a href="https://www.stratus.swiss" target="_blank">Stratus</a> and
+                <a href="https://bluecare.ch/blueconnect/" target="_blank">BlueConnect</a>.
             </p>
+        </div>
 
-            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="research-proposal">
-                Research proposal: Code Voting for Swiss Internet Voting
-                <span class="text-secondary">2022, <a href="https://e-vote-id.org/" target="_blank">E-Vote ID 2022</a></span>
-            </h3>
-            <p id="research-proposal" aria-expanded="false" class="d-none">
-                Complexity of the Swiss internet voting proposals is identified as a repeatedly voiced concern in
-                reviews. Code voting is proposed as an additional mechanism, which reduces the complexity of the
-                involved cryptography while increasing security. The protocol, security definitions motivated by Swiss
-                law and corresponding proofs are sketched [<a href="papers/Code Voting for Swiss Internet Voting.pdf"
-                                                              target="_blank">download</a>].
-            </p>
-
-            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="master-thesis">
-                Master thesis: Swiss Internet Voting
-                <span class="text-secondary">2022, <a href="https://www.research-collection.ethz.ch/handle/20.500.11850/535992" target="_blank">ETH Research Collection</a></span>
-            </h3>
-            <p id="master-thesis" aria-expanded="false" class="d-none">
-                The Master's thesis examines internet voting in Switzerland. First, an overview of the scientific
-                literature is given, and then relevant events, laws and political influences in Switzerland are
-                summarised. To improve the current situation, a code-voting system is proposed that drastically reduces
-                the complexity of the cryptography involved, while achieving stronger security properties. It is proven
-                that this design meets formal definitions of legal requirements [<a
-                        href="papers/Swiss Internet Voting.pdf" target="_blank">download</a>].
-            </p>
-
-            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="report-chvote-pairing-based-id">
-                Report: A Pairing-Based Identification Protocol for CHVote
-                <span class="text-secondary">2021</span>
-            </h3>
-            <p id="report-chvote-pairing-based-id" aria-expanded="false" class="d-none">
-                <a href="https://eprint.iacr.org/2017/325">CHVote</a> is an internet voting protocol suitable for use in
-                Switzerland. As part of the casting procedure, voters authenticate their vote by entering an
-                authentication key. In an effort to increase usability, a novel pairing-based identification protocol
-                was proposed which requires only half the key for the same security guarantee than the previous
-                proposal. The analysis proves the protocol secure, but asserts that the key size cannot be halved
-                [<a href="papers/Evaluate a Pairing Based Identification Protocol - Paper.pdf" target="_blank">paper</a>].
-            </p>
-
-            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="curve25519">
-                Advanced Systems Lab: Fast implementation of Curve25519 on Intel Skylake
-                <span class="text-secondary">2020</span>
-            </h3>
-            <p id="curve25519" aria-expanded="false" class="d-none">
-                As a joint work with three other students, it was investigated whether existing implementations of the
-                widely used Curve25519 could be further improved. Multiple approaches out of existing literature were
-                combined and extended. The resulting implementation for the Intel Skylake architecture was 10% faster
-                than all other implementations of the Bernstein comparison
-                [<a href="papers/Fast Implementation of Curve25519 on Intel Skylake.pdf"
-                    target="_blank">download</a>,
-                <a href="papers/Fast Implementation of Curve25519 on Intel Skylake - code.zip" target="_blank">code</a>].
-            </p>
-
-            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="bachelor-thesis">
-                Bachelor thesis: Identifying encrypted online video streams using bitrate profiles
-                <span class="text-secondary">2018</span>
-            </h3>
-            <p id="bachelor-thesis" aria-expanded="false" class="d-none">
-                It was investigated whether passively observable network traffic of netflix could be used to identify
-                the currently watched content. Existing approaches were replicated, and extended. The resulting
-                implementation needed only to measure the in average used bandwidth to identify what content is being
-                watched
-                [<a href="papers/Identifying encrypted online video streams using bitrate profiles.pdf" target="_blank">download</a>,
-                <a href="https://github.com/famoser/bachelor-thesis" target="_blank">code</a>].
-            </p>
-
-            <h3 class="mt-5 collapse-anchor" role="button" aria-controls="teaching">
-                Teaching: TheAlternative
-                <span class="text-secondary">2016-2023</span>
-                and University of Zürich
-                <span class="text-secondary">2020-2023</span>
-            </h3>
-            <p id="teaching" aria-expanded="false" class="d-none">
-                As part of <a href="https://thealternative.ch" target="_blank">TheAlternative</a>, I used to organize
-                and give lectures
-                [<a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/project%20management"
-                    target="_blank">project management</a>,
-                <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/web" target="_blank">web</a>,
-                <a href="https://gitlab.ethz.ch/thealternative/courses/-/tree/master/pdf" target="_blank">pdf</a>].
-                As a course instructor for <a href="https://www.uzh.ch" target="_blank">University of Zürich</a>, I
-                regularly gave courses about git and GitLab
-                [<a href="https://gitlab.uzh.ch/zi-it-training/git" target="_blank">git</a>].
+        <div class="footer">
+            <p class="text-center text-muted">
+                famoser GmbH,
+                c/o Florian Moser,
+                Ochsengasse 66,
+                CH-4123 Allschwil -
+                <a href="https://www.zefix.ch/en/search/entity/list/firm/1515465" target="_blank">CHE-498.133.112</a> -
+                <a href="https://www.irqao.com/PDF/C46969-85361.pdf" target="_blank">ISO 9001 certified</a> -
+                <a href="https://www.irqao.com/PDF/C46969-85362.pdf" target="_blank">ISO 27001 certified</a>
             </p>
         </div>
     </div>
 </section>
 
-<section>
-    <div class="container">
-        <div class="experience">
-            <h2>Experience</h2>
-            <div class="row">
-                <div class="col-xl-8">
-                    <?php
-                    $jobs = [
-                        [
-                            "class" => "phd",
-                            "title" => "PhD student in group PESTO (Véronique Cortier)",
-                            "firm" => "INRIA Nancy - French Institute for Research in Computer Science",
-                            "link" => "https://www.inria.fr/en/inria-nancy-grand-est-centre",
-                            "period" => "since Jul. 2023",
-                            "image_name" => "inria.png"
-                        ],
-                        [
-                            "class" => "freelancer",
-                            "title" => "Developer & Scientist",
-                            "firm" => "famoser GmbH",
-                            "link" => "https://famoser.ch",
-                            "period" => "since Jan. 2018, incorporated since Dec. 2022"
-                        ],
-                        [
-                            "class" => "eth",
-                            "title" => "Master of Science ETH in Computer Science",
-                            "firm" => "ETH Zürich - Federal Institute of Technology",
-                            "link" => "https://ethz.ch",
-                            "period" => "Sep. 2015 - Feb. 2022, grade average top 15%",
-                            "image_name" => "eth.png"
-                        ],
-                        [
-                            "class" => "vseth",
-                            "title" => "Board Member, Ressort Internal Affairs",
-                            "firm" => "VSETH - Umbrella organisation of all students ETH",
-                            "link" => "https://vseth.ethz.ch",
-                            "period" => "Sep. 2019 - Sep. 2020",
-                            "image_name" => "vseth.png"
-                        ],
-                        [
-                            "class" => "zuehlke",
-                            "title" => "Professional Software Engineer",
-                            "firm" => "Zühlke AG - Empowering Ideas",
-                            "link" => "https://www.zuehlke.com",
-                            "period" => "Oct. 2018 - Jun. 2019",
-                            "image_name" => "zuehlke.svg"
-                        ],
-                        [
-                            "class" => "jkweb",
-                            "title" => "Projektleitung & Programmierung",
-                            "firm" => "JKweb GmbH - Schöne und schlichte Webseiten",
-                            "link" => "https://jkweb.ch",
-                            "period" => "Feb. 2016 - Dez. 2017",
-                            "image_name" => "jkweb.svg"
-                        ]
-                    ];
-
-                    foreach ($jobs as $job) { ?>
-                        <div class="job <?= $job["class"] ?>">
-                            <p>
-                                <b><?= $job["title"] ?></b><br/>
-                                <a href="<?= $job["link"] ?>" target="_blank"><?= $job["firm"] ?></a><br/>
-                                <small class="text-secondary"><?= $job["period"] ?></small>
-                            </p>
-                            <?php if (isset($job["image_name"])) { ?>
-                                <img class="job-image d-none d-md-block" src="/images/jobs/<?= $job["image_name"] ?>"
-                                     alt="logo of <?= $job["firm"] ?>">
-                            <?php } ?>
-                        </div>
-                    <?php } ?>
-                </div>
-
-                <div class="col-xl-4 col-12 d-none d-xl-block">
-                    <div class="job-wrapper">
-                        <!--
-                        10 width = 100% pensum
-                        1 height = 1 month
-                        0 = jan 2015, 11 = dez 2015, 78 dez 2020, 92 feb 2022, 108 jun 2023, 114 dez 2023
-
-                        59 height = 59 months; from Sep 2015 - Juli 2020
-                        -->
-                        <svg class="jobs" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
-                             viewBox="0 0 10 114"
-                             height="109%"
-                             width="100%">
-                            <filter id="dry">
-                                <feComponentTransfer>
-                                    <feFuncA type="table" tableValues="0 0.5"></feFuncA>
-                                </feComponentTransfer>
-                            </filter>
-                            <g transform="scale(-1,-1)" transform-origin="center">
-                                <g class="eth" filter="url(#dry)">
-                                    <title>ETH Master</title>
-                                    <!--
-                                    10 sep 2015 (8) - jan 2016 (0+12)
-                                    0.8 feb 2016 - aug 2018 (7+36)
-                                    0 sep 2018 - aug 2019 (7+48)
-                                    0.5 sep 2019 - sep 2020 (8+60)
-                                    0.8 sep 2020 - dez 2020 (11+60)
-                                    -->
-                                    <polygon points="0,54 4,54 4,69 8,69 8,92 0,92" fill="#1f4070"></polygon>
-                                </g>
-                                <g class="eth" filter="url(#dry)">
-                                    <title>ETH Bachelor</title>
-                                    <!--
-                                    10 sep 2015 (8) - jan 2016 (0+12)
-                                    0.8 feb 2016 - aug 2018 (7+36)
-                                    0 sep 2018 - aug 2019 (7+48)
-                                    0.5 sep 2019 - sep 2020 (8+60)
-                                    0.8 sep 2020 - dez 2020 (11+60)
-                                    -->
-                                    <polygon points="0,8 10,8 10,13 8,13 8,45 0,45" fill="#1f4070"></polygon>
-                                </g>
-                                <g class="jkweb" filter="url(#dry)">
-                                    <title>JKWeb</title>
-                                    <!--
-                                    02 feb 2016 (1+12) - dez 2017 (11+24)
-                                    -->
-                                    <polygon points="8,13 10,13 10,36 8,36" fill="#3d3d3d"></polygon>
-                                </g>
-                                <g class="zuehlke" filter="url(#dry)">
-                                    <title>Zühlke</title>
-                                    <!--
-                                    Oct 2018 (9+36) - Jun 2019 (5+48)
-                                    -->
-                                    <polygon points="0,45 9,45 9,54 0,54" fill="#985b9c"></polygon>
-                                </g>
-                                <g class="vseth" filter="url(#dry)">
-                                    <title>VSETH</title>
-                                    <!--
-                                    Sep 2019 (8+48) - Sep 2020 (8+60)
-                                    -->
-                                    <polygon points="4,54 9,54 9,69 4,69" fill="#009FE3"></polygon>
-                                </g>
-                                <g class="freelancer" filter="url(#dry)">
-                                    <title>Freelancer</title>
-                                    <!--
-                                    02 Jan 2018 (0+36) - Sep 2018 (8+36)
-                                    10 Jul 2019 (6+48) - Sep 2019 (8+48)
-                                    02 Oct 2020 (9+60) - Dez 2020 (11+60)
-                                    -->
-                                    <polygon points="8,36 10,36 10,114 8,114 8,108 0,108 0,92 8,92 8,69 9,69 9,45 8,45"
-                                             fill="#8BBB9B"></polygon>
-                                </g>
-                                <g class="phd" filter="url(#dry)">
-                                    <title>PhD</title>
-                                    <!--
-                                    02 Jan 2018 (0+36) - Sep 2018 (8+36)
-                                    10 Jul 2019 (6+48) - Sep 2019 (8+48)
-                                    02 Oct 2020 (9+60) - Dez 2020 (11+60)
-                                    -->
-                                    <polygon points="0,108 8,108 8,114 0,114"
-                                             fill="#EE2D20"></polygon>
-                                </g>
-                            </g>
-                        </svg>
-                        <small class="axis-top text-end text-secondary">today</small>
-                        <small class="axis-bottom text-end text-secondary">2015</small>
-                    </div>
-                    <small class="text-center text-secondary ms-5 mt-1 d-block">Workload</small>
-                </div>
-            </div>
+<section class="full-page research-font">
+    <div class="top">
+        <div class="title">
+            <h1>Research</h1>
+            <p>into usable provably-secure internet voting</p>
         </div>
     </div>
-</section>
 
-<section class="secondary">
-    <div class="container">
-        <div class="network">
-            <div class="row">
-                <div class="col-3">
-                    <p>
-                        <a href="https://github.com/famoser/" target="_blank">
-                            <img class="icon" src="icons/github.svg" alt="github icon">
-                        </a>
-                    </p>
-                </div>
-                <div class="col-3">
-                    <p>
-                        <a href="https://stackoverflow.com/users/2259391/florian-moser" target="_blank">
-                            <img class="icon" src="icons/stackoverflow.svg" alt="stackoverflow icon">
-                        </a>
-                    </p>
-                </div>
-                <div class="col-3">
-                    <p>
-                        <a href="https://linkedin.com/in/famoser" target="_blank">
-                            <img class="icon" src="icons/linkedin.svg" alt="linkedin icon">
-                        </a>
-                    </p>
-                </div>
-                <div class="col-3">
-                    <p>
-                        <a href="https://gitlab.com/famoser" target="_blank">
-                            <img class="icon" src="icons/gitlab.svg" alt="gitlab icon">
-                        </a>
-                    </p>
-                </div>
-            </div>
+    <div class="bottom">
+        <div class="description background-red">
+            <p>
+                I propose and proof
+                <a href="https://arxiv.org/abs/2311.12710" target="_blank">internet voting protocols</a>,
+
+                <br>
+                participate in
+                <a href="https://github.com/famoser/polyas-verification" target="_blank">independent implementation</a>
+                pilots,
+
+                <br>
+                explain verifiable internet voting to
+                <a href="https://cfp.gulas.ch/gpn22/talk/TKRTLZ/" target="_blank">the general public</a>,
+
+                <br>
+                and develop, operate and maintain internet voting at
+                <a href="https://www.uzh.ch/cmsssl/vauz/de/politik/wahlen/e-voting.html" target="_blank">UZH</a>.
+            </p>
         </div>
 
-        <p class="text-center text-muted mt-5">
-            famoser GmbH, CHE-498.133.112<br/>
-            c/o Florian Moser, Ochsengasse 66, CH-4123 Allschwil
-        </p>
+        <div class="footer">
+            <p class="text-center text-muted">
+                Équipe PESTO,
+                Centre Inria University De Lorraine,
+                615 Rue du Jardin-Botanique,
+                FR-54600 Villers-lès-Nancy -
+                <a href="https://team.inria.fr/pesto/">research team</a> -
+                <a href="https://members.loria.fr/FMoser/">research website</a>
+            </p>
+        </div>
     </div>
 </section>
 
