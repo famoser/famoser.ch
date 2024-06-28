@@ -40,14 +40,20 @@ include "../templates/head.html"
         <table class="time-table">
             <tbody>
             <tr>
+                <!-- My topic is internet voting protocols. -->
+                <!-- My method is primarily formal proofs. -->
                 <td>now</td>
                 <td>PhD Cand. <a href="https://inria.fr">INRIA</a> in Computer Science</td>
             </tr>
             <tr>
+                <!-- I focused on information security, and finished with a grade average top 15%. -->
+                <!-- The Master's thesis is entitled "Swiss Internet Voting". -->
                 <td>2022</td>
                 <td>Msc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
             </tr>
             <tr>
+                <!-- I focused on software engineering and security, and finished in the minimal time. -->
+                <!-- The Bachelor's thesis is entitled "Identifying encrypted online video streams using bitrate profiles". -->
                 <td>2018</td>
                 <td>Bsc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
             </tr>
@@ -59,6 +65,9 @@ include "../templates/head.html"
         <table class="time-table">
             <tbody>
             <tr>
+                <!-- I develop on big and small products, or provide scientific consulting. -->
+                <!-- Customers include Teqable (BlueCare, Basler & Hofmann), Hilti, University of Zürich, Swiss Post, Federal Office for Information Security Germany, and others -->
+                <!-- Hire me! :) -->
                 <td>now</td>
                 <td>
                     Developer & Scientist
@@ -66,6 +75,7 @@ include "../templates/head.html"
                 </td>
             </tr>
             <tr>
+                <!-- I was responsible to coordinate with the many organizations VSETH is in contact with, and is composed out of. -->
                 <td>2019</td>
                 <td>
                     Board Member Internal Affairs
@@ -73,6 +83,7 @@ include "../templates/head.html"
                 </td>
             </tr>
             <tr>
+                <!-- I worked in a Scrum team on a product in the insurance sector. -->
                 <td>2018</td>
                 <td>
                     Professional Software Engineer
@@ -80,6 +91,7 @@ include "../templates/head.html"
                 </td>
             </tr>
             <tr>
+                <!-- I conceptualized and implemented functionality-heavy websites, such as online shops. -->
                 <td>2016</td>
                 <td>
                     Developer and Project Manager
@@ -102,21 +114,25 @@ include "../templates/head.html"
     <div class="bottom">
         <div class="description background-green">
             <p>
+                <!-- I develop, operate and maintain multiple products over long-term. -->
                 I develop, operate and maintain
                 <a href="https://baupen.ch" target="_blank">baupen</a> and
                 <a href="https://github.com/famoser/nodika" target="_blank">nodika</a>;
-
                 <br>
+
+                <!-- In big organizations, I find agreements and implement strategic improvements end-to-end. -->
                 automate internal processes of the
                 <a href="https://uzh.ch" target="_blank">University of Zürich</a>;
-
                 <br>
+
+                <!-- If current state-of-the-art lacks in quality, I also bring highly-technical projects into production. -->
                 create
                 <a href="https://github.com/famoser/pdf-generator" target="_blank">PDF writers</a>,
                 <a href="https://github.com/ProVerif/vscode-proverif-language-service" target="_blank">language servers</a> and
                 <a href="https://github.com/famoser/agnes" target="_blank">deployment tools</a>;
-
                 <br>
+
+                <!-- I am effective in Scrum teams in improving and refactoring existing code, or even introducing new technologies. -->
                 and was part of the teams powering
                 <a href="https://www.stratus.swiss" target="_blank">Stratus</a> and
                 <a href="https://bluecare.ch/blueconnect/" target="_blank">BlueConnect</a>.
@@ -148,19 +164,23 @@ include "../templates/head.html"
     <div class="bottom">
         <div class="description background-red">
             <p>
+                <!-- I push simple and convincingly-proven protocols which suit their respective context. -->
                 I propose and proof
                 <a href="https://arxiv.org/abs/2311.12710" target="_blank">internet voting protocols</a>,
-
                 <br>
+
+                <!-- To show that more secure systems can indeed be constructed, I implement parts by myself. -->
                 participate in
                 <a href="https://github.com/famoser/polyas-verification" target="_blank">independent implementation</a>
                 pilots,
-
                 <br>
+
+                <!-- I communicate research results to the general public to enable them to choose better systems. -->
                 explain verifiable internet voting to
                 <a href="https://cfp.gulas.ch/gpn22/talk/TKRTLZ/" target="_blank">the general public</a>,
-
                 <br>
+
+                <!-- Since many years, I run and continuously adapt the internet voting system used by the personnel of UZH. -->
                 and develop, operate and maintain internet voting at
                 <a href="https://www.uzh.ch/cmsssl/vauz/de/politik/wahlen/e-voting.html" target="_blank">UZH</a>.
             </p>
