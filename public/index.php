@@ -69,7 +69,7 @@ include "../templates/head.html"
                     <!-- Hire me! :) -->
                     <td>now</td>
                     <td>
-                        Developer & Scientist
+                        Engineer & Scientist
                         <a href="https://famoser.ch">famoser GmbH</a>
                     </td>
                 </tr>
