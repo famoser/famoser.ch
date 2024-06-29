@@ -2,10 +2,6 @@
     "name": "famoser/famoser.ch",
     "description": "personal webpage of Florian Moser",
     "type": "project",
-    "require": {
-        "symfony/yaml": "^4.3",
-        "symfony/dotenv": "^4.1"
-    },
     "license": "MIT",
     "authors": [
         {
