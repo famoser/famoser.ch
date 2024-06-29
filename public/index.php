@@ -42,7 +42,7 @@ include "../templates/head.html"
                     <!-- My topic is internet voting protocols. -->
                     <!-- My method is primarily formal proofs. -->
                     <td>now</td>
-                    <td>PhD Cand. <a href="https://inria.fr">INRIA</a> in Computer Science</td>
+                    <td>PhD Cand. <a href="https://inria.fr" target="_blank">INRIA</a> in Computer Science</td>
                 </tr>
                 <tr>
                     <!-- I focused on information security, and finished with a grade average top 15%. -->
@@ -193,8 +193,8 @@ include "../templates/head.html"
                 Centre Inria University De Lorraine,
                 615 Rue du Jardin-Botanique,
                 FR-54600 Villers-lès-Nancy -
-                <a href="https://team.inria.fr/pesto/">research team</a> -
-                <a href="https://members.loria.fr/FMoser/">research website</a>
+                <a href="https://team.inria.fr/pesto/" target="_blank">research team</a> -
+                <a href="https://members.loria.fr/FMoser/" target="_blank">research website</a>
             </p>
         </div>
     </div>
