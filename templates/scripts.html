@@ -3,4 +3,26 @@
     console.log('Read the HTML for more information, or ask me for a development / research CV.')
     console.log('🌈');
   });
+
+  const sidebar = document.querySelector('.sidebar');
+  document.addEventListener('scroll', function() {
+    const windowHeight = window.innerHeight;
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth >= 950 || windowHeight >= 950) {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const documentHeight = document.documentElement.scrollHeight;
+      if (scrollTop + windowHeight >= documentHeight) {
+        sidebar.classList.add('research-font');
+      } else if (scrollTop <= 0) {
+        sidebar.classList.remove('research-font');
+      }
+    }
+  });
+
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 950 && window.innerHeight < 950) {
+      sidebar.classList.remove('research-font');
+    }
+  });
 </script>
