@@ -24,12 +24,12 @@ include "../templates/head.html"
 
 <section class="sidebar">
     <div class="profile">
-        <img alt="Florian Moser" src="../images/Florian Moser.jpg">
+        <img alt="Florian Moser" src="../images/Florian_Moser.jpg">
         <div class="presentation">
             <h2>Florian Moser</h2>
             <p>
                 florian.moser (at) famoser.ch <br>
-                write me in en, de, de-ch or fr
+                contact me in en, de or fr
             </p>
         </div>
     </div>
@@ -42,19 +42,19 @@ include "../templates/head.html"
                     <!-- My topic is internet voting protocols. -->
                     <!-- My method is primarily formal proofs. -->
                     <td>now</td>
-                    <td>PhD Cand. <a href="https://inria.fr" target="_blank">INRIA</a> in Computer Science</td>
+                    <td>PhD Cand. <a href="https://inria.fr">INRIA</a> in Computer Science</td>
                 </tr>
                 <tr>
                     <!-- I focused on information security, and finished with a grade average top 15%. -->
                     <!-- The Master's thesis is entitled "Swiss Internet Voting". -->
                     <td>2022</td>
-                    <td>Msc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
+                    <td>Msc <a href="https://ethz.ch">ETH</a> in Computer Science</td>
                 </tr>
                 <tr>
                     <!-- I focused on software engineering and security, and finished in the minimal time. -->
                     <!-- The Bachelor's thesis is entitled "Identifying encrypted online video streams using bitrate profiles". -->
                     <td>2018</td>
-                    <td>Bsc <a href="https://ethz.ch" target="_blank">ETH</a> in Computer Science</td>
+                    <td>Bsc <a href="https://ethz.ch">ETH</a> in Computer Science</td>
                 </tr>
                 </tbody>
             </table>
@@ -70,7 +70,7 @@ include "../templates/head.html"
                     <td>now</td>
                     <td>
                         Engineer & Scientist
-                        <a href="https://famoser.ch">famoser GmbH</a>
+                        <a href="https://famoser.ch" target="_self">famoser GmbH</a>
                     </td>
                 </tr>
                 <tr>
@@ -78,7 +78,7 @@ include "../templates/head.html"
                     <td>2019</td>
                     <td>
                         Board Member Internal Affairs
-                        <a href="https://vseth.ethz.ch" target="_blank">VSETH</a>
+                        <a href="https://vseth.ethz.ch">VSETH</a>
                     </td>
                 </tr>
                 <tr>
@@ -86,7 +86,7 @@ include "../templates/head.html"
                     <td>2018</td>
                     <td>
                         Professional Software Engineer
-                        <a href="https://www.zuehlke.com" target="_blank">Zühlke</a>
+                        <a href="https://www.zuehlke.com">Zühlke</a>
                     </td>
                 </tr>
                 <tr>
@@ -94,7 +94,7 @@ include "../templates/head.html"
                     <td>2016</td>
                     <td>
                         Developer and Project Manager
-                        <a href="https://novu.ch" target="_blank">Novu</a>
+                        <a href="https://novu.ch">Novu</a>
                     </td>
                 </tr>
                 </tbody>
@@ -116,27 +116,27 @@ include "../templates/head.html"
             <p>
                 <!-- I develop, operate and maintain multiple products over long-term. -->
                 I develop, operate and maintain
-                <a href="https://baupen.ch" target="_blank">baupen</a> and
-                <a href="https://github.com/famoser/nodika" target="_blank">nodika</a>;
+                <a href="https://baupen.ch">baupen</a> and
+                <a href="https://github.com/famoser/nodika">nodika</a>;
                 <br>
 
                 <!-- In big organizations, I find agreements and implement strategic improvements end-to-end. -->
                 automate internal processes of the
-                <a href="https://uzh.ch" target="_blank">University of Zürich</a>;
+                <a href="https://uzh.ch">University of Zürich</a>;
                 <br>
 
                 <!-- If current state-of-the-art lacks in quality, I also bring highly-technical projects into production. -->
                 create
-                <a href="https://github.com/famoser/pdf-generator" target="_blank">PDF writers</a>,
-                <a href="https://github.com/ProVerif/vscode-proverif-language-service" target="_blank">language
+                <a href="https://github.com/famoser/pdf-generator">PDF writers</a>,
+                <a href="https://github.com/ProVerif/vscode-proverif-language-service">language
                     servers</a> and
-                <a href="https://github.com/famoser/agnes" target="_blank">deployment tools</a>;
+                <a href="https://github.com/famoser/agnes">deployment tools</a>;
                 <br>
 
                 <!-- I am effective in Scrum teams in improving and refactoring existing code, or even introducing new technologies. -->
                 and was part of the teams powering
-                <a href="https://www.stratus.swiss" target="_blank">Stratus</a> and
-                <a href="https://bluecare.ch/blueconnect/" target="_blank">BlueConnect</a>.
+                <a href="https://www.stratus.swiss">Stratus</a> and
+                <a href="https://bluecare.ch/blueconnect/">BlueConnect</a>.
             </p>
         </div>
 
@@ -146,9 +146,9 @@ include "../templates/head.html"
                 c/o Florian Moser,
                 Ochsengasse 66,
                 CH-4123 Allschwil -
-                <a href="https://www.zefix.ch/en/search/entity/list/firm/1515465" target="_blank">CHE-498.133.112</a> -
-                <a href="https://www.irqao.com/PDF/C46969-85361.pdf" target="_blank">ISO 9001 certified</a> -
-                <a href="https://www.irqao.com/PDF/C46969-85362.pdf" target="_blank">ISO 27001 certified</a>
+                <a href="https://www.zefix.ch/en/search/entity/list/firm/1515465">CHE-498.133.112</a> -
+                <a href="https://www.irqao.com/PDF/C46969-85361.pdf">ISO 9001 certified</a> -
+                <a href="https://www.irqao.com/PDF/C46969-85362.pdf">ISO 27001 certified</a>
             </p>
         </div>
     </div>
@@ -167,23 +167,23 @@ include "../templates/head.html"
             <p>
                 <!-- I push simple and convincingly-proven protocols which suit their respective context. -->
                 I propose and proof
-                <a href="https://arxiv.org/abs/2311.12710" target="_blank">internet voting protocols</a>,
+                <a href="https://arxiv.org/abs/2311.12710">internet voting protocols</a>,
                 <br>
 
                 <!-- To show that more secure systems can indeed be constructed, I implement parts by myself. -->
                 participate in
-                <a href="https://github.com/famoser/polyas-verification" target="_blank">independent implementation</a>
+                <a href="https://github.com/famoser/polyas-verification">independent implementation</a>
                 pilots,
                 <br>
 
                 <!-- I communicate research results to the general public to enable them to choose better systems. -->
                 explain verifiable internet voting to
-                <a href="https://cfp.gulas.ch/gpn22/talk/TKRTLZ/" target="_blank">the general public</a>,
+                <a href="https://cfp.gulas.ch/gpn22/talk/TKRTLZ/">the general public</a>,
                 <br>
 
                 <!-- Since many years, I run and continuously adapt the internet voting system used by the personnel of UZH. -->
                 and develop, operate and maintain internet voting at
-                <a href="https://www.uzh.ch/cmsssl/vauz/de/politik/wahlen/e-voting.html" target="_blank">UZH</a>.
+                <a href="https://www.uzh.ch/cmsssl/vauz/de/politik/wahlen/e-voting.html">UZH</a>.
             </p>
         </div>
 
@@ -193,8 +193,8 @@ include "../templates/head.html"
                 Centre Inria University De Lorraine,
                 615 Rue du Jardin-Botanique,
                 FR-54600 Villers-lès-Nancy -
-                <a href="https://team.inria.fr/pesto/" target="_blank">research team</a> -
-                <a href="https://members.loria.fr/FMoser/" target="_blank">research website</a>
+                <a href="https://team.inria.fr/pesto/">research team</a> -
+                <a href="https://members.loria.fr/FMoser/">research website</a>
             </p>
         </div>
     </div>
