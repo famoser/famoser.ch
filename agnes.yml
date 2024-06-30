@@ -22,4 +22,4 @@ scripts:
   build:
     hook: build
     script:
-      - composer install --verbose --prefer-dist --no-interaction --no-dev --optimize-autoloader --no-scripts
+      - rm -rf projects scripts
