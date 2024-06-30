@@ -74,19 +74,9 @@ DirectoryIndex index.php
 
 # Serve resources with the proper media types (f.k.a. MIME types).
 <IfModule mod_mime.c>
-
-  # JavaScript
-    AddType application/javascript                      js mjs
-
-  # Media files
-    AddType image/svg+xml                               svg svgz
-    AddType image/x-icon                                cur ico
-
   # Web fonts
-    AddType font/woff                                   woff
-    AddType font/woff2                                  woff2
-    AddType application/vnd.ms-fontobject               eot
     AddType font/ttf                                    ttf
+    AddType font/opentype                               otf
 
 </IfModule>
 
@@ -97,9 +87,7 @@ AddDefaultCharset utf-8
 # Serve the following file types with the media type `charset`
 # parameter set to `UTF-8`.
 <IfModule mod_mime.c>
-    AddCharset utf-8 .css \
-                     .js \
-                     .json
+    AddCharset utf-8 .css
 </IfModule>
 
 # Redirect from the `http://` to the `https://` version of the URL.
@@ -123,11 +111,6 @@ AddDefaultCharset utf-8
     Header set X-Content-Type-Options "nosniff"
 </IfModule>
 
-# Opt out google cohort tracking
-<IfModule mod_headers.c>
-    Header always set Permissions-Policy: interest-cohort=()
-</IfModule>
-
 # Set referrer policy (disable all potentially leaking information)
 <IfModule mod_headers.c>
     Header set Referrer-Policy: no-referrer
@@ -141,7 +124,7 @@ AddDefaultCharset utf-8
     # `mod_headers` cannot match based on the content-type, however,
     # the `X-Frame-Options` response header should be send only for
     # HTML documents and not for the other resources.
-    <FilesMatch "\.(bmp|css|eot|gif|jpe?g|json(ld)?|otf|pdf|png|txt|woff2?)$">
+    <FilesMatch "\.(css|jpe?g|png|otf|ttf|pdf)$">
         Header unset X-Frame-Options
     </FilesMatch>
 
@@ -162,7 +145,7 @@ AddDefaultCharset utf-8
     # `mod_headers` cannot match based on the content-type, however,
     # the `X-XSS-Protection` response header should be send only for
     # HTML documents and not for the other resources.
-    <FilesMatch "\.(bmp|css|eot|gif|jpe?g|json(ld)?|otf|pdf|png|txt|woff2?)$">
+    <FilesMatch "\.(css|jpe?g|png|otf|ttf|pdf)$">
         Header unset X-XSS-Protection
     </FilesMatch>
 
@@ -185,14 +168,14 @@ AddDefaultCharset utf-8
     # font-src 'self'; to load fonts from same domain
     # img-src 'self' data:; to load images from same domain and allow from data attributes
     # form-action 'self'; to submit forms only to same domain
-    Header set Content-Security-Policy "block-all-mixed-content; default-src 'none'; base-uri 'self'; manifest-src 'self'; object-src 'self'; connect-src 'self'; script-src *.googlesyndication.com 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: *.openstreetmap.org unpkg.com; form-action 'self'"
-    Header set X-Content-Security-Policy "block-all-mixed-content; default-src 'none'; base-uri 'self'; manifest-src 'self'; object-src 'self'; connect-src 'self'; script-src *.googlesyndication.com 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: *.openstreetmap.org unpkg.com; form-action 'self'"
-    Header set X--WebKit-CSP "block-all-mixed-content; default-src 'none'; base-uri 'self'; manifest-src 'self'; object-src 'self'; connect-src 'self'; script-src *.googlesyndication.com 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: *.openstreetmap.org unpkg.com; form-action 'self'"
+    Header set Content-Security-Policy "block-all-mixed-content; default-src 'none'; base-uri 'self'; style-src 'self'; font-src 'self'; img-src 'self'"
+    Header set X-Content-Security-Policy "block-all-mixed-content; default-src 'none'; base-uri 'self'; style-src 'self'; font-src 'self'; img-src 'self'"
+    Header set X--WebKit-CSP "block-all-mixed-content; default-src 'none'; base-uri 'self'; style-src 'self'; font-src 'self'; img-src 'self'"
 
     # `mod_headers` cannot match based on the content-type, however,
     # the `Content-Security-Policy` response header should be send
     # only for HTML documents and not for the other resources.
-    <FilesMatch "\.(bmp|css|eot|gif|jpe?g|json(ld)?|otf|pdf|png|txt|woff2?)$">
+    <FilesMatch "\.(css|jpe?g|png|otf|ttf|pdf)$">
         Header unset Content-Security-Policy
     </FilesMatch>
 </IfModule>
@@ -227,43 +210,12 @@ ServerSignature Off
 
     # Compress all output labeled with one of the following media types.
     <IfModule mod_filter.c>
-        AddOutputFilterByType DEFLATE "application/atom+xml" \
-                                      "application/javascript" \
-                                      "application/json" \
-                                      "application/ld+json" \
-                                      "application/manifest+json" \
-                                      "application/rdf+xml" \
-                                      "application/rss+xml" \
-                                      "application/schema+json" \
-                                      "application/vnd.geo+json" \
-                                      "application/vnd.ms-fontobject" \
-                                      "application/x-font-ttf" \
-                                      "application/x-javascript" \
-                                      "application/x-web-app-manifest+json" \
-                                      "application/xhtml+xml" \
-                                      "application/xml" \
-                                      "font/collection" \
-                                      "font/eot" \
+        AddOutputFilterByType DEFLATE "application/x-font-ttf" \
                                       "font/opentype" \
                                       "font/otf" \
                                       "font/ttf" \
-                                      "image/bmp" \
-                                      "image/svg+xml" \
-                                      "image/vnd.microsoft.icon" \
-                                      "image/x-icon" \
-                                      "text/cache-manifest" \
-                                      "text/calendar" \
                                       "text/css" \
-                                      "text/html" \
-                                      "text/javascript" \
-                                      "text/plain" \
-                                      "text/markdown" \
-                                      "text/vcard" \
-                                      "text/vnd.rim.location.xloc" \
-                                      "text/vtt" \
-                                      "text/x-component" \
-                                      "text/x-cross-domain-policy" \
-                                      "text/xml"
+                                      "text/html"
 
     </IfModule>
 
@@ -299,64 +251,9 @@ FileETag None
 <IfModule mod_expires.c>
 
     ExpiresActive on
-    ExpiresDefault                                      "access plus 1 day"
+    ExpiresDefault                                      "access plus 1 year"
 
-  # CSS
-    ExpiresByType text/css                              "access plus 1 year"
-
-  # Favicon (cannot be renamed!) and cursor images
-    ExpiresByType image/vnd.microsoft.icon              "access plus 1 month"
-    ExpiresByType image/x-icon                          "access plus 1 month"
-
-  # HTML
+    # Exception for HTML
     ExpiresByType text/html                             "access plus 0 seconds"
-
-  # JavaScript
-    ExpiresByType application/javascript                "access plus 1 year"
-    ExpiresByType application/x-javascript              "access plus 1 year"
-    ExpiresByType text/javascript                       "access plus 1 year"
-
-  # Manifest files
-    ExpiresByType application/manifest+json             "access plus 1 week"
-
-  # Media files
-    ExpiresByType audio/ogg                             "access plus 1 month"
-    ExpiresByType image/bmp                             "access plus 1 month"
-    ExpiresByType image/gif                             "access plus 1 month"
-    ExpiresByType image/jpeg                            "access plus 1 month"
-    ExpiresByType image/png                             "access plus 1 month"
-    ExpiresByType image/svg+xml                         "access plus 1 month"
-    ExpiresByType image/webp                            "access plus 1 month"
-    ExpiresByType video/mp4                             "access plus 1 month"
-    ExpiresByType video/ogg                             "access plus 1 month"
-    ExpiresByType video/webm                            "access plus 1 month"
-
-  # Web fonts
-    # Collection
-    ExpiresByType font/collection                       "access plus 1 month"
-
-    # Embedded OpenType (EOT)
-    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
-    ExpiresByType font/eot                              "access plus 1 month"
-
-    # OpenType
-    ExpiresByType font/opentype                         "access plus 1 month"
-    ExpiresByType font/otf                              "access plus 1 month"
-
-    # TrueType
-    ExpiresByType application/x-font-ttf                "access plus 1 month"
-    ExpiresByType font/ttf                              "access plus 1 month"
-
-    # Web Open Font Format (WOFF) 1.0
-    ExpiresByType application/font-woff                 "access plus 1 month"
-    ExpiresByType application/x-font-woff               "access plus 1 month"
-    ExpiresByType font/woff                             "access plus 1 month"
-
-    # Web Open Font Format (WOFF) 2.0
-    ExpiresByType application/font-woff2                "access plus 1 month"
-    ExpiresByType font/woff2                            "access plus 1 month"
-
-  # Other
-    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
 
 </IfModule>
