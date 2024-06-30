@@ -9,6 +9,13 @@
 
 @font-face {
     font-family: "Inter";
+    font-weight: bold;
+    src: url("../fonts/Inter-Bold.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Inter";
     font-weight: 300;
     src: url("../fonts/Inter-Light.ttf");
     font-display: swap;
@@ -17,6 +24,13 @@
 @font-face {
     font-family: "Latin Modern Roman";
     src: url("../fonts/lmroman9-regular.otf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Latin Modern Roman";
+    font-weight: bold;
+    src: url("../fonts/lmroman12-bold.otf");
     font-display: swap;
 }
 
