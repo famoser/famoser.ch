@@ -59,6 +59,9 @@ a:hover, a:focus {
 .background-red {
     background-color: #f4e8ed;
 }
+.background-gray {
+    background-color: #f8f8f8;
+}
 
 .background-green a,
 .background-green a:hover,
@@ -70,6 +73,12 @@ a:hover, a:focus {
 .background-red a:hover,
 .background-red a:focus {
     color: #6c173b;
+}
+
+.background-gray a,
+.background-gray a:hover,
+.background-gray a:focus {
+    color: #505050;
 }
 
 
@@ -136,32 +145,28 @@ body {
 
 .sidebar {
     position: fixed;
-    width: 27em;
-    right: -1em;
     top: 0;
-    bottom: 0;
+    right: 0;
     overflow-y: auto;
-    padding: 4em 4em 4em 0;
+    margin: 1em;
+    padding: 2em;
     box-sizing: border-box;
-}
-
-.profile {
-    padding-left: 4em;
+    border-radius: 2em;
 }
 
 .profile img {
-    max-width: calc(100% - 1em);
+    max-width: min(100%, 12em);
+    border-radius: 1em;
 }
 
 .profile h2 {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 0;
 }
 
 .time-table {
     border-collapse: collapse;
     border-spacing: 0;
-    padding-left: 1em; /* +3em table first row equals 4 */
 }
 
 .time-table td {
@@ -173,12 +178,11 @@ body {
     max-width: 2.5em;
     padding-right: 0.5em;
     color: #555;
-    text-align: end;
+    text-align: start;
 }
 
 .education, .experience {
-    padding-left: 1em;
-    margin-top: 4em;
+    margin-top: 3em;
 }
 
 /* extreme landscape */

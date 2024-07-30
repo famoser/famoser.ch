@@ -22,9 +22,9 @@ include "../templates/head.html"
     </p>
 <?php } ?>
 
-<section class="sidebar">
+<section class="sidebar background-gray">
     <div class="profile">
-        <img alt="Florian Moser" src="../images/Florian_Moser.jpg">
+        <img alt="Florian Moser" src="./images/Florian_Moser.jpg">
         <div class="presentation">
             <h2>Florian Moser</h2>
             <p>
