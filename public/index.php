@@ -190,7 +190,7 @@ include "../templates/head.html"
         <div class="footer">
             <p>
                 Équipe PESTO,
-                Centre Inria University De Lorraine,
+                Centre Inria de l'Université de Lorraine,
                 615 Rue du Jardin-Botanique,
                 FR-54600 Villers-lès-Nancy -
                 <a href="https://team.inria.fr/pesto/">research team</a> -
