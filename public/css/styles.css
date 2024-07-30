@@ -2,23 +2,11 @@
 
 /* page */
 @font-face {
-    font-family: "Inter";
-    src: url("../fonts/Inter-Regular.ttf");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Inter";
-    font-weight: bold;
-    src: url("../fonts/Inter-Bold.ttf");
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "Inter";
-    font-weight: 300;
-    src: url("../fonts/Inter-Light.ttf");
-    font-display: swap;
+    font-family: InterVariable;
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: optional;
+    src: url('../fonts/InterVariable.woff2') format('woff2');
 }
 
 @font-face {
@@ -48,7 +36,7 @@ html, body {
 
     font-size: 1vw;
     color: #111;
-    font-family: "Inter", sans-serif;
+    font-family: InterVariable, sans-serif;
 }
 
 a {
