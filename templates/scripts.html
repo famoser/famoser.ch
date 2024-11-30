@@ -12,9 +12,9 @@
     if (windowWidth >= 950 || windowHeight >= 950) {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
       const documentHeight = document.documentElement.scrollHeight;
-      if (scrollTop + windowHeight >= documentHeight) {
+      if (scrollTop + windowHeight >= documentHeight * 0.9) {
         sidebar.classList.add('research-font');
-      } else if (scrollTop <= 0) {
+      } else if (scrollTop <= documentHeight * 0.3) {
         sidebar.classList.remove('research-font');
       }
     }
