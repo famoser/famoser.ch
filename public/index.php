@@ -170,10 +170,12 @@ include "../templates/head.html"
                 <a href="https://arxiv.org/abs/2311.12710">internet voting protocols</a>,
                 <br>
 
-                <!-- To show that more secure systems can indeed be constructed, I implement parts by myself. -->
-                participate in
-                <a href="https://github.com/famoser/polyas-verification">independent implementation</a>
-                pilots,
+                <!-- To show that more secure systems can indeed be constructed, I implement parts by myself... -->
+                publish
+                <a href="https://github.com/famoser/polyas-verification">independent implementations</a>
+                <!-- ...and document in studies proposed and implemented building blocks and their properties. -->
+                and
+                <a href="https://www.bsi.bund.de/DE/Service-Navi/Publikationen/Studien/Verifiable_Online-Voting/Verifiable_Online-Voting_node.html">studies</a>,
                 <br>
 
                 <!-- I communicate research results to the general public to enable them to choose better systems. -->
