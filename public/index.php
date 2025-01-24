@@ -39,10 +39,10 @@ include "../templates/head.html"
             <table class="time-table">
                 <tbody>
                 <tr>
-                    <!-- My topic is internet voting protocols. -->
-                    <!-- My method is primarily formal proofs. -->
+                    <!-- My method is primarily formal (symbolic) proofs. -->
+                    <!-- I apply this to internet voting protocols. -->
                     <td>now</td>
-                    <td>PhD Cand. <a href="https://inria.fr">INRIA</a> in Computer Science</td>
+                    <td>PhD Cand. <a href="https://inria.fr">INRIA</a> in Formal Methods</td>
                 </tr>
                 <tr>
                     <!-- I focused on information security, and finished with a grade average top 15%. -->
@@ -65,7 +65,7 @@ include "../templates/head.html"
                 <tbody>
                 <tr>
                     <!-- I develop on big and small products, or provide scientific consulting. -->
-                    <!-- Customers include Teqable (BlueCare, Basler & Hofmann), Hilti, University of Zürich, Swiss Post, Federal Office for Information Security Germany, and others -->
+                    <!-- Customers include University of Zürich, Teqable (BlueCare, Basler & Hofmann), Hilti, Swiss Post, Federal Office for Information Security Germany, and others -->
                     <!-- Hire me! :) -->
                     <td>now</td>
                     <td>
@@ -125,7 +125,7 @@ include "../templates/head.html"
                 <a href="https://uzh.ch">University of Zürich</a>;
                 <br>
 
-                <!-- If current state-of-the-art lacks in quality, I also bring highly-technical projects into production. -->
+                <!-- If current state-of-the-art is lacking, I also bring highly-technical projects into production. -->
                 create
                 <a href="https://github.com/famoser/pdf-generator">PDF writers</a>,
                 <a href="https://github.com/ProVerif/vscode-proverif-language-service">language
@@ -133,7 +133,7 @@ include "../templates/head.html"
                 <a href="https://github.com/famoser/agnes">deployment tools</a>;
                 <br>
 
-                <!-- I am effective in Scrum teams in improving and refactoring existing code, or even introducing new technologies. -->
+                <!-- I improve and refactor existing code, or introduce new technologies if necessary. -->
                 and was part of the teams powering
                 <a href="https://www.stratus.swiss">Stratus</a> and
                 <a href="https://bluecare.ch/blueconnect/">BlueConnect</a>.
@@ -165,20 +165,20 @@ include "../templates/head.html"
     <div class="bottom">
         <div class="description background-red">
             <p>
-                <!-- I push simple and convincingly-proven protocols which suit their respective context. -->
+                <!-- I publish simple and convincingly-proven protocols which suit their respective context. -->
                 I propose and proof
                 <a href="https://arxiv.org/abs/2311.12710">internet voting protocols</a>,
                 <br>
 
-                <!-- To show that more secure systems can indeed be constructed, I implement parts by myself... -->
+                <!-- To show that more secure systems can indeed be constructed, I document the state of the art... -->
                 publish
-                <a href="https://github.com/famoser/polyas-verification">independent implementations</a>
-                <!-- ...and document in studies proposed and implemented building blocks and their properties. -->
+                <a href="https://www.bsi.bund.de/DE/Service-Navi/Publikationen/Studien/Verifiable_Online-Voting/Verifiable_Online-Voting_node.html">studies</a>
                 and
-                <a href="https://www.bsi.bund.de/DE/Service-Navi/Publikationen/Studien/Verifiable_Online-Voting/Verifiable_Online-Voting_node.html">studies</a>,
+                <!-- and sometimes even implement parts by myself. -->
+                <a href="https://github.com/famoser/polyas-verification">independent implementations</a>,
                 <br>
 
-                <!-- I communicate research results to the general public to enable them to choose better systems. -->
+                <!-- I communicate research results to the general public to contribute towards choosing better systems. -->
                 explain verifiable internet voting to
                 <a href="https://cfp.gulas.ch/gpn22/talk/TKRTLZ/">the general public</a>,
                 <br>
