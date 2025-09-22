@@ -166,7 +166,7 @@ include "../templates/head.html"
         <div class="description background-red">
             <p>
                 <!-- I publish simple and convincingly-proven protocols which suit their respective context. -->
-                I propose and proof
+                I propose and prove
                 <a href="https://arxiv.org/abs/2311.12710">internet voting protocols</a>,
                 <br>
 
