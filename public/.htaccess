@@ -168,9 +168,9 @@ AddDefaultCharset utf-8
     # font-src 'self'; to load fonts from same domain
     # img-src 'self' data:; to load images from same domain and allow from data attributes
     # form-action 'self'; to submit forms only to same domain
-    Header set Content-Security-Policy "block-all-mixed-content; default-src 'none'; base-uri 'self'; style-src 'self'; script-src 'sha256-zJRjSC14RZiJjTiB2hry7beckKE0xoGOB2WFxpiytQE='; font-src 'self'; img-src 'self'"
-    Header set X-Content-Security-Policy "block-all-mixed-content; default-src 'none'; base-uri 'self'; style-src 'self'; script-src 'sha256-zJRjSC14RZiJjTiB2hry7beckKE0xoGOB2WFxpiytQE='; font-src 'self'; img-src 'self'"
-    Header set X--WebKit-CSP "block-all-mixed-content; default-src 'none'; base-uri 'self'; style-src 'self'; script-src 'sha256-zJRjSC14RZiJjTiB2hry7beckKE0xoGOB2WFxpiytQE='; font-src 'self'; img-src 'self'"
+    Header set Content-Security-Policy "block-all-mixed-content; default-src 'none'; base-uri 'self'; style-src 'self'; script-src 'sha256-I7VE6yrvS9J1LMCiV0iMyTjfxMw9e7BIq9/V/K/tocQ='; font-src 'self'; img-src 'self'"
+    Header set X-Content-Security-Policy "block-all-mixed-content; default-src 'none'; base-uri 'self'; style-src 'self'; script-src 'sha256-I7VE6yrvS9J1LMCiV0iMyTjfxMw9e7BIq9/V/K/tocQ='; font-src 'self'; img-src 'self'"
+    Header set X--WebKit-CSP "block-all-mixed-content; default-src 'none'; base-uri 'self'; style-src 'self'; script-src 'sha256-I7VE6yrvS9J1LMCiV0iMyTjfxMw9e7BIq9/V/K/tocQ='; font-src 'self'; img-src 'self'"
 
     # `mod_headers` cannot match based on the content-type, however,
     # the `Content-Security-Policy` response header should be send
