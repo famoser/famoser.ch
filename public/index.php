@@ -26,7 +26,7 @@ include "../templates/head.html"
     <div class="profile">
         <img alt="Florian Moser" src="./images/Florian_Moser.jpg">
         <div class="presentation">
-            <h2>Florian Moser</h2>
+            <h2>Dr. Florian Moser</h2>
             <p>
                 florian.moser (at) famoser.ch <br>
                 contact me in en, de or fr
@@ -35,44 +35,25 @@ include "../templates/head.html"
     </div>
 
     <div class="presentation">
-        <div class="education">
-            <table class="time-table">
-                <tbody>
-                <tr>
-                    <!-- My method is primarily formal (symbolic) proofs. -->
-                    <!-- I apply this to internet voting protocols. -->
-                    <td>now</td>
-                    <td>PhD Cand. <a href="https://inria.fr">INRIA</a> in Formal Methods</td>
-                </tr>
-                <tr>
-                    <!-- I focused on information security, and finished with a grade average top 15%. -->
-                    <!-- The Master's thesis is entitled "Swiss Internet Voting". -->
-                    <td>2022</td>
-                    <td>Msc <a href="https://ethz.ch">ETH</a> in Computer Science</td>
-                </tr>
-                <tr>
-                    <!-- I focused on software engineering and security, and finished in the minimal time. -->
-                    <!-- The Bachelor's thesis is entitled "Identifying encrypted online video streams using bitrate profiles". -->
-                    <td>2018</td>
-                    <td>Bsc <a href="https://ethz.ch">ETH</a> in Computer Science</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-
         <div class="experience">
             <table class="time-table">
                 <tbody>
                 <tr>
                     <!-- I develop on big and small products, or provide scientific consulting. -->
                     <!-- Customers include University of Zürich, Teqable (BlueCare, Basler & Hofmann), Hilti, Swiss Post, Federal Office for Information Security Germany, and others -->
-                    <!-- Hire me! :) -->
+                    <!-- Contract me! :) -->
                     <td>now</td>
                     <td>
                         Engineer & Scientist
                         <a href="https://famoser.ch" target="_self">famoser GmbH</a>
                     </td>
                 </tr>
+            </table>
+        </div>
+
+        <div class="experience">
+            <table class="time-table">
+                <tbody>
                 <tr>
                     <!-- I was responsible to coordinate with the many organizations VSETH is in contact with, and is composed out of. -->
                     <td>2019</td>
@@ -100,6 +81,35 @@ include "../templates/head.html"
                 </tbody>
             </table>
         </div>
+
+        <div class="education">
+            <table class="time-table">
+                <tbody>
+                <tr>
+                    <!-- My method is primarily formal (symbolic) proofs. -->
+                    <!-- I apply this to internet voting protocols. -->
+                    <td>2026</td>
+                    <td>
+                        PhD <a href="https://www.univ-lorraine.fr/">Université de Lorraine</a> at <a href="https://www.inria.fr/en">INRIA</a><br>
+                        <span class="mt-1 text-secondary">Formal Methods for Internet Voting</span>
+                    </td>
+                </tr>
+                <tr>
+                    <!-- I focused on information security, and finished with a grade average top 15%. -->
+                    <!-- The Master's thesis is entitled "Swiss Internet Voting". -->
+                    <td>2022</td>
+                    <td>Msc <a href="https://ethz.ch">ETH</a> in Computer Science</td>
+                </tr>
+                <tr>
+                    <!-- I focused on software engineering and security, and finished in the minimal time. -->
+                    <!-- The Bachelor's thesis is entitled "Identifying encrypted online video streams using bitrate profiles". -->
+                    <td>2018</td>
+                    <td>Bsc <a href="https://ethz.ch">ETH</a> in Computer Science</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
 </section>
 
@@ -114,10 +124,10 @@ include "../templates/head.html"
     <div class="bottom">
         <div class="description background-green">
             <p>
-                <!-- I develop, operate and maintain multiple products over long-term. -->
+                <!-- I develop, operate and maintain multiple products over long-term. oldest-->
                 I develop, operate and maintain
                 <a href="https://baupen.ch">baupen</a> and
-                <a href="https://github.com/famoser/nodika">nodika</a>;
+                <a href="https://github.com/uzh-nent/ente">ente</a>;
                 <br>
 
                 <!-- In big organizations, I find agreements and implement strategic improvements end-to-end. -->
@@ -125,7 +135,7 @@ include "../templates/head.html"
                 <a href="https://uzh.ch">University of Zürich</a>;
                 <br>
 
-                <!-- If current state-of-the-art is lacking, I also bring highly-technical projects into production. -->
+                <!-- If current state-of-the-art is lacking, I also bring highly technical projects into production. -->
                 create
                 <a href="https://github.com/famoser/pdf-generator">PDF writers</a>,
                 <a href="https://github.com/ProVerif/vscode-proverif-language-service">language
@@ -145,9 +155,9 @@ include "../templates/head.html"
                 famoser GmbH,
                 c/o Florian Moser,
                 Ochsengasse 66,
-                CH-4123 Allschwil -
-                <a href="https://www.zefix.ch/en/search/entity/list/firm/1515465">CHE-498.133.112</a> -
-                <a href="https://www.irqao.com/PDF/C46969-85361.pdf">ISO 9001 certified</a> -
+                CH-4123 Allschwil &ndash;
+                <a href="https://www.zefix.ch/en/search/entity/list/firm/1515465">CHE-498.133.112</a> &ndash;
+                <a href="https://www.irqao.com/PDF/C46969-85361.pdf">ISO 9001 certified</a> &ndash;
                 <a href="https://www.irqao.com/PDF/C46969-85362.pdf">ISO 27001 certified</a>
             </p>
         </div>
@@ -191,11 +201,8 @@ include "../templates/head.html"
 
         <div class="footer">
             <p>
-                Équipe PESTO,
-                Centre Inria de l'Université de Lorraine,
-                615 Rue du Jardin-Botanique,
-                FR-54600 Villers-lès-Nancy -
-                <a href="https://team.inria.fr/pesto/">research team</a> -
+                Published at ESORICS '24; CSF '26; E-Vote-ID '24, '25 &ndash;
+                Active collaborations with <a href="https://team.inria.fr/pesto/">INRIA</a>; <a href="https://secuso.aifb.kit.edu/">KIT</a> &ndash;
                 <a href="https://members.loria.fr/FMoser/">research website</a>
             </p>
         </div>
