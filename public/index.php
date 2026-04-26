@@ -10,9 +10,37 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<?php
-include "../templates/head.html"
-?>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/styles.css?v=19">
+    <base href="/" target="_blank">
+
+    <title>Florian Moser - Development & Research</title>
+    <meta name="description" content="Development and Research by Florian Moser">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Florian Moser",
+            "url": "https://famoser.ch",
+            "jobTitle": "Developer & Scientist",
+            "alumniOf": "ETH Zürich",
+            "image": "https://famoser.ch/images/Florian_Moser.jpg",
+            "sameAs": [
+                "https://linkedin.com/in/famoser",
+                "https://github.com/famoser",
+                "https://gitlab.com/famoser",
+                "https://orcid.org/0000-0003-2268-2367",
+                "https://dblp.org/pid/27/10686-2.html"
+            ]
+        }
+    </script>
+</head>
+
 <body>
 
 <?php if ($invalidUri) { ?>
@@ -209,9 +237,12 @@ include "../templates/head.html"
     </div>
 </section>
 
-<?php
-include "../templates/scripts.html"
-?>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    console.log('Read the HTML for more information, or ask me for a development / research CV.')
+    console.log('🌈');
+  });
+</script>
 
 </body>
 </html>
