@@ -231,7 +231,7 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
             <p>
                 Published at ESORICS '24; CSF '26; E-Vote-ID '24, '25 &ndash;
                 Active collaborations with <a href="https://team.inria.fr/pesto/">INRIA</a>; <a href="https://secuso.aifb.kit.edu/">KIT</a> &ndash;
-                <a href="https://members.loria.fr/FMoser/">research website</a>
+                <a href="/research.html" target="_self">research website</a>
             </p>
         </div>
     </div>
