@@ -21,7 +21,6 @@
 }
 
 html, body {
-    height: 100%;
     margin: 0;
     padding: 1em;
     max-width: 50em;
@@ -52,4 +51,14 @@ h2 {
 
 li {
     margin-bottom: 0.5em;
+}
+
+.favorite {
+    padding: 0.5em;
+    background-color: #f4e8ed;
+}
+
+span.favorite {
+    padding: 0 0.4em;
+    background-color: #f4e8ed;
 }
