@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="css/styles.css?v=19">
+    <link rel="stylesheet" href="css/styles.css?v=20">
     <base href="/" target="_blank">
 
     <title>Florian Moser - Development & Research</title>
