@@ -48,6 +48,10 @@ h2 {
     margin-bottom: 0.5em;
 }
 
+p {
+    text-align: justify;
+}
+
 
 li {
     margin-bottom: 0.5em;
@@ -63,10 +67,18 @@ span.favorite {
     background-color: #f4e8ed;
 }
 
-@media (max-width: 950px) and (max-height: 950px) {
+@media print, (max-width: 950px) and (max-height: 950px) {
     html, body {
         padding: 0.5em;
 
         font-size: inherit;
+    }
+
+    ol {
+        padding-left: 1.5em;
+    }
+
+    section {
+        break-inside: avoid;
     }
 }
