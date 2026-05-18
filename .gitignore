@@ -12,5 +12,5 @@ tools/__pycache__
 .env.local
 
 # agnes
-.config
+.agnes
 .build
