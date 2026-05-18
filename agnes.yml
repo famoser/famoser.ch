@@ -3,6 +3,7 @@ agnes:
 
 config:
   path: .config
+  encryption_key: '%env(ANGES_ENCRYPTION_KEY)%'
   repository:
     url: git@gitlab.com:agnes-config/famoser-famoser.ch.git
 
@@ -17,6 +18,7 @@ data:
   files:
     - path: .env.local
       required: true
+      encrypted: true
 
 scripts:
   build:
