@@ -145,7 +145,7 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
     <div class="top">
         <div class="title">
             <h1>Development</h1>
-            <p>of custom high-quality web-applications</p>
+            <p>of maintainable high-quality web-applications</p>
         </div>
     </div>
 
