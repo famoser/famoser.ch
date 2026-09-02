@@ -76,6 +76,14 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
                         <a href="https://famoser.ch" target="_self">famoser GmbH</a>
                     </td>
                 </tr>
+                <tr>
+                    <!-- I operate the internet voting system of Swiss Post for the canton TG. -->
+                    <td>now</td>
+                    <td>
+                        E-Voting Specialist
+                        <a href="https://rechtsdienst.tg.ch/e-voting.html/15008">Canton Thurgau</a>
+                    </td>
+                </tr>
             </table>
         </div>
 
@@ -126,7 +134,10 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
                     <!-- I focused on information security, and finished with a grade average top 15%. -->
                     <!-- The Master's thesis is entitled "Swiss Internet Voting". -->
                     <td>2022</td>
-                    <td>Msc <a href="https://ethz.ch">ETH</a> in Computer Science</td>
+                    <td>
+                        Msc <a href="https://ethz.ch">ETH</a> in Computer Science<br>
+                        <span class="mt-1 text-secondary">Thesis: Swiss Internet Voting</span>
+                </td>
                 </tr>
                 <tr>
                     <!-- I focused on software engineering and security, and finished in the minimal time. -->
@@ -196,7 +207,7 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
     <div class="top">
         <div class="title">
             <h1>Research</h1>
-            <p>into usable provably-secure internet voting</p>
+            <p>into usable provably-secure e-democracy</p>
         </div>
     </div>
 
@@ -230,7 +241,7 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
         <div class="footer">
             <p>
                 Published at ESORICS '24; CSF '26; E-Vote-ID '24, '25, '26 &ndash;
-                Active collaborations with <a href="https://team.inria.fr/pesto/">INRIA</a>; <a href="https://secuso.aifb.kit.edu/">KIT</a> &ndash;
+                Active collaborations with <a href="https://team.inria.fr/pesto/">INRIA</a>; <a href="https://secuso.aifb.kit.edu/">KIT</a>; <a href="https://e-voting.bfh.ch/">BFH</a> &ndash;
                 <a href="/research.html" target="_self">research website</a>
             </p>
         </div>
