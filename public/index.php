@@ -215,8 +215,8 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
         <div class="description background-red">
             <p>
                 <!-- I publish simple and convincingly-proven protocols which suit their respective context. -->
-                I propose and prove
-                <a href="https://arxiv.org/abs/2311.12710">internet voting protocols</a>,
+                I propose
+                <a href="https://inria.hal.science/hal-04627733v1">e-voting</a> and <a href="https://hal.science/hal-05769917v1">e-collecting</a> protocols,
                 <br>
 
                 <!-- To show that more secure systems can indeed be constructed, I document the state of the art... -->
