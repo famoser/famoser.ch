@@ -241,7 +241,7 @@ if ($_SERVER["REQUEST_URI"] !== "/") {
         <div class="footer">
             <p>
                 Published at ESORICS '24; CSF '26; E-Vote-ID '24, '25, '26 &ndash;
-                Active collaborations with <a href="https://team.inria.fr/pesto/">INRIA</a>; <a href="https://secuso.aifb.kit.edu/">KIT</a>; <a href="https://e-voting.bfh.ch/">BFH</a> &ndash;
+                Collaborations with <a href="https://team.inria.fr/pesto/">INRIA</a>; <a href="https://secuso.aifb.kit.edu/">KIT</a>; <a href="https://e-voting.bfh.ch/">BFH</a> &ndash;
                 <a href="/research.html" target="_self">research website</a>
             </p>
         </div>
